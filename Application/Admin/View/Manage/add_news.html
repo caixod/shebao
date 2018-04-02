@@ -1,0 +1,88 @@
+<include file="Public/min-header"/>
+<script src="__PUBLIC__/laydate/laydate.js"></script>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+           		<!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 消息编辑</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">消息</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <form method="post" id="addEditBrandForm" action="" onsubmit="return checkName();">
+
+                        <!--通用信息-->
+                    <div class="tab-content">                 	  
+                        <div class="tab-pane active" id="tab_tongyong">
+                           
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>发送对象:</td>
+                                        <td>
+                                            <select class="form-control" name="user_id" id="user" style="width:250px;" >
+                                                <option value="">发送对象</option>
+
+                                                <foreach name="user_info" item="vo" key="k" >
+                                                    <option value="{$vo.user_id}" <if condition="$vo.user_id eq $info['user_id']">selected="selected"</if>>{$vo.username}</option>
+                                                </foreach>
+                                            </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>消息内容:</td>
+                                    <td>
+                                        <textarea name="question_content" id="question_content" cols="50" rows="4">{$info.question_content}</textarea>
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                                </table>
+                        </div>                           
+                    </div>              
+                    <div class="pull-left" style="margin-left:200px;">
+                        <input type="hidden" name="id" value="{$info.id}">
+                        <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="发送">发送</button>
+                    </div>
+			    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+
+// 判断输入框是否为空
+function checkName(){
+
+     var question_content=$("#question_content").val();
+
+    if($.trim(question_content)=="")
+	{
+        layer.msg("请输入内容", {icon: 2,time: 3000});
+		return false;
+	}
+
+	return true;
+}
+
+laydate.render({
+    elem: '#start_time'
+});
+laydate.render({
+    elem: '#end_time'
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row top text-center no_margin">
+        <div class="col-xs-3">
+            <img class="logo" src="http://www.zhongguoshebaodaili.cn/Public/Home/images/about_02.gif" width="100%   " alt="">
+        </div>
+        <div class="row no_margin col-xs-6 _title" style="width: 30%;">
+
+        </div>
+
+        <div class="col-xs-3 _title" style="width: 40%;">
+            <if condition="$username eq '游客'">
+            <a href="{:U('Home/Mobile/login')}">登录</a>
+            <!--<a href="{:U('Home/Checklogin/company_login')}">企业登录</a>-->
+            <a href="{:U('Home/Mobile/register')}">注册</a>
+
+               <else />
+
+               <span>{$username}</span>&nbsp;&nbsp;
+                <a href="{:U('Home/Mobile/logout')}">退出</a>
+            </if>
+        </div>
+    </div>
+</div>

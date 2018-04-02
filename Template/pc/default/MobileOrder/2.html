@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>选择门店</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+     <link href="./layui/css/layui.css" rel="stylesheet">
+<script src="./layui/layui.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body class="">
+
+<section>
+    <div class="xinxi_div">
+        <div class="xinxis">
+            <label>姓  名：</label>
+            <input type="text" class="inputs"  placeholder="请输入名字">
+        </div>
+        <div class="xinxis">
+            <label>性  别：</label>
+            <input type="radio" checked="checked" name="sex"> 男
+            <input type="radio" checked="" name="sex"> 女
+        </div>
+        <div class="xinxis">
+            <label>手  机：</label>
+            <input type="text" class="inputs"  placeholder="请输入手机号码">
+        </div>
+        <div class="xinxis">
+            <label>出生年月：</label>
+            <input type="text" class="inputs" placeholder="请输入出生年月">
+        </div>
+        <div class="xinxis boders">
+            <label class="labers">注：生日有惊喜哦</label>
+        </div>
+    </div>
+</section>
+<div class="foot">
+    <div class="footer">
+        <button class="but">确定</button>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/other.js"></script>
+<script>
+ 
+//一般直接写在一个js文件中
+layui.use('layer', function(){
+  var layer = layui.layer;
+  
+var a=layer.open({
+  type: 2, 
+  content: '1.html',
+  skin: 'layui-bg-gray',
+  area: ['500px', '500px'],
+  btn: ['按钮一', '按钮二'],
+  yes:function(index, layero){
+  		var a=$("#b").html();
+  		// layer.msg(a, {icon: 5});
+        parent.layer.close(a);
+	},
+  btn2:function(index,layero){
+  	    layer.msg('不开心。。', {icon: 5});
+  },
+
+
+}); 
+
+// layer.open({
+// 	title:"修改",
+//   content: '<form><input id="bt" type="text" name="aa" value=""></form>'
+//   ,btn: ['按钮一', '按钮二']
+//   ,yes: function(index, layero){
+//     var a=$("#bt").val();
+//     alert(a);
+//     layer.close(index);
+//   }
+//   ,btn2: function(index, layero){
+//     //按钮【按钮二】的回调
+    
+//     //return false 开启该代码可禁止点击该按钮关闭
+//   }
+//   ,btn3: function(index, layero){
+//     //按钮【按钮三】的回调
+    
+//     //return false 开启该代码可禁止点击该按钮关闭
+//   }
+//   ,cancel: function(){ 
+//     //右上角关闭回调
+    
+//     //return false 开启该代码可禁止点击该按钮关闭
+//   }
+// });
+});              
+</script> 
+</body>
+</html>

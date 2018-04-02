@@ -1,0 +1,182 @@
+<include file="Public/new_header" />
+<div class="con3">
+    <div class="container">
+        <!--左边按钮 nb_left-->
+        <include file="Public/jisuanqi_nav_menu" />
+        <!--右边按钮-->
+
+        <div class="ab_right" style="border-radius:10px;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">社保计算器</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">首页</a>&gt;<a href="">我的查询</a>&gt;<a style="color:#ae2c26;">社保计算器</a></span>
+            </div>
+            <div class="ab_r_cc">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="denglu">
+                            <h3 class="dengji">社保缴费测算器</h3>
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">请选择参保城市</label>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_province" id="to_province" onChange="get_city_t(this);">
+                                                <option  value="0">请选择</option>
+                                                <volist name="province" id="p">
+                                                    <option  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_city" id="to_city" >
+                                                <option  value="0">请选择</option>
+                                                <volist name="city" id="p">
+                                                    <option   value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--<div class="form-group">-->
+                                        <!--<label class="col-sm-4 control-label">请选择参保类型</label>-->
+                                        <!--<div class="col-sm-6">-->
+                                            <!--<select class="form-control">-->
+                                                <!--<option>1</option>-->
+                                                <!--<option>2</option>-->
+                                                <!--<option>3</option>-->
+                                                <!--<option>4</option>-->
+                                                <!--<option>5</option>-->
+                                            <!--</select>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <div class="form-group">
+                                        <label for="firstname" class="col-sm-4 control-label">社保基数</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="sb_base" placeholder="请输入社保基数">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="firstname" class="col-sm-4 control-label">公积金基数</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="gjj_base" placeholder="请输入公积金基数">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-8">
+                                            <button type="button" class="btn btn-default" onclick="btn_fee();" >计算</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="col-sm-12">
+                                    <div class="jieguo">
+                                        <table class="jieguo_ta" >
+                                            <tr>
+                                                <td>
+                                                    个人应缴社保（元）
+                                                </td>
+                                                <td>
+                                                    单位应缴社保（元）
+                                                </td>
+                                                <td>
+                                                    个人应缴公积金（元）
+                                                </td>
+                                                <td>
+                                                    单位应缴公积金（元）
+                                                </td>
+                                                <td>
+                                                    合计（元）
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="jieguo1" id="sb_fee"></td>
+                                                <td class="jieguo1" id="c_sb_fee"></td>
+                                                <td class="jieguo1" id="gjj_fee"></td>
+                                                <td class="jieguo1" id="company_gjj_fee"></td>
+                                                <td class="jieguo1" id="total_fee"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+
+                                    <div class="jieguo2" id="i_table">
+                                        <table class="table table-hover" style="text-align: center;" id="t">
+
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+        </div>
+    </div>
+</div>
+<script src="__STATIC__/js/other.js"></script>
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+<script>
+
+    function btn_fee(){
+        var to_city=$("#to_city").val();
+        var to_province=$("#to_province").val();
+        var sb_base = $.trim($('#sb_base').val());
+        var gjj_base = $.trim($('#gjj_base').val());
+        var r = /^\d+(\.\d+)?$/;
+        // var num = /^\d+$/;
+        if(to_city==0){
+            layer.alert('请选择补缴城市', {icon: 2});
+            return false;
+        }
+        if(sb_base=='' || !r.test(sb_base)){
+            layer.alert('请输入社保补缴基数', {icon: 2});
+            return false;
+        }
+        if(gjj_base=='' || !r.test(gjj_base)){
+            layer.alert('请输入公积金补缴基数', {icon: 2});
+            return false;
+        }
+
+            $.ajax({
+                url:"{:U('Home/Checklogin/ajax_jisuanqi')}",
+                type : "POST",
+                data:{'to_city':to_city,'sb_base':sb_base,'gjj_base':gjj_base},
+                // async:false,  //同步方式
+                dataType:'json',
+                error: function(request) {
+                    alert("服务器繁忙!");
+                    return false;
+                },
+                success: function(v) {
+                  if(v.code==1){
+                      $("#sb_fee").html(v.mess.sb_fee);
+                      $("#c_sb_fee").html(v.mess.c_sb_fee);
+                      $("#gjj_fee").html(v.mess.gjj_fee);
+                      $("#company_gjj_fee").html(v.mess.company_gjj_fee);
+                      $("#total_fee").html(v.mess.total_fee);
+                      var html='';
+                  html+='<tr><th style="text-align: center;">险种</th><th style="text-align: center;">个人缴费比例</th><th style="text-align: center;">单位缴费比例</th></tr>';
+                          html+='<tr>';
+                      html+='<td>养老保险比例</td><td>'+v.city.xian_one+'%</td><td>'+v.city.c_xian_one+'%</td></tr><tr>';
+                      html+='<td>失业保险比例</td><td>'+v.city.xian_two+'%</td><td>'+v.city.c_xian_two+'%</td></tr><tr>';
+                      html+='<td>生育保险比例</td> <td>'+v.city.xian_three+'%</td><td>'+v.city.c_xian_three+'%</td></tr><tr>';
+                      html+='<td>工伤保险</td><td>'+v.city.xian_four+'%</td><td>'+v.city.c_xian_four+'%</td></tr>';
+                      html+='<tr> <td>医疗保险</td><td>'+v.city.xian_five+'%</td><td>'+v.city.c_xian_five+'%</td></tr>'
+                      html+='<tr><td>公积金</td><td>'+v.city.gjj_bilie+'%</td><td>'+v.city.c_gjj_bilie+'%</td></tr>';
+                      $("#t").html(html);
+                  }else{
+                      layer.alert(v.mess, {icon: 2});
+                  }
+                }
+            });
+
+    }
+
+    // function get_info(obj){
+    //     var city=$(obj).val();
+    //     $.ajax({
+    //         url:''
+    //     })
+    // }
+</script>
+
+</div>
+<include file="Public/footer2" />

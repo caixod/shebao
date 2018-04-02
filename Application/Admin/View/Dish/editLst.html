@@ -1,0 +1,156 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+           		<!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 店铺设置</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">修改店铺</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <form method="post" id="addEditBrandForm" onsubmit="return checkName();">             
+                        <!--通用信息-->
+                    <div class="tab-content">                 	  
+                        <div class="tab-pane active" id="tab_tongyong">
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>营业开始时间:</td>
+                                    <td>
+                                        <input type="text" value="<if condition="$thisCompany['starttime'] gt 0">{$thisCompany['starttime']|date="H:i",###}</if>" onClick="WdatePicker({dateFmt:'H:mm'})" name="starttime" class="form-control" style="width:200px;"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>营业结束时间:</td>
+                                    <td>
+                                        <input type="text" value="<if condition="$thisCompany['endtime'] gt 0">{$thisCompany['endtime']|date="H:i",###}</if>" onClick="WdatePicker({dateFmt:'H:mm'})" name="endtime" class="form-control" style="width:200px;"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>折扣:</td>
+                                    <td>
+                                        <input type="text" value="{$thisCompany.discount}" name="discount" class="form-control" style="width:200px;"/>
+                                        <span id="discount" style="color:#F00; display:none;">折扣必须是1.0到9.9之间的数字</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>随机减免数量:</td>
+                                    <td>
+                                        <input type="text" value="{$thisCompany.remission}" name="remission" class="form-control" style="width:200px;"/>
+                                        <span>数量为0表示不开启随机减免,下面的随机折扣和随机减免金额均可以不填写</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>随机折扣最大值:</td>
+                                    <td>
+                                        <input type="text" value="{$thisCompany.scopemax}" name="scopemax" class="form-control" style="width:200px;"/>
+                                        <span id="scopemax" style="color:#F00; display:none;">折扣必须是1.0到9.9之间的数字</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>随机折扣最小值:</td>
+                                    <td>
+                                        <input type="text" value="{$thisCompany.scopemin}" name="scopemin" class="form-control" style="width:200px;"/>
+                                        <span id="scopemin" style="color:#F00; display:none;">折扣必须是1.0到9.9之间的数字</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>随机减免最大金额:</td>
+                                    <td>
+                                        <input type="text" value="{$thisCompany.minusmax}" name="minusmax" class="form-control" style="width:200px;"/>
+                                        <span id="minusmax" style="color:#F00; display:none;">金额必须为数字</span>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>随机减免最小金额:</td>
+                                    <td>
+                                        <input type="text" value="{$thisCompany.minusmin}" name="minusmin" class="form-control" style="width:200px;"/>
+                                        <span id="minusmin" style="color:#F00; display:none;">金额必须为数字</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>滚动字幕内容:</td>
+                                    <td>
+                                        <input type="text" value="{$thisCompany.roll_content}" name="roll_content" class="form-control" style="width:250px;"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>店铺图片:</td>
+                                    <td>  
+                                    	<div class="col-sm-3">                                                                              
+                                        	<input type="text" value="{$thisCompany.imgs}" name="image" id="logo" class="form-control" style="width:350px;margin-left:-15px;"/>
+                                        </div>
+                                        <div class="col-sm-3">
+                                        	<input onclick="GetUploadify(1,'imgs','dish_company');" type="button" class="btn btn-default" value="上传logo"/>
+                                        </div>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>排序数字:</td>
+                                    <td>
+                                        <input type="text" value="{$thisCompany.sort}" name="sort" class="form-control" style="width:200px;" placeholder="50"/>
+                                    </td>
+                                </tr>
+
+                                </tbody>                                
+                                </table>
+                        </div>                           
+                    </div>              
+                    <div class="pull-right">
+                        <input type="hidden" name="id" value="{$thisCompany.id}">
+                        <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="保存">保存</button>
+                    </div>
+			    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+// 判断输入框是否为空
+function checkName(){
+    var zkREG=/^[1-9](\.[0-9])?$/;
+    var zkPREG=/^[0-9]*$/;
+    var scopemin=$.trim($("#addEditBrandForm").find("input[name='scopemin']").val());
+    var scopemax=$.trim($("#addEditBrandForm").find("input[name='scopemax']").val());
+    var minusmin=$.trim($("#addEditBrandForm").find("input[name='minusmin']").val());
+    var minusmax=$.trim($("#addEditBrandForm").find("input[name='minusmax']").val());
+    var remission=$.trim($("#addEditBrandForm").find("input[name='remission']").val());
+    if(remission>0){
+        if(scopemin && !zkREG.test(scopemin)){
+            $("#scopemin").show();
+            return false;
+        }
+        if(scopemax && !zkREG.test(scopemax)){
+            $("#scopemax").show();
+            return false;
+        }
+        if(minusmin && !zkPREG.test(minusmin)){
+            $("#minusmin").show();
+            return false;
+        }
+        if(minusmax && !zkPREG.test(minusmax)){
+            $("#minusmax").show();
+            return false;
+        }
+        return true;
+    }else{
+        return true;
+    }
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<include file="Public/new_header" />
+<include file="Public/new_nav_menu" />
+<style>
+    label {color: grey;}
+</style>
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/order_nav_menu" />
+        <div class="ab_right" style="border-radius: 10px;border: 1px solid #ddd;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">朋友信息编辑</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="#">个人中心></a><a style="color:#ae2c26;">朋友信息</a></span>
+            </div>
+
+            <div class="ab_r_cc">
+
+                    <!--<a href="javascript:history.back();" style="padding-left:95%;font-size: 18px;"> <i class="fa fa-angle-double-left"></i>返回</a>-->
+
+                <div class="row">
+
+                    <!--<hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">-->
+                    <div class="col-sm-12">
+                        <div class="denglu">
+                            <div class="denglu_div" style="background-color: #ffffff;width: 90%;border: none;margin: 0px auto;">
+                                <form role="form" method="post" action=""  enctype="multipart/form-data" id="form1">
+
+                                    <div class="form-group">
+                                        <label for="username">姓&nbsp&nbsp&nbsp&nbsp&nbsp名：</label>
+                                        <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                        <input type="text" class="form-control" id="username" placeholder="请输入姓名" name="username" value="{$info.username}" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+                                        <label for="mobile">联系电话：</label>
+                                        <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                        <input type="text" class="form-control" id="mobile" placeholder="联系电话" name="mobile" value="{$info.mobile}" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+                                        <label for="mobile">身份证号：</label>
+                                        <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                        <input type="text" class="form-control" id="idcard" placeholder="身份证号码" name="idcard" value="{$info.idcard}" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+                                        <label for="mobile">卡&nbsp&nbsp&nbsp&nbsp号：</label>
+                                        <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                        <input type="text" class="form-control" id="bank_num" placeholder="首次办理社保用户必填" name="bank_num" value="{$info.bank_num}" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+                                        <label for="mobile">开&nbsp户&nbsp行：</label>
+                                        <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                        <input type="text" class="form-control" id="bank_name" placeholder="首次办理社保用户必填" name="bank_name" value="{$info.bank_name}" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+                                    </div>
+                                    <label for="mobile">性&nbsp&nbsp&nbsp&nbsp别：</label>
+                                    <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                    <div class="form-group" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" <if condition="$info.sex eq 1">checked="checked"</if>  value="1" >&nbsp&nbsp男
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" <if condition="$info.sex eq 2">checked="checked"</if>   value="2">&nbsp&nbsp女
+                                        </label>
+                                    </div>
+                                    <label for="mobile">户口性质：</label>
+                                    <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                    <div class="form-group" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+
+                                        <label class="radio-inline">
+                                            <input type="radio" name="nature" id="nature" value="1"  <if condition="$info.nature eq 1">checked="checked"</if>  >农村
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="nature" id="optionsRadios4"  value="2"   <if condition="$info.nature eq 2">checked="checked"</if> >  城镇
+                                        </label>
+                                    </div>
+                                    <label class="" for="image">证件信息：</label>
+                                    <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                    <div class="form-group">
+                                        <label class="" for="image">上传身份证正面：</label>
+                                        <input type="file" name="image" value="" id="image" style="display: inline-block;width: 50%;" >
+
+
+                                        <notempty  name="info['image']">
+                                            <a href="{$info.image}" target="_blank"><i class="fa fa-link"></i> 查看</a>
+                                        </notempty >
+
+                                       <br> <label class=""  for="image_t">上传身份证反面：</label>
+                                        <input type="file" name="image_t" value="" id="image_t"  style="display: inline-block;width: 50%;" >
+                                        <notempty  name="info['image_t']">
+                                            <a href="{$info.image_t}" target="_blank"><i class="fa fa-link"></i> 查看</a>
+                                        </notempty >
+                                    </div>
+
+                                     <input type="hidden" name="user_id" value="{$info.user_id}">
+                                    <button type="button" class="btn btn-success  btn-block" onclick="checkForm();"  style="width: 50%;margin-left: 25%;">保存</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var user_id={$user_id};
+
+    function checkForm() {
+
+        var username = $.trim($('#username').val());
+        var mobile = $.trim($('#mobile').val());
+        var idcard = $.trim($('#idcard').val());
+        var bank_num = $.trim($('#bank_num').val());
+        var bank_name = $.trim($('#bank_name').val());
+        var image = $.trim($('#image').val());
+        var image_t = $.trim($('#image_t').val());
+        var sex = $("input[name='sex']:checked").val();
+        var nature = $("input[name='nature']:checked").val();
+
+        var pattern = /^1[34578]\d{9}$/;
+        var pattern_idcard = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+        var pattern_card = /^[0-9]*$/;
+
+        if (username == '') {
+            layer.alert('请输入您的姓名', {icon: 2});
+            return false;
+        }
+        if (mobile == '' || !pattern.test(mobile)) {
+            layer.alert('请填写正确的电话号码', {icon: 2});
+            return false;
+        }
+        if (idcard == '' || !pattern_idcard.test(idcard)) {
+            layer.alert('请填写正确的身份证号', {icon: 2});
+            return false;
+        }
+        // if (bank_num == '' || !pattern_card.test(bank_num)) {
+        //     layer.alert('请填写正确的卡号', {icon: 2});
+        //     return false;
+        // }
+        // if (bank_name == '') {
+        //     layer.alert('请填写开户行', {icon: 2});
+        //     return false;
+        // }
+        if (typeof(sex)== 'undefined') {
+            layer.alert('请选择性别', {icon: 2});
+            return false;
+        }
+        if (typeof(nature)== 'undefined') {
+            layer.alert('请选择户口性质', {icon: 2});
+            return false;
+        }
+        if (user_id==0 && (image=="" || image_t=="")) {
+            layer.alert('请上传身份证信息', {icon: 2});
+            return false;
+        }
+        if(bank_num==""){
+            var index=layer.confirm('如果是首次办理社保用户务必填写银行卡信息', {
+                btn: ['继续提交','取消'] //按钮
+            }, function(index){
+                $("#form1").submit();
+            }, function(index){
+               layer.close(index);
+            });
+        }else{
+            $("#form1").submit();
+        }
+
+    }
+</script>
+<include file="Public/footer2" />

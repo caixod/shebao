@@ -1,0 +1,94 @@
+<include file="Public/min-header" />
+<div class="wrapper">
+	<include file="Public/breadcrumb"/>
+	<section class="content">
+       <div class="row">
+       		<div class="col-xs-12">
+	       		<div class="box">
+	             <div class="box-header">
+	               	<nav class="navbar navbar-default">	     
+				        <div class="collapse navbar-collapse">
+				          <form class="navbar-form form-inline" action="{:U('Dish/manage')}" method="post">
+				            <div class="form-group">                       
+				            	 <select name="sid" class="form-control">
+                                            <option value="0">==查看所有==</option>
+                                      <volist name="sort_list" id="item" key="k">
+                                            <option value="{$item.id}" <if condition="$item[id] eq $sid"> selected="selected" </if> >{$item.name}</option>
+                                      </volist>                  
+                                 </select>   
+				            </div>
+				            <button type="submit" class="btn btn-primary">查询</button>
+				            <div class="form-group pull-right">
+				            </div>
+				          </form>
+				      	</div>
+	    			</nav>
+
+	             </div>
+	             <div class="box-body">
+	           	 <div class="row">
+	            	<div class="col-sm-12">
+		              <table id="list-table" class="table table-bordered table-striped dataTable">
+		                 <thead>
+		                   <tr role="row">
+							   <th>菜品id</th>
+							   <th>所在分类</th>
+			                   <th>菜品名称</th>
+			                   <th>菜品图片</th>
+			                   <th>售卖价格</th>
+			                   <th>是否上架</th>
+			                   <th>是否热卖</th>
+		                  	   <th>排序</th>
+							   <th>菜品描述</th>
+		                  	   <th>操作</th>
+		                   </tr>
+		                 </thead>
+						<tbody>
+                          <foreach name="list" item="vo" key="k" >
+                             <tr role="row">    
+                                 <td>{$vo.id}</td>
+                                <td>{$vo.name}</td>
+                                <td>{$vo.dish_name}</td>
+		                     <td><img alt="" src="{$vo.image}" width="80px" height="50px"></td>
+								 <td>
+									 <input type="text" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" onpaste="this.value=this.value.replace(/[^\d]/g,'')" onchange="updateSort('dish_info','id','{$vo.id}','my_price',this)" size="4" value="{$vo.my_price}" class="input-sm" />
+								 </td>
+		                     <td>
+                                         <img width="20" height="20" src="__PUBLIC__/images/<if condition='$vo[is_open] eq 1'>yes.png<else />cancel.png</if>" onclick="changeTableVal('dish_info','id','{$vo.id}','is_open',this)"/>
+		                     </td>
+								 <td>
+									 <img width="20" height="20" src="__PUBLIC__/images/<if condition='$vo[is_hot] eq 1'>yes.png<else />cancel.png</if>" onclick="changeTableVal('dish_info','id','{$vo.id}','is_hot',this)"/>
+								 </td>
+		                     <td>
+                                        <input type="text" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" onpaste="this.value=this.value.replace(/[^\d]/g,'')" onchange="updateSort('dish_info','id','{$vo.id}','sort',this)" size="4" value="{$vo.sort}" class="input-sm" />
+		                     </td>
+								 <td>{$vo.des}</td>
+		                     <td>
+		                      <a class="btn btn-primary" href="{:U('Dish/manageEdit',array('act'=>'edit','id'=>$vo['id']))}"><i class="fa fa-pencil"></i></a>
+		              </td>
+		                   </tr>
+		                  </foreach>
+		                   </tbody>
+		                 <tfoot>
+		                 
+		                 </tfoot>
+		               </table>
+	               </div>
+	          </div>
+              <div class="row">
+              	    <div class="col-sm-6 text-left">
+              	    	<button class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i></button>
+              	    </div>
+                    <div class="col-sm-6 text-right">{$page}</div>		
+              </div>
+	          </div>
+	        </div>
+       	</div>
+       </div>
+   </section>
+<script>
+
+</script>
+</div>
+</body>
+</html>   

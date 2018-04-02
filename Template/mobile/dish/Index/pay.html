@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>订单支付页-{$tpshop_config['GLOBAL_TITLE']}</title>
+    <script language="javascript" type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+            <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body class="zhifu_body">
+<form action="{:U('Mobile/Payment/getCode')}" method="post" name="cart4_form" id="cart4_form">
+    <section>
+        <div class="qian">
+            <img src="__STATIC__/images/zhifu.jpg">
+        </div>
+        <h5>总金额:<span>&yen;<php>echo priceFormat($order['actually_total_fee']);</php></span></h5>
+        <div class="zhifu_butten">
+            <ul class="nav nav-list-sidenav" id="zhifu68" style="display:block; border-bottom:none;text-align: center;">
+                <foreach name="paymentList" item="v"  key="k">
+                    <li class="clearfix" name="payment_name">
+                        <label>
+                            <input type="radio"   value="pay_code={$v['code']}" class="c_checkbox_t" name="pay_radio" style="display: none;"/>
+                            <div class="fl shipping_title">
+                                <img style="display:none;" src="/plugins/{$v['type']}/{$v['code']}/{$v['icon']}" onClick="change_pay(this);" width="110" height="40" />
+                            </div>
+                        </label>
+                    </li>
+                </foreach>
+            </ul>
+        </div>
+        <div class="zhifu_butten">
+            <button>微信支付</button>
+        </div>
+        <p>请完成支付，厨房将立即开始生产，美味餐品会在6分钟内出锅，为保证口感，请您留意叫餐提醒。</p>
+
+    </section>
+    <input type="hidden" name="system_order_id" value="{$system_order_id}" />
+</form>
+</body>
+<script>
+    $(document).ready(function(){
+        $("input[name='pay_radio']").first().trigger('click');
+    });
+    // 切换支付方式
+    function change_pay(obj)
+    {
+        $(obj).parent().siblings('input[name="pay_radio"]').trigger('click');
+    }
+
+    function pay(){
+        $('#cart4_form').submit();
+        return;
+        //微信JS支付
+    }
+</script>
+</html>

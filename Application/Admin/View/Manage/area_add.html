@@ -1,0 +1,200 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+                <!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 修改地区服务费</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">修改服务费</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <form method="post" id="addEditBrandForm" action="" onsubmit="return check_all();">
+
+                        <!--通用信息-->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab_tongyong">
+
+                                <table class="table table-bordered">
+                                    <tbody>
+                                    <tr>
+                                        <td>地区名称:</td>
+                                        <td>
+                                            <input type="text" value="{$info.gname}" name="province" class="form-control" style="width:150px;"  />&nbsp;&nbsp;
+                                        ——
+                                            <input type="text" value="{$info.name}" name="city" class="form-control" style="width:150px;"  />&nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>社保补缴办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.sb_bujiao}" name="sb_bujiao" class="form-control" style="width:150px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/月&nbsp;&nbsp;
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>个人单独【社保/公积金】 代缴办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$own[wuxian][month]}" name="own[wuxian][month]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/月&nbsp;&nbsp;
+                                            <input type="text" value="{$own[wuxian][season]}" name="own[wuxian][season]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/> &nbsp;元/季&nbsp;&nbsp;
+                                            <input type="text" value="{$own[wuxian][half_year]}" name="own[wuxian][half_year]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/半年&nbsp;&nbsp;
+                                            <input type="text" value="{$own[wuxian][year]}" name="own[wuxian][year]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/年&nbsp;&nbsp;
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>个人【五险一金】 代缴办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$own[wuxian_and_gjj][month]}" name="own[wuxian_and_gjj][month]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/月&nbsp;&nbsp;
+                                            <input type="text" value="{$own[wuxian_and_gjj][season]}" name="own[wuxian_and_gjj][season]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/> &nbsp;元/季&nbsp;&nbsp;
+                                            <input type="text" value="{$own[wuxian_and_gjj][half_year]}" name="own[wuxian_and_gjj][half_year]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/半年&nbsp;&nbsp;
+                                            <input type="text" value="{$own[wuxian_and_gjj][year]}" name="own[wuxian_and_gjj][year]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/年&nbsp;&nbsp;
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>企业【挂靠】单独【社保/公积金】办理服务费:</td>
+                                        <td>
+                                            【0-10人】<input type="text" value="{$company[guakao][wuxian][ten]}" name="company[guakao][wuxian][ten]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/月&nbsp;&nbsp;
+                                            【大于10人】<input type="text" value="{$company[guakao][wuxian][gt_ten]}" name="company[guakao][wuxian][gt_ten]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/> &nbsp;元/人/月&nbsp;&nbsp;
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>企业【挂靠】【五险一金】 代缴办理服务费:</td>
+                                        <td>
+                                            【0-10人】<input type="text" value="{$company[guakao][wuxian_and_gjj][ten]}" name="company[guakao][wuxian_and_gjj][ten]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/月&nbsp;&nbsp;
+                                            【大于10人】<input type="text" value="{$company[guakao][wuxian_and_gjj][gt_ten]}" name="company[guakao][wuxian_and_gjj][gt_ten]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/> &nbsp;元/人/月&nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>企业【代理】单独【社保/公积金】办理服务费:</td>
+                                        <td>
+                                            【0-10人】<input type="text" value="{$company[daili][wuxian][ten]}" name="company[daili][wuxian][ten]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/年&nbsp;&nbsp;
+                                            【大于10人】<input type="text" value="{$company[daili][wuxian][gt_ten]}" name="company[daili][wuxian][gt_ten]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/> &nbsp;元/人/月&nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>企业【代理】【五险一金】 代缴办理服务费:</td>
+                                        <td>
+                                            【0-10人】<input type="text" value="{$company[daili][wuxian_and_gjj][ten]}" name="company[daili][wuxian_and_gjj][ten]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;元/年&nbsp;&nbsp;
+                                            【大于10人】<input type="text" value="{$company[daili][wuxian_and_gjj][gt_ten]}" name="company[daili][wuxian_and_gjj][gt_ten]" class="form-control" style="width:80px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/> &nbsp;元/人/月&nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>公积金补缴办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.gjj_bujiao}" name="gjj_bujiao" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}" />&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>社保转移办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.sb_zhuanyi}" name="sb_zhuanyi" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>公积金转移办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.gjj_zhuanyi}" name="gjj_zhuanyi" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>住房公积金提取办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.gjj_tiqu}" name="gjj_tiqu" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>医疗手工报销办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.yl_sgz}" name="yl_sgz" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>生育待遇申领办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.sy_shenqing}" name="sy_shenqing" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>异地就医备案办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.yd_bajy}" name="yd_bajy" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>社保信息修改办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.sb_editinfo}" name="sb_editinfo" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>个人所得税申报办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.own_money}" name="own_money" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>退休养老办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.tx_yanglao}" name="tx_yanglao" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>孩子上学材料办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.school_info}" name="school_info" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>天津人才引进办理服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.rc_yingjin}" name="rc_yingjin" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){  layer.msg('只能是数字或者小数', {icon: 2,time: 3000}) ;this.value='';}"/>&nbsp;&nbsp;元
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <input type="hidden" name="id" value="{$id}">
+                            <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="保存">保存</button>
+                        </div>
+                    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+
+    // 判断输入框是否为空
+    function check_all(){
+        // var province = $("#province").val();
+        // var city = $("#city").val();
+        //
+        // if(province ==0 || city==0)
+        // {
+        //     layer.msg('请选择开通地区', {icon: 2,time: 3000});
+        //     return false;
+        // }
+
+        return true;
+    }
+
+
+</script>
+</body>
+</html>

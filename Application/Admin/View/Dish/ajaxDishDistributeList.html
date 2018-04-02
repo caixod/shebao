@@ -1,0 +1,124 @@
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover" border="1">
+            <thead>
+            <tr>
+
+            </tr>
+            </thead>
+            <tbody>
+                <form method="post" enctype="multipart/form-data" target="_blank" id="form-store-restaurant">
+                <tr>
+                    <td colspan="2">
+
+                    <volist name="list" id="list">
+                    <php>
+                            //$checked = ($list['store_id'] && $list['restaurant_id'] && ($list['dish_id']==$dish_id)) ? 'checked' : '';
+                            $checked = (in_array($dish_id,$list[dish_id_arr])) ? 'checked' : '';
+                                echo '<input style="width:18px;height:18px;" class="layui-form-label input-distribute" type="checkbox" '.$checked.' value="'.$list['id'].'" data-toggle="toggle"/>'.$list["name"].'&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp';
+
+                    </php>
+                    </volist>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td ><input onclick="allChecked();" type="button" class="btn btn-default" value="全选"/> <input onclick="noneChecked();" type="button" class="btn btn-default" value="全不选"/> </td>
+
+                    <td align="right">
+                        <button type="submit" class="box-ok ma-le--70" id="commit-button"><span>确认保存</span></button>
+                    </td>
+                </tr>
+                </form>
+            </tbody>
+        </table>
+    </div>
+<div class="row">
+    <div class="col-sm-3 text-left"></div>
+    <div class="col-sm-9 text-right">{$page}</div>
+</div>
+<script>
+    //全选
+    function allChecked(){
+        //alert(0);return;
+        $(".input-distribute").prop("checked","checked");
+    }
+    //全不选
+    function noneChecked(){
+        $(".input-distribute").prop("checked","");
+    }
+    // 点击分页触发的事件
+    $(".pagination  a").click(function(){
+        cur_page = $(this).data('p');
+        ajax_get_table('search-form2',cur_page);
+    });
+	
+
+    /*
+     * 清除商品缩列图缓存
+     */
+    /*function ClearGoodsThumb(goods_id)
+    {
+    	$.ajax({
+				type:'GET',
+				url:"{:U('Admin/System/ClearGoodsThumb')}",
+				data:{goods_id:goods_id},
+				dataType:'json',
+				success:function(data){
+					layer.alert(data.msg, {icon: 2});								 
+				}
+		});
+    }*/
+
+    $(function(){
+        /*$('form').submit(function(){
+            alert(222);
+            return false;
+        });*/
+        $("#commit-button").click(function(){
+            var input_checkbox_checked = $('input[type="checkbox"]:checked');
+            var input_checkbox_unchecked = $('input[type="checkbox"]').not('input:checked');
+            var i_c_checked = '';
+            var i_c_unchecked = '';
+            //var data_post = new Array();
+            for(i=0;i<input_checkbox_checked.length;i++){
+                i_c_checked += (i==input_checkbox_checked.length-1)?(input_checkbox_checked[i]).value:(input_checkbox_checked[i]).value+'-';
+            }
+            for(i=0;i<input_checkbox_unchecked.length;i++){
+                i_c_unchecked += (i==input_checkbox_unchecked.length-1)?(input_checkbox_unchecked[i]).value:(input_checkbox_unchecked[i]).value+'-';
+            }
+            //var data_post['checked'] = i_c_checked;
+            //var data_post['unchecked'] = i_c_unchecked;
+            //alert(i_c_unchecked);return;
+            $.ajax({
+                type:'POST',
+                url:"{:U('Admin/Dish/dishDistributeExec')}",
+                data:{table:"{$store_restaurant}",checked:i_c_checked,unchecked:i_c_unchecked,dish_id:'{$dish_id}'},
+                dataType:'json',
+                success:function(data){
+                    var data = eval('('+data+')');
+                    //alert(data.i_arr);return;
+                    layer.alert(data.msg, {icon: 1});
+                },
+                error:function(e){
+                    alert('发生错误');
+                }
+            });
+
+        });
+
+        /*$("<script>")
+                .attr({ rel: "script",
+                    type: "text/javascript",
+                    //src: "https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"
+                    src: "__PUBLIC__/layui/layui.js"
+                })
+                .appendTo("head");
+        $("<link>")
+                .attr({ rel: "stylesheet",
+                    type: "text/css",
+                    //href: "https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+                    href: "__PUBLIC__/layui/css/layui.css"
+                })
+                .appendTo("head");*/
+    });
+</script>

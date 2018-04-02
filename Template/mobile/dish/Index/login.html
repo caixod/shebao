@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>登录</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/apps.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body class="dingwei_body">
+
+     <section class="dingwei_main">
+         <div class="logo">
+             <div class="logo_div"><img src="__STATIC__/images/login.png"></div>
+             <p>拔丝蛋糕</p>
+         </div>
+         <form method="post" action="{:U('Dish/Index/cake_login',array('store_id'=>$store_id))}">
+             <div class="login_info">
+                 <div class="info_main">
+                     <table>
+                         <tr>
+                             <td class="td1 td3">账号</td>
+                             <td class="td2 td3"><input type="text" name="user_name" placeholder="请输入您的账号"></td>
+                         </tr>
+                         <tr>
+                             <td class="td1">密码</td>
+                             <td class="td2"><input type="password" name="password" placeholder="请输入您的密码"></td>
+                         </tr>
+                     </table>
+                 </div>
+                 <div class="denglu">
+                     <input type="button" id="btnlog" name="login" value="登录">
+                 </div>
+             </div>
+
+         </form>
+
+         <div class="top_div">
+             <p>全国招商加盟热线</p>
+             <p>400-675-5707</p>
+         </div>
+
+     </section>
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script language="javascript" type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="__STATIC__/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="__STATIC__/js/other.js"></script>
+</body>
+<script type="text/javascript">
+//    function check_log(){
+        $("#btnlog").click(function(){
+            var user_name=$("input[name='user_name']").val();
+            var password=$("input[name='password']").val();
+            if(user_name=='' || password==""){
+                alert('账号和密码不能为空');
+                return false;
+            }
+            $.ajax({
+                type:'post',
+                url: "{:U('Dish/Index/cake_login')}",
+                data:{'password':password,'user_name':user_name},
+                async:true,
+                success:function(res){
+                    if(res.code==0){
+                        alert(res.error);
+                    }else{
+                        location.href="{:U('Dish/Index/dishList_new','',0)}?"+'&store_id='+res.store_id;
+
+                    }
+                }
+            })
+        })
+
+
+//    }
+
+</script>
+</html>

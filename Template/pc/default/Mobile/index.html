@@ -1,0 +1,72 @@
+<include file="Public/new_header" />
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/nav_menu" />
+        <div class="ab_right" style="min-height: 495px;border-radius:10px;" >
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">服务办理流程</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">服务办理</a>&gt;<a href="">服务办理流程</a></span>
+            </div>
+            <div class="ab_r_cc">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <br> <br>
+                        <p class="p_sh">服务办理流程：</p><br>
+                        <table class="jindu_ta">
+                            <tr>
+                                <td>
+                                    <div class="xian"></div>
+                                    <div class="dian1"></div>
+                                </td>
+                                <td>
+                                    <div class="xian"></div>
+                                    <div class="dian1"></div>
+                                </td>
+                                <td>
+                                    <div class="xian"></div>
+                                    <div class="dian1"></div>
+                                </td>
+                                <td>
+                                    <div class="xian"></div>
+                                    <div class="dian1"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>填写并提交资料</td>
+                                <td>支付费用</td>
+                                <td>工作人员审核</td>
+                                <td>办理完成</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+
+<script>
+    function checkForm() {
+
+        var image = $('#image').val();
+        var image_t = $('#image_t').val();
+
+
+        if (image == '') {
+            layer.alert('身份证正面未上传', {icon: 2});
+            return false;
+        }
+        if (image_t == 0) {
+            layer.alert('身份证反面未上传', {icon: 2});
+            return false;
+        }
+
+
+        return true;
+    }
+</script>
+<include file="Public/footer2" />

@@ -1,0 +1,97 @@
+<include file="Public/new_header" />
+<include file="Public/new_nav_menu" />
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/order_nav_menu" />
+        <div class="ab_right" style="border-radius: 10px;border: 3px solid #ddd;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">基本信息修改</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">个人中心</a>> <a style="color:#ae2c26;">基本信息</a></span>
+            </div>
+            <div class="ab_r_cc">
+                <div class="row">
+
+                    <div class="hhh"></div>
+                    <div class="col-sm-8">
+                        <div class="denglu">
+                            <div class="denglu_div" style="background-color: #f1f4f5;">
+                                <form role="form" method="post" action="{:U('Home/Order/edit_info')}" onsubmit=" return checkForm();">
+
+                                    <div class="form-group">
+                                        <label for="username">姓名：</label>
+                                        <input type="text" class="form-control" id="username" placeholder="请输入姓名" name="username" value="{$info.username}">
+
+                                        <label for="mobile">联系电话：</label>
+                                        <input type="text" class="form-control" id="mobile" placeholder="联系电话" name="mobile" value="{$info.mobile}">
+
+                                        <label for="mobile">身份证号：</label>
+                                        <input type="text" class="form-control" id="idcard" placeholder="身份证号码" name="idcard" value="{$info.idcard}">
+
+                                        <label for="mobile">卡号：</label>
+                                        <input type="text" class="form-control" id="bank_num" placeholder="银行卡号" name="bank_num" value="{$info.bank_num}">
+
+                                        <label for="mobile">开户行：</label>
+                                        <input type="text" class="form-control" id="bank_name" placeholder="开户行" name="bank_name" value="{$info.bank_name}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mobile">性别：</label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" <if condition="$info.sex eq 1">checked="checked"</if>  value="1" >男
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" <if condition="$info.sex eq 2">checked="checked"</if>   value="2"> 女
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mobile">户口性质：</label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="nature" id="nature" value="1"  <if condition="$info.nature eq 1">checked="checked"</if>  >农村
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="nature" id="optionsRadios4"  value="2"   <if condition="$info.nature eq 2">checked="checked"</if> >  城镇
+                                        </label>
+                                    </div>
+                                    <input type="hidden" name="id" value="{$info.user_id}">
+                                    <button type="submit" class="btn btn-success  btn-block">保存</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hhh"></div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function checkForm() {
+
+        var username = $.trim($('#username').val());
+        var mobile = $.trim($('#mobile').val());
+
+        var idcard = $.trim($('#idcard').val());
+        var pattern = /^1[34578]\d{9}$/;
+        if (username == '') {
+            layer.alert('请输入您的姓名', {icon: 2});
+            return false;
+        }
+        if (mobile == '' || !pattern.test(mobile)) {
+            layer.alert('请填写正确的电话号码', {icon: 2});
+            return false;
+        }
+        var pattern_idcard = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+        if (idcard == '' || !pattern_idcard.test(idcard)) {
+            layer.alert('请填写正确的身份证号', {icon: 2});
+            return false;
+        }
+
+        return true;
+    }
+</script>
+<include file="Public/footer2" />

@@ -1,0 +1,1 @@
+<div class="footer"> &copy; 2014-2016 <a href="http://www.shop.yiqidongfang.com" target="_blank">www.shop.yiqidongfang.com</a> 北京易启东方网络出品</div>

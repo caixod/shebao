@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社保计算</title>
+    <link rel="stylesheet" href="__STATIC__/css/new_css/reset.css">
+    <script src="__STATIC__/js/new_js/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/new_css/style.css">
+    <link rel="stylesheet" href="__STATIC__/css/new_css/comeon.css">
+
+</head>
+<body>
+<div class="_content2 clear">
+    <form action="{:U('Mobile/sure_order_info')}" method="post" id="form1" >
+    <div class="_left2">
+        <div class="_l_title">您办理的服务是：{$service_name}</div>
+        <div>
+            <div class="_l_title1">订单金额</div>
+            <div class="_money">
+                订单金额：<span>{$total_fee}</span>元
+            </div>
+        </div>
+        <div>
+            <div class="_l_title1">可用代金券</div>
+            <div class="_money">
+                <if condition="$coupon neq null">
+                <!--<div class="data _s_select">暂无可用代金券</div>-->
+                <select class="data">
+                    <volist name="coupon" id="vo" empty="暂无可用代金券" >
+                        <option  value="{$vo.id}">满{$vo.max_fee}元减{$vo.money}元</option>
+                    </volist>
+                </select>
+                    <else />
+                    暂无可用代金券
+                </if>
+            </div>
+        </div>
+        <!--<button type="submit" id="submit_order"  class="btn btn-lg btn-success now_buy">确认支付</button>-->
+        <button class="btn btn-success _btn_on">确认支付</button>
+
+    </div>
+    </form>
+    <div class="_right2">
+        <div class="main-article">
+            <div class="main-article-tips">
+                <div class="default">
+                    <h4>社保小贴士</h4>
+                    <p>请选择您的参保城市</p>
+                    <p>根据您选择的参保城市，提供以下信息：</p>
+                    <p>1、下单截止日期</p>
+                    <p>2、参保规则说明</p>
+                    <p>3、需要提供的参保资料</p>
+                    <p>4、服务费收取规则</p>
+                </div>
+                <div class="social_tips">
+                    <p>特别提示:</p>
+                    <div>
+                        1、 因客户自身原因（未了解清楚规则、无故撤单）退费的，服务费不予退还！<br>
+                        2、不承接现已怀孕、重病等特殊人员的社保代缴业务。如客户隐瞒孕情、病情下单，我司无法为其办理相应的社保待遇。如有生育计划，请在孕前3个月，即生育前13个月提前购买社保。<br>
+                        3、关于生育待遇的申领，我司仅承接异地分娩，生育备案，医疗报销等业务。涉及生育津贴、产假工资的申领我司概不接受。<br>
+                        4、首次支付时系统会提示上传身份证正反面材料，填写好个人信息支付订单后，我司会有人跟进，如后续需要其它材料补充，我司会再联系您。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(function() {
+        if(navigator.userAgent.match(/mobile/i)) {
+            $("._right2").css("display","none");
+            $("._content2").css("width","96%");
+            $("._left2").css("width","100%")
+        }
+    })
+</script>
+</html>
+
+

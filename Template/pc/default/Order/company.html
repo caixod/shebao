@@ -1,0 +1,80 @@
+<include file="Public/new_header" />
+<include file="Public/new_nav_menu" />
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/order_nav_menu" />
+        <div class="ab_right" style="border-radius: 10px;border: 3px solid #ddd;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">公司信息</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">个人中心</a>> <a style="color:#ae2c26;">公司信息</a></span>
+            </div>
+            <div class="ab_r_cc">
+                <div class="row">
+
+
+                    <div class="col-sm-12">
+                        <div class="denglu">
+                            <div class="denglu_div" style="background-color: #ffffff;width: 90%;border: none;margin: 0px auto;">
+                                <form role="form" method="post" action="" onsubmit=" return checkForm();">
+
+                                    <div class="form-group">
+                                        <label for="username">公司名称：</label><hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                        <input type="text" class="form-control" id="company_name" placeholder="请输入公司名称" name="company_name" value="{$info.company_name}" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+
+                                        <label for="mobile">联系人：</label>
+                                        <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                        <input type="text" class="form-control" id="linkman" placeholder="联系人" name="linkman" value="{$info.linkman}" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+
+                                        <label for="mobile">联系电话：</label>
+                                        <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                        <input type="text" class="form-control" id="mobile" placeholder="联系电话" name="mobile" value="{$info.mobile}" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+
+                                        <label for="mobile">座机：</label>
+                                        <hr style="margin: 0 5px;border: 1px solid #dddddd;margin-bottom: 15px;transform: scaleY(.5);">
+                                        <input type="text" class="form-control" id="tel" placeholder="座机号" name="tel" value="{$info.tel}" style='width: 50%;margin-left: 50px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";font-size: inherit;height:38px;margin-bottom: 10px;'>
+                                    </div>
+
+                              <input type="hidden" name="id" value="{$info.id}">
+                                    <button type="submit" class="btn btn-success  btn-block"  style="width: 50%;margin-left: 25%;">保存</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function checkForm() {
+
+        var company_name = $.trim($('#company_name').val());
+        var linkman = $.trim($('#linkman').val());
+        var mobile = $.trim($('#mobile').val());
+
+        var idcard = $.trim($('#idcard').val());
+        var pattern = /^1[34578]\d{9}$/;
+        if (company_name == '') {
+            layer.alert('请输入公司名称', {icon: 2});
+            return false;
+        }
+        if (linkman == '') {
+            layer.alert('请输入联系人', {icon: 2});
+            return false;
+        }
+        if (mobile == '' || !pattern.test(mobile)) {
+            layer.alert('请填写正确的电话号码', {icon: 2});
+            return false;
+        }
+
+        return true;
+    }
+</script>
+<include file="Public/footer2" />

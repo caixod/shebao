@@ -1,0 +1,177 @@
+<include file="Public/new_header" />
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/nav_menu" />
+        <div class="ab_right" style="border-radius:10px;">
+            <div class="ab_r_tt" >
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">社保代缴</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">服务办理</a>&gt;<a style="color:#ae2c26;">社保代缴</a></span>
+            </div>
+            <div class="ab_r_cc"  >
+                <div class="row">
+                    <div class="hhh"></div>
+                    <div class="col-sm-9">
+
+                        <div class="denglu">
+                            <div class="denglu_div">
+                                <form role="form" action="" method="post" onsubmit="return btn_fee();" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="name">办理人</label>
+                                        <select class="form-control" style="width: 50%;" name="username">
+                                            <volist name="friend" id="data">
+                                                <option value="{$data.user_id}">{$data.username}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="" for="inputfile">上传身份证正面</label>
+                                        <input type="file" value="" name="image" id="inputfile">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="" for="inputfile2">上传身份证反面</label>
+                                        <input type="file" value="" name="image_t" id="inputfile2">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="start_time">代缴时间 </label><br>
+                                        <input type="text" class="form-control" name="start_time" value="" style="width: 150px;display: inline-block;"  id="start_time" data-beatpicker="true">&nbsp;月
+                                        <input type="text" class="form-control" name="end_time" value="" style="width: 150px;display: inline-block;"  id="end_time" data-beatpicker="true">&nbsp;月
+                                    </div>
+
+                                    <label for="to_province">请选择城市</label>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_province" id="to_province" onChange="get_city_t(this);">
+                                                <option  value="0">请选择</option>
+                                                <volist name="province" id="p">
+                                                    <option  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_city" id="to_city">
+                                                <option  value="0">请选择</option>
+                                                <volist name="city" id="p">
+                                                    <option   value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+
+                                        </div><br>
+                                    <div class="form-group">
+                                        <label for="mobile">公积金：</label>&nbsp;&nbsp;
+                                        <label class="radio-inline">
+                                            <input type="radio" name="is_gjj"  value="1" checked="checked" onclick="hidden_input(1);">办理
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="is_gjj"  value="2" onclick="hidden_input(2);">不办
+                                        </label>
+                                    </div>
+                                    <div class="form-group" id="gjj_div">
+                                        <label for="gjj_base">公积金基数 </label><br>
+                                        <input type="text" class="form-control" name="gjj_base" value="" style="width: 170px;display: inline-block;" id="gjj_base" placeholder="请输入期望基数">&nbsp;元
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="money">社保基数 </label><br>
+                                        <input type="text" class="form-control" name="sb_base" value="" style="width: 170px;display: inline-block;" id="sb_base" placeholder="请输入期望补缴基数">&nbsp;元
+                                    </div>
+                                    <button type="submit" class="btn btn-default">提交</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+<script>
+    function hidden_input(n){
+        if(n==1){
+            $("#gjj_div").show();
+        }else{
+            $("#gjj_div").hide();
+        }
+
+    }
+
+    //点击计算费用
+   function btn_fee(){
+       var inputfile = $('#inputfile').val();
+       var inputfile2 = $('#inputfile2').val();
+       var city=$("#to_city").val();
+       var to_province=$("#to_province").val();
+       var sb_base=$.trim($("#sb_base").val());
+       var gjj_base=$.trim($("#gjj_base").val());
+       var start_time = $.trim($('#start_time').val());
+       var end_time = $.trim($('#end_time').val());
+       var is_gjj=$("input[name='is_gjj']:checked").val();
+
+       var r = /^\d+(\.\d+)?$/;
+       var num = /^\d+$/;
+       var n=true;
+// alert(to_province)
+       //js中的日期时间函数
+
+       var s_d=start_time.split('-');
+       var e_d=end_time.split('-');
+       alert(s_d[1]);
+       alert(typeof(e_d[1]));
+
+
+       if( start_time>=end_time || s_d[1] != e_d[1]){
+           layer.alert('请选择正确的时间', {icon: 2});
+           return false;
+       }
+       return false;
+
+       if (inputfile == '') {
+           layer.alert('身份证正面未上传', {icon: 2});
+           return false;
+       }
+       if (inputfile2 == 0) {
+           layer.alert('身份证反面未上传', {icon: 2});
+           return false;
+       }
+       if(end_time=='' || start_time=='' || end_time<=start_time){
+           layer.alert('请选择正确的时间', {icon: 2});
+           return false;
+       }
+       if(sb_base=='' || !r.test(sb_base)){
+           layer.alert('请输入社保缴费基数', {icon: 2});
+           return false;
+       }
+       if(is_gjj==1 && gjj_base==''){
+           layer.alert('请输入公积金缴费基数', {icon: 2});
+           return false;
+       }
+       if(city==0){
+           layer.alert('请选择补缴地点', {icon: 2});
+           return false;
+       }
+       return true;
+   }
+laydate.render({
+    elem: '#start_time'
+    ,type: 'month'
+    ,min: 0
+    ,max: 2000
+});
+laydate.render({
+    elem: '#end_time'
+    ,type: 'month'
+    ,min: 0
+    ,max: 2000
+});
+</script>
+
+</div>
+<include file="Public/footer2" />

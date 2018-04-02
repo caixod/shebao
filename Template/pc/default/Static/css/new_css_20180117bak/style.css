@@ -1,0 +1,358 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	font-family: "微软雅黑";
+	font-weight: 500;
+}
+body {  
+               padding-right: 0px !important;   
+       }  
+    *.modal-open {  
+    overflow-y: scroll;  
+    padding-right: 0 !important;  
+}  
+a:hover{
+	text-decoration: none;	
+}
+.top{
+	width:100%;
+	min-width: 1000px;
+	margin:0 auto;
+	height:76px;
+	line-height: 76px;
+	font-size: 16px;
+	
+}
+.logo{
+	width:130px;
+}
+.g_nav>div{
+	padding: 0;
+}
+.top_out{
+	min-width: 1200px;
+	box-shadow: 0 2px 5px #FFECC7;
+	margin-bottom:15px;
+}
+.top_out a{
+	color:#333;
+}
+.top_out a.active{
+	color:#38b863;
+}
+.select{
+	width:100px;
+	margin:0 auto;
+}
+.content{
+	width:1200px;
+	margin:0 auto 20px;
+}
+.dropdown-menu{
+	margin-top:-19px;
+}
+.clear{
+	overflow:hidden; 
+}
+.left{
+	width: 900px;
+	float: left;
+	padding: 25px 0;
+}
+.right{
+	float: right;
+	width: 280px;
+}
+.g_login{
+	position: absolute;
+	top: 0px;
+	right: 10%;
+}
+.main-content-fun-select>input{
+	padding-left: 15px;
+}
+.g_padd{
+	padding: 15px 0;
+}
+.g_li{
+	width: 800px;
+	margin: 10px 0 10px 20px;
+	overflow: hidden;
+}
+.g_li > p{
+	display: inline-block;
+	float: left;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+.g_li > input{
+	display: inline-block;
+	float: left;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 15px;
+    border: 1px solid #e1e1e1;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.g_li > span{
+	display: inline-block;
+	float: left;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 15px;
+    text-align: center;
+}
+.g_btn{
+	position: absolute;
+	right: 20px;
+	top: 75px;
+}
+.g_re{
+	position: relative;
+}
+.g_re>button{
+	margin-left: 30px;
+}
+.g_button{
+	text-align: center;
+	margin-top: 45px;	
+}
+.g_button>button{
+	margin: 0 20px;
+}
+.dropdown-menu{
+	top: 97px;
+	min-width: 200px;
+}
+.dropdown-menu>li{
+	padding: 10px 0;
+}
+.bdbox{
+	display: inline-block;
+}
+.dqxl{
+	width: 144px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 15px;
+    border: 1px solid #e1e1e1;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.g_month{
+	display: inline-block;
+}
+.g_month>input{
+	width: 230px;
+	padding-left: 15px;
+	border-radius: 5px;
+}
+.g_alert{
+	width: 750px;
+    height: 400px;
+    background: #fff;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden !important;;
+}
+.g_alert2{
+	width: 750px;
+    height: 600px;
+    background: #fff;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden !important;;
+}
+.alert_footer{
+	width: 200px;
+    margin: auto;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.alert_footer>button{
+	float: left;
+	margin: 0 15px;
+	padding: 5px 16px;
+}
+.modal-dialog{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	position: relative;
+}
+.g_title{
+	width: 90%;
+	margin:20px auto 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.g_title>label{
+	font-size: 18px;
+	margin-left: 15px;
+	font-weight: lighter;
+}
+.e-closePop{
+	font-size: 26px;
+	position: absolute;
+	right: 15px;
+	top: -10px;
+	cursor: pointer;
+}
+.g_box{
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 16px;
+	border: 1px solid #337ab7;
+	margin-left: 15px;
+	margin-top: 45px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.g_box:hover a{
+	color: blue;
+}
+.g_on_off{
+    position: absolute !important;
+    left: 400px;
+    top: 70px;
+}
+.pop-content-left{
+	margin-top: 20px;
+}
+.gg{
+	overflow: hidden;
+	margin:20px 0 20px 20px;
+}
+.gg>p{
+	float: left;
+	width: 187px;
+	margin-left: 37px;
+}
+.gg>p>input{
+	width: 100%;
+	border-radius: 5px;
+}
+.g_in{
+	display: block;
+	margin-top: 20px;
+	margin-left: 37px;
+}
+.g_in>span{
+	width: 84px;
+	text-align: right;
+	display: inline-block;
+}
+.g_in>input{
+	margin-left: 15px;
+	border-radius: 5px;
+}
+.main-content-fun{
+	border: 1px solid #e1e1e1;
+	border-radius: 10px;
+	padding: 5px;
+}
+.g_tips{
+	height: 269px;
+	padding: 5px 20px;
+    border: 1px solid #e1e1e1;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.g_tips>p{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.g_city{
+	height: 190px;
+	padding-bottom: 15px;
+	overflow-y: auto;
+}
+.g_city>li>p{
+	color: #ff8a00;
+    font-size: 14px;
+}
+.g_city>li>span{
+	color: #999;
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 15px;
+}
+.g_city>li{
+	margin-bottom: 10px;
+}
+.g_city>li>p{
+	margin-bottom: 0px;
+}
+.friendly-url>span{
+	font-size: 18px !important;
+}
+.ui-close-date{
+	color: #fff;
+}
+/*.ui-icon-circle-triangle-w{
+	color: #000;
+}*/
+.main-content-fun-tips p{
+	display: inline-block;
+}
+
+.g_titel_2{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 18px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+.g_titel_2>span{
+	margin-left: 15px;
+}
+.new>h4{
+	text-align: left !important;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	color: #449d44;
+}
+.i_agree{
+	margin-left: 100px;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #449d44;
+}
+.i_agree>label{
+	margin-left: 20px;
+	
+}
+.g_in>label{
+	font-weight: lighter !important;
+	vertical-align: top;
+	margin-left: 5px;
+	color: #449d44;
+}
+.g_wxd{
+	margin-bottom: 20px;
+}
+.g_name{
+	position: relative;
+	left: 5px;
+}

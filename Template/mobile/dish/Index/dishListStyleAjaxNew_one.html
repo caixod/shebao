@@ -1,0 +1,653 @@
+<!--顶部分类-->
+<div class="main_top">
+    <!--<div class="ilike top_li_cur only_toggle" cate_id="ilike">
+        <p><img src="__STATIC__/new-20170414/images/tp_sc.png"> 我喜欢</p>
+    </div>-->
+    <ul class="top_ul menu_ul">
+
+        <!--<li class="menu_li meun_p_l only_toggle" cate_id="65535">新品推荐</li>-->
+        <foreach name="sort_list" key="key" item="s_l" >
+        <li class="menu_li <if condition='$key eq 0'>meun_p_l</if> only_toggle" cate_id="{$s_l}" >{:getSortInfo($s_l)['name']}</li>
+        </foreach>
+        <!--<li class="menu_li" cate_id="3">螺蛳粉</li>
+        <li class="menu_li" cate_id="4">鸡汤粉</li>
+        <li class="menu_li" cate_id="5">大份</li>
+        <li class="menu_li" cate_id="6">小吃</li>
+        <li class="menu_li" cate_id="7">饮料</li>-->
+    </ul>
+</div>
+
+
+<!--两个大图四个小图规则，[0-1：两个图]1、[2-5：四个图]5、[6-7：两个图]7、[8-11：四个图]11、13、17、19、23、25、29...
+规则：[(n*3)-(n%2+1)]-->
+
+<div class="one_main">
+
+    <!--<div class="one_tab one_tab_block" id="con_ones_ilike">&lt;!&ndash;我喜欢&ndash;&gt;
+        <div class="big_div_s">
+            <div class="one_m_big one_divs">
+                <div class="big_div"><img src="__STATIC__/new-20170414/images/tp1.jpg" class="big_img"></div>
+                <h3 goods_id="10">原味螺蛳粉(微辣)喜欢</h3>
+                <p class="big_p1 guige_1">&yen;<span>18.98</span>/份</p>
+                <div class="big_p2"><img class="one_wsc" src="__STATIC__/new-20170414/images/sc_3.png"></div>
+
+                <div class="guige guige_big">
+                    <div class="shuliang shuliang_big">
+                        <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                        <p class="food_p2 food_p3">0</p>
+                        <p class ="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                    </div>
+                    <p class="food_p4 guige2" price_num="24.00" geige_num="2">大份</p>
+                    <p class="food_p4 guige2" price_num="24.00" geige_num="3">中份</p>
+                    <p class="food_p4 guige1 m1" price_num="18.98" geige_num="1">标准</p>
+                </div>
+                &lt;!&ndash;推荐图片&ndash;&gt;
+                <div class="tuijian_big">推荐</div>
+                <div class="zhekou_big"><b>5.0</b>折</div>
+            </div>
+            <div class="one_m_big one_divs">
+                <div class="big_div"><img src="__STATIC__/new-20170414/images/tp1.jpg" class="big_img"></div>
+                <h3 goods_id="20">老友记肥肠螺蛳粉(微辣)</h3>
+                <p class="big_p1 guige_1">&yen;<span>27.00</span>/份</p>
+                <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+                <div class="guige guige_big">
+                    <div class="shuliang shuliang_big">
+                        <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                        <p class="food_p2 food_p3">0</p>
+                        <p class ="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                    </div>
+                </div>
+                <div class="tuijian_big">推荐</div>
+            </div>
+        </div>
+        <div class="one_m_smo">
+            <ul class="smo_ul">
+                <li class="smo_li li_left one_divs">
+                    <div class="smo_div"><img src="__STATIC__/new-20170414/images/tp2.jpg" class="smo_img img-responsive"></div>
+                    <h3 goods_id="30">酸菜牛牛粉</h3>
+                    <p class="big_p1 guige_1">&yen;<span>24.00</span>/份</p>
+                    <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+
+                    <div class="guige guige_big">
+                        <div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>
+                        <p class="food_p4 guige1 m1" price_num="24.00" geige_num="1">标准</p>
+
+                    </div>
+                    &lt;!&ndash;推荐图片&ndash;&gt;
+                    <div class="tuijian_big">推荐</div>
+                    <div class="zhekou_big"><b>5.0</b>折</div>
+                </li>
+                <li class="smo_li li_right one_divs">
+                    <div class="smo_div"><img src="__STATIC__/new-20170414/images/tp3.jpg" class="smo_img img-responsive"></div>
+                    <h3 goods_id="40">三鲜菌菇汤粉</h3>
+                    <p class="big_p1 guige_1">&yen;<span>18.00</span>/份</p>
+                    <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+
+                    <div class="guige guige_big">
+                        <div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>
+                        <p class="food_p4 guige2" price_num="24.00" geige_num="2">大份</p>
+                        <p class="food_p4 guige2" price_num="24.00" geige_num="3">中份</p>
+                        <p class="food_p4 guige1 m1" price_num="18.00" geige_num="1">标准</p>
+
+                    </div>
+                </li>
+                <li class="smo_li li_left one_divs">
+                    <div class="smo_div"><img src="__STATIC__/new-20170414/images/tp2.jpg" class="smo_img img-responsive"></div>
+                    <h3 goods_id="50">酸菜鸡肉粉(微辣)</h3>
+                    <p class="big_p1 guige_1">&yen;<span>24.00</span>/份</p>
+                    <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+
+                    <div class="guige guige_big">
+                        <div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>
+                        <p class="food_p4 guige2" price_num="29.00" geige_num="2">大份</p>
+                        <p class="food_p4 guige1 m1" price_num="24.00" geige_num="1">标准</p>
+
+                    </div>
+                </li>
+                <li class="smo_li li_right one_divs">
+                    <div class="smo_div"><img src="__STATIC__/new-20170414/images/tp3.jpg" class="smo_img img-responsive"></div>
+                    <h3 goods_id="60">三鲜汤粉</h3>
+                    <p class="big_p1 guige_1">&yen;<span>18.00</span>/份</p>
+                    <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+
+                    <div class="guige guige_big">
+                        <div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>
+                        <p class="food_p4 guige2" price_num="29.00" geige_num="2">大份</p>
+                        <p class="food_p4 guige2" price_num="29.00" geige_num="3">中份</p>
+                        <p class="food_p4 guige1 m1" price_num="18.00" geige_num="1">标准</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>-->
+
+    <!---->
+
+    <foreach name="list" item="v" key="key">
+    <div class="one_tab" id="con_ones_{$key}">
+        <foreach name="v" item="vv" key="key_v">
+        <div class="big_div_s">
+            <if condition="$vv[0]['id'] gt 0">
+            <div class="one_m_big one_divs">
+                <div class="big_div"><img src="<php>echo getDishInfo($vv[0]['dish_id'])['image'];</php>" class="big_img"></div>
+                <h3 goods_id="10"><php>echo getDishInfo($vv[0]['dish_id'])['dish_name'];</php></h3>
+                <p class="big_p1 guige_1">&yen;<span id="price_{$key}_{$vv.0.dish_id}"><php>echo priceFormat($vv[0]['price']);</php></span></p>
+                <div class="big_p2"><img class="one_wsc" src="__STATIC__/new-20170414/images/sc_3.png"></div>
+
+                <div class="guige guige_big">
+                    <div class="shuliang shuliang_big">
+                        <p class="food_p2 line1	line" data-dish-restaurant="{$vv.0.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[0]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.0.dish_id}" data-sort-id="{$key}" operate="plus"><span class="glyphicon glyphicon-plus"></span> </p>
+                        <p class="food_p2 food_p3">0</p>
+                        <p class ="food_p2 line2 line" data-dish-restaurant="{$vv.0.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[0]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.0.dish_id}" data-sort-id="{$key}" operate="minus"><span class=" glyphicon glyphicon-minus"></span> </p>
+                    </div>
+                    <if condition="$vv[0]['standard_on_off'] eq 1">
+                        <!--拿取大小份和对应价格-->
+                        <php>$st_list = getStandardList($vv[0]['dish_id']);</php>
+                        <foreach name="st_list" key="key_st" item="st">
+                    <p class="food_p4 guige{$key_st}" data-sort-id="{$key}" data-dish-id="{$vv.0.dish_id}" price_num="{$st.price}" geige_num="{$key_st}">{$st.name}</p>
+                        </foreach>
+                    </if>
+                    <p class="food_p4 guige0 m1" data-sort-id="{$key}" data-dish-id="{$vv.0.dish_id}" price_num="<php>echo priceFormat($vv[0]['price']);</php>" geige_num="0">标准</p>
+
+                </div>
+                <!--推荐图片-->
+                <if condition="$vv[0]['is_up'] eq 1">
+                <div class="tuijian_big">推荐</div>
+                </if>
+                <if condition="$vv[0]['is_hot'] eq 1">
+                    <!--<div class="remai_big">热卖</div>-->
+                </if>
+                <if condition="$vv[0]['is_discount'] neq 0">
+                <div class="zhekou_big"><b>{$vv[0]['is_discount']}</b>折</div>
+                </if>
+            </div>
+            </if>
+            <if condition="$vv[1]['id'] gt 0">
+            <div class="one_m_big one_divs">
+                <div class="big_div"><img src="<php>echo getDishInfo($vv[1]['dish_id'])['image'];</php>" class="big_img"></div>
+                <h3 goods_id="20"><php>echo getDishInfo($vv[1]['dish_id'])['dish_name'];</php></h3>
+                <p class="big_p1 guige_1">&yen;<span id="price_{$key}_{$vv.1.dish_id}"><php>echo priceFormat($vv[1]['price']);</php></span></p>
+                <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+                <div class="guige guige_big">
+                    <div class="shuliang shuliang_big">
+                        <p class="food_p2 line1	line" data-dish-restaurant="{$vv.1.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[1]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.1.dish_id}" data-sort-id="{$key}" operate="plus"><span class="glyphicon glyphicon-plus"></span> </p>
+                        <p class="food_p2 food_p3">0</p>
+                        <p class ="food_p2 line2 line" data-dish-restaurant="{$vv.1.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[1]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.0.dish_id}" data-sort-id="{$key}" operate="minus"><span class=" glyphicon glyphicon-minus"></span> </p>
+                    </div>
+                    <!--大小份 start-->
+                    <if condition="$vv[1]['standard_on_off'] eq 1">
+                        <!--拿取大小份和对应价格-->
+                        <php>$st_list = getStandardList($vv[1]['dish_id']);</php>
+                        <foreach name="st_list" key="key_st" item="st">
+                            <p class="food_p4 guige{$key_st}" data-sort-id="{$key}" data-dish-id="{$vv.1.dish_id}" price_num="{$st.price}" geige_num="{$key_st}">{$st.name}</p>
+                        </foreach>
+                        <!--<p class="food_p4 guige2" price_num="24.00" geige_num="3">中份</p>-->
+                    </if>
+                    <p class="food_p4 guige0 m1" data-sort-id="{$key}" data-dish-id="{$vv.1.dish_id}" price_num="<php>echo priceFormat($vv[1]['price']);</php>" geige_num="0">标准</p>
+                    <!--大小份 end-->
+                </div>
+                <if condition="$vv[1]['is_up'] eq 1">
+                    <div class="tuijian_big">推荐</div>
+                </if>
+                <if condition="$vv[1]['is_hot'] eq 1">
+                    <!--<div class="remai_big">热卖</div>-->
+                </if>
+                <if condition="$vv[1]['is_discount'] neq 0">
+                    <div class="zhekou_big"><b>{$vv[1]['is_discount']}</b>折</div>
+                </if>
+            </div>
+            </if>
+        </div>
+        <div class="one_m_smo">
+            <ul class="smo_ul">
+                <if condition="$vv[2]['id'] gt 0">
+                <li class="smo_li li_left one_divs">
+                    <div class="smo_div"><img src="<php>echo getDishInfo($vv[2]['dish_id'])['image'];</php>" class="smo_img img-responsive"></div>
+                    <h3 goods_id="30"><php>echo getDishInfo($vv[2]['dish_id'])['dish_name'];</php></h3>
+                    <p class="big_p1 guige_1">&yen;<span id="price_{$key}_{$vv.2.dish_id}"><php>echo priceFormat($vv[2]['price']);</php></span></p>
+                    <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+
+                    <div class="guige guige_big">
+                        <!--<div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>-->
+                        <div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	line" data-dish-restaurant="{$vv.2.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[2]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.2.dish_id}" data-sort-id="{$key}" operate="plus"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class ="food_p2 line2 line" data-dish-restaurant="{$vv.2.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[2]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.2.dish_id}" data-sort-id="{$key}" operate="minus"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>
+                        <!--大小份 start-->
+                        <if condition="$vv[2]['standard_on_off'] eq 1">
+                            <!--拿取大小份和对应价格-->
+                            <php>$st_list = getStandardList($vv[2]['dish_id']);</php>
+                            <foreach name="st_list" key="key_st" item="st">
+                                <p class="food_p4 guige{$key_st}" data-sort-id="{$key}" data-dish-id="{$vv.2.dish_id}" price_num="{$st.price}" geige_num="{$key_st}">{$st.name}</p>
+                            </foreach>
+                            <!--<p class="food_p4 guige2" price_num="24.00" geige_num="3">中份</p>-->
+                        </if>
+                        <p class="food_p4 guige0 m1" data-sort-id="{$key}" data-dish-id="{$vv.2.dish_id}" price_num="<php>echo priceFormat($vv[2]['price']);</php>" geige_num="0">标准</p>
+                        <!--大小份 end-->
+
+                    </div>
+                    <!--推荐图片-->
+                    <if condition="$vv[2]['is_up'] eq 1">
+                        <div class="tuijian_big">推荐</div>
+                    </if>
+                    <if condition="$vv[2]['is_hot'] eq 1">
+                        <!--<div class="remai_big">热卖</div>-->
+                    </if>
+                    <if condition="$vv[2]['is_discount'] neq 0">
+                        <div class="zhekou_big"><b>{$vv[2]['is_discount']}</b>折</div>
+                    </if>
+                </li>
+                </if>
+                <if condition="$vv[3]['id'] gt 0">
+                <li class="smo_li li_right one_divs">
+                    <div class="smo_div"><img src="<php>echo getDishInfo($vv[3]['dish_id'])['image'];</php>" class="smo_img img-responsive"></div>
+                    <h3 goods_id="40"><php>echo getDishInfo($vv[3]['dish_id'])['dish_name'];</php></h3>
+                    <p class="big_p1 guige_1">&yen;<span id="price_{$key}_{$vv.3.dish_id}"><php>echo priceFormat($vv[3]['price']);</php></span></p>
+                    <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+
+                    <div class="guige guige_big">
+                        <!--<div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>-->
+                        <div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	line" data-dish-restaurant="{$vv.3.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[3]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.3.dish_id}" data-sort-id="{$key}" operate="plus"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class ="food_p2 line2 line" data-dish-restaurant="{$vv.3.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[3]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.3.dish_id}" data-sort-id="{$key}" operate="minus"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>
+                        <!--大小份 start-->
+                        <if condition="$vv[3]['standard_on_off'] eq 1">
+                            <!--拿取大小份和对应价格-->
+                            <php>$st_list = getStandardList($vv[3]['dish_id']);</php>
+                            <foreach name="st_list" key="key_st" item="st">
+                                <p class="food_p4 guige{$key_st}" data-sort-id="{$key}" data-dish-id="{$vv.3.dish_id}" price_num="{$st.price}" geige_num="{$key_st}">{$st.name}</p>
+                            </foreach>
+                            <!--<p class="food_p4 guige2" price_num="24.00" geige_num="3">中份</p>-->
+                        </if>
+                        <p class="food_p4 guige0 m1" data-sort-id="{$key}" data-dish-id="{$vv.3.dish_id}" price_num="<php>echo priceFormat($vv[3]['price']);</php>" geige_num="0">标准</p>
+                        <!--大小份 end-->
+                    </div>
+                    <!--推荐图片-->
+                    <if condition="$vv[3]['is_up'] eq 1">
+                        <div class="tuijian_big">推荐</div>
+                    </if>
+                    <if condition="$vv[3]['is_hot'] eq 1">
+                        <!--<div class="remai_big">热卖</div>-->
+                    </if>
+                    <if condition="$vv[3]['is_discount'] neq 0">
+                        <div class="zhekou_big"><b>{$vv[3]['is_discount']}</b>折</div>
+                    </if>
+                </li>
+                </if>
+                <if condition="$vv[4]['id'] gt 0">
+                <li class="smo_li li_left one_divs">
+                    <div class="smo_div"><img src="<php>echo getDishInfo($vv[4]['dish_id'])['image'];</php>" class="smo_img img-responsive"></div>
+                    <h3 goods_id="50"><php>echo getDishInfo($vv[4]['dish_id'])['dish_name'];</php></h3>
+                    <p class="big_p1 guige_1">&yen;<span id="price_{$key}_{$vv.4.dish_id}"><php>echo priceFormat($vv[4]['price']);</php></span></p>
+                    <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+
+                    <div class="guige guige_big">
+                        <!--<div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>-->
+                        <div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	line" data-dish-restaurant="{$vv.4.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[4]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.4.dish_id}" data-sort-id="{$key}" operate="plus"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class ="food_p2 line2 line" data-dish-restaurant="{$vv.4.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[4]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.4.dish_id}" data-sort-id="{$key}" operate="minus"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>
+                        <!--大小份 start-->
+                        <if condition="$vv[4]['standard_on_off'] eq 1">
+                            <!--拿取大小份和对应价格-->
+                            <php>$st_list = getStandardList($vv[4]['dish_id']);</php>
+                            <foreach name="st_list" key="key_st" item="st">
+                                <p class="food_p4 guige{$key_st}" data-sort-id="{$key}" data-dish-id="{$vv.4.dish_id}" price_num="{$st.price}" geige_num="{$key_st}">{$st.name}</p>
+                            </foreach>
+                            <!--<p class="food_p4 guige2" price_num="24.00" geige_num="3">中份</p>-->
+                        </if>
+                        <p class="food_p4 guige0 m1" data-sort-id="{$key}" data-dish-id="{$vv.4.dish_id}" price_num="<php>echo priceFormat($vv[4]['price']);</php>" geige_num="0">标准</p>
+                        <!--大小份 end-->
+                    </div>
+                    <if condition="$vv[4]['is_up'] eq 1">
+                        <div class="tuijian_big">推荐</div>
+                    </if>
+                    <if condition="$vv[4]['is_hot'] eq 1">
+                       <!-- <div class="remai_big">热卖</div>-->
+                    </if>
+                    <if condition="$vv[4]['is_discount'] neq 0">
+                        <div class="zhekou_big"><b>{$vv[4]['is_discount']}</b>折</div>
+                    </if>
+                </li>
+                </if>
+                <if condition="$vv[5]['id'] gt 0">
+                <li class="smo_li li_right one_divs">
+                    <div class="smo_div"><img src="<php>echo getDishInfo($vv[5]['dish_id'])['image'];</php>" class="smo_img img-responsive"></div>
+                    <h3 goods_id="60"><php>echo getDishInfo($vv[5]['dish_id'])['dish_name'];</php></h3>
+                    <p class="big_p1 guige_1">&yen;<span id="price_{$key}_{$vv.5.dish_id}"><php>echo priceFormat($vv[5]['price']);</php></span></p>
+                    <div class="big_p2"><img src="__STATIC__/new-20170414/images/sc_3.png" class="one_wsc"></div>
+
+                    <div class="guige guige_big">
+                        <!--<div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class="food_p2 line2"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>-->
+                        <div class="shuliang shuliang_big">
+                            <p class="food_p2 line1	line" data-dish-restaurant="{$vv.5.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[5]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.5.dish_id}" data-sort-id="{$key}" operate="plus"><span class="glyphicon glyphicon-plus"></span> </p>
+                            <p class="food_p2 food_p3">0</p>
+                            <p class ="food_p2 line2 line" data-dish-restaurant="{$vv.5.restaurant_id}" data-dish-name="<php>echo getDishInfo($vv[5]['dish_id'])['dish_name'];</php>" data-dish-id="{$vv.5.dish_id}" data-sort-id="{$key}" operate="minus"><span class=" glyphicon glyphicon-minus"></span> </p>
+                        </div>
+                        <!--大小份 start-->
+                        <if condition="$vv[5]['standard_on_off'] eq 1">
+                            <!--拿取大小份和对应价格-->
+                            <php>$st_list = getStandardList($vv[5]['dish_id']);</php>
+                            <foreach name="st_list" key="key_st" item="st">
+                                <p class="food_p4 guige{$key_st}" data-sort-id="{$key}" data-dish-id="{$vv.5.dish_id}" price_num="{$st.price}" geige_num="{$key_st}">{$st.name}</p>
+                            </foreach>
+                            <!--<p class="food_p4 guige2" price_num="24.00" geige_num="3">中份</p>-->
+                        </if>
+                        <p class="food_p4 guige0 m1" data-sort-id="{$key}" data-dish-id="{$vv.5.dish_id}" price_num="<php>echo priceFormat($vv[5]['price']);</php>" geige_num="0">标准</p>
+                        <!--大小份 end-->
+                    </div>
+                    <if condition="$vv[5]['is_up'] eq 1">
+                        <div class="tuijian_big">推荐</div>
+                    </if>
+                    <if condition="$vv[5]['is_hot'] eq 1">
+                        <!--<div class="remai_big">热卖</div>-->
+                    </if>
+                    <if condition="$vv[5]['is_discount'] neq 0">
+                        <div class="zhekou_big"><b>{$vv[5]['is_discount']}</b>折</div>
+                    </if>
+                </li>
+                </if>
+            </ul>
+        </div>
+        </foreach>
+    </div>
+    </foreach>
+
+    <!--<div class="one_tab" id="con_ones_2" >
+
+    </div>-->
+</div>
+<script language="javascript" type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" >
+    $(document).ready(function(){
+        //页面加载默认显示
+        $(".menu_li:first").each(function(){
+            $(this).addClass("top_li_cur");
+            $("#con_ones_"+$(this).attr("cate_id")).show();
+        })
+        $(".only_toggle").click(function(){
+            $(".only_toggle").removeClass("top_li_cur");
+            $(this).addClass("top_li_cur");
+            cate_id = $(this).attr("cate_id");
+            $(".one_tab").css("display","none");
+            $("#con_ones_"+cate_id).css("display","block");
+        });
+
+        //点击大小份切换价格
+        $(".food_p4").click(function(){
+            $(this).siblings().removeClass("m1");
+            $(this).addClass("m1");
+            $("#price_"+$(this).attr("data-sort-id")+"_"+$(this).attr("data-dish-id")).html('').html($(this).attr("price_num"));
+            //切换当前点菜份数
+            num_current = ($(this).parent().children().children(".line1")).attr("num-standard-"+$(this).attr("geige_num"));
+            num_current = num_current?num_current:0;
+            $(this).parent().children().children(".food_p3").html(num_current);
+        });
+
+        //点击加减号
+        $(".guige .line").click(function(){
+            //获取菜品名
+            dish_name = $(this).attr("data-dish-name");
+            //当前餐厅id
+            dish_res = $(this).attr("data-dish-restaurant");
+            //当前操作，是加还是减
+            operate = $(this).attr("operate");
+            //当前价格
+            price_current = $(this).parent().siblings(".m1").attr("price_num");
+            //当前规格
+            standard_current = $(this).parent().siblings(".m1").attr("geige_num");
+
+            if(operate == "plus"){
+                //获取sort_id
+                sort_id = $(this).attr("data-sort-id");
+                //获取dish_id
+                dish_id = $(this).attr("data-dish-id");
+                //当前菜品改变数量
+                num_current = ($(this).attr("num-standard-"+standard_current))?parseInt($(this).attr("num-standard-"+standard_current))+1:1;
+                //重写当前规格点菜数量
+                $(this).attr("num-standard-"+standard_current,num_current);
+                $(this).siblings(".food_p3").html(num_current);
+                //操作父页面//////////////
+                //打开购物车，显示对应分类
+                $(".cate_id_"+$(this).attr("data-sort-id")).show();
+                /*$(".z_div").css("display","block");
+                $(".gouwuche_t").css("display","block");*/
+                $(".p_wu").css("display","none");
+                $(".p_zongji").css("display","block");
+                $(".p_shuzi").css("display","block");
+                $(".foot_left img").attr("src","/Template/mobile/dish/Static/new-20170414/images/gouwuche2.png");
+                $(".foot_right button").css("background","red");
+                //操作菜品插入购物车
+
+                //console.log(JSON.parse(window.localStorage.getItem("data_dish_"+sort_id+"_"+dish_id+"_"+standard_current)));
+                //return;
+                    dish_num_in_localStorage = window.localStorage.getItem("data_dish_"+sort_id+"_"+dish_id+"_"+standard_current);
+                if(!(dish_num_in_localStorage) || JSON.parse(dish_num_in_localStorage).dish_num == '0'){
+                    _html = dataInsert(dish_name,price_current,num_current,dish_id,sort_id,standard_current);
+                    $(".cate_id_"+sort_id).append(_html);
+                }
+                dishLocalStorage(dish_name,price_current,num_current,dish_id,sort_id,standard_current,dish_res);
+                //console.log(JSON.parse(window.localStorage.getItem("data_dish_"+sort_id+"_"+dish_id+"_"+standard_current)));
+                //购物车下标加1
+                numPlus(1);
+                //总数
+                totalFee(price_current);
+            }else{
+                if(parseInt($(this).siblings(".line1").attr("num-standard-"+standard_current))){
+                    n_cur =$(this).siblings(".line1").attr("num-standard-"+standard_current);
+                    dish_id =$(this).siblings(".line1").attr("data-dish-id");
+                    sort_id = $(this).siblings(".line1").attr("data-sort-id");
+
+                            //alert(n_cur);
+                    //当前菜品改变数量
+                    num_current = parseInt(n_cur)-1;
+                    $(this).siblings(".line1").attr("num-standard-"+standard_current,parseInt(n_cur)-1);
+                   $(this).siblings(".food_p3").html(parseInt(n_cur)-1);
+                    dishLocalStorage(dish_name,price_current,num_current,dish_id,sort_id,standard_current,dish_res);
+                    //购物车下标-1
+                    numPlus(-1);
+                    //总数
+                    totalFee(-price_current);
+                    //console.log(window.localStorage);
+                    //当购物车中菜品为0的时候删除
+                    if(n_cur==1){
+                        //window.localStorage.removeItem("data_dish_"+sort_id+"_"+dish_id+"_"+standard_current);
+                        n_cur =$(this).siblings(".line1").attr("num-standard-"+standard_current);
+                        dish_id =$(this).siblings(".line1").attr("data-dish-id");
+                        sort_id = $(this).siblings(".line1").attr("data-sort-id");
+                        $(".cate_id_"+sort_id).find(".qingkong_g").each(function(){
+                            //console.log($(this).attr("data-dish-id"));
+                            if($(this).attr("data-dish-id")==dish_id && $(this).attr("data-dish-standard")==standard_current){
+                                $(this).remove();
+                            }
+                        });
+                        ///alert($(this).length);
+                        if($(".cate_id_"+sort_id).find(".qingkong_g").length=='0'){
+                            $(".cate_id_"+sort_id).css('display','none');
+                        }
+                        return false;
+                    }
+
+                }/*else{
+
+                }*/
+
+            }
+
+        });
+    });
+
+    //构造插入购物车数据结构
+    /*
+    string@d_name 菜品名
+    int@d_price   价格
+    int@d_num  数量
+    int@d_d_id  菜品id
+    int@d_s_id  分类id
+     int@d_standard 规格id
+    * */
+    function dataInsert(d_name,d_price,d_num,d_d_id,d_s_id,d_standard){
+        data_p3 = '<p class="food_p2 line1 cart-line" onclick="cartPlusMinusClick($(this))" data-dish-name="'+d_name+'" data-dish-standard="'+d_standard+'" data-dish-id="'+d_d_id+'" data-sort-id="'+d_s_id+'" operate="minus"><span class=" glyphicon glyphicon-minus"></span> </p>';
+        data_p2 = '<p class="food_p2 food_p3">'+d_num+'</p>';
+        data_p1 = '<p class="food_p2 line2 cart-line" onclick="cartPlusMinusClick($(this))" data-dish-name="'+d_name+'" data-dish-standard="'+d_standard+'" data-dish-id="'+d_d_id+'" data-sort-id="'+d_s_id+'" operate="plus"><span class="glyphicon glyphicon-plus"></span> </p>';
+        data_td2 = '<td class="gwc_td2">'+d_price+'</td>';
+        data_td1 = '<td class="gwc_td1"><h3>'+d_name+'</h3></td>';
+        data_td3 = '<td class="gwc_td3"><div class="shuliang shuliang2">'+data_p1+data_p2+data_p3+'</div></td>';
+        data_tr = '<tr class="qingkong_g" data-sort-id="'+d_s_id+'" data-dish-id="'+d_d_id+'" data-dish-standard="'+d_standard+'">'+data_td1+data_td2+data_td3+'</tr>';
+
+        return data_tr;
+    }
+
+    //菜品信息存储方法
+    /*
+     string@d_name 菜品名
+     int@d_price   价格
+     int@d_num  数量
+     int@d_d_id  菜品id
+     int@d_s_id  分类id
+     int@d_standard 规格id
+     int@d_res 餐厅id
+     * */
+    function dishLocalStorage(d_name,d_price,d_num,d_d_id,d_s_id,d_standard,d_res){
+        if(!window.localStorage){
+            alert("请升级浏览器");
+            return false;
+        }else{
+            var storageObj = window.localStorage;
+            data_dish ={
+                dish_id:d_d_id,
+                sort_id:d_s_id,
+                dish_name:d_name,
+                dish_price:d_price,
+                dish_num:d_num,
+                dish_standard:d_standard,
+                dish_restaurant:d_res
+            };
+            //alert(d_standard);return;
+            //if(storageObj.getItem("data_dish_"+d_s_id+"_"+d_d_id+"_"+d_standard)){
+              //  alert("有");
+            //}else{
+                //alert("没有");
+                _data_dish = JSON.stringify(data_dish);
+                storageObj.setItem("data_dish_"+d_s_id+"_"+d_d_id+"_"+d_standard,_data_dish);
+            //}
+
+            //json = storageObj.getItem("data_dish_"+d_s_id+"_"+d_d_id+"_"+d_standard);
+            //console.log(JSON.parse(json));
+            //console.log(JSON.parse(storageObj.getItem("data_dish")));
+            //storageObj.removeItem("data_dish"+d_s_id);
+
+        }
+    }
+    //购物车下标数字加1
+    function numPlus(step){
+        n = parseInt($(".p_shuzi").text());
+        n = n+step;
+        if(n>=0){
+            $(".p_shuzi").text(n)
+        }
+    }
+    //算总账
+    function totalFee(money){
+        //alert(parseFloat(money));
+        money = parseFloat(money)*100;
+        n = parseFloat($("#p_zongji").text())*100;
+        n = n+money;
+        if(n>=0){
+            $("#p_zongji").text((n/100).toFixed(2))
+        }else{
+            $("#p_zongji").text(0)
+        }
+    }
+
+    ///点击购物车中加减号
+    function cartPlusMinusClick(obj){
+        dish_id = obj.attr("data-dish-id");
+        sort_id = obj.attr("data-sort-id");
+        standard_current = obj.attr("data-dish-standard");
+        d_info = JSON.parse(window.localStorage.getItem("data_dish_"+sort_id+"_"+dish_id+"_"+standard_current));
+            if(obj.attr("operate")=="plus"){
+                 num_current = parseInt(d_info.dish_num)+1;
+                dishLocalStorage(d_info.dish_name,d_info.dish_price,num_current,dish_id,sort_id,standard_current,d_info.dish_restaurant);
+                //页面里修改两个位置数量
+                obj.siblings(".food_p3").text(num_current);
+                $("#con_ones_"+sort_id).find(".line1").each(function(){
+                    //console.log($(this).attr("data-dish-id"));
+                    if($(this).attr("data-dish-id")==dish_id){
+                        $(this).attr("num-standard-"+standard_current,num_current);
+                        $(this).siblings(".food_p3").text(num_current);
+                    }
+                });
+                //购物车下标-1
+                numPlus(1);
+                //总数
+                totalFee(parseFloat(d_info.dish_price));
+            }else{
+                num_current = parseInt(d_info.dish_num)-1;
+                dishLocalStorage(d_info.dish_name,d_info.dish_price,num_current,dish_id,sort_id,standard_current,d_info.dish_restaurant);
+
+                //页面里修改两个位置数量
+                obj.siblings(".food_p3").text(num_current);
+                $("#con_ones_"+sort_id).find(".line1").each(function(){
+                    //console.log($(this).attr("data-dish-id"));
+                    if($(this).attr("data-dish-id")==dish_id){
+                        $(this).attr("num-standard-"+standard_current,num_current);
+                        $(this).siblings(".food_p3").text(num_current);
+                    }
+                });
+                //购物车下标-1
+                numPlus(-1);
+                //总数
+                totalFee(-parseFloat(d_info.dish_price));
+                if(d_info.dish_num == '1'){
+                    $(".cate_id_"+sort_id).find(".qingkong_g").each(function(){
+                        //console.log($(this).attr("data-dish-id"));
+                        if($(this).attr("data-dish-id")==dish_id && $(this).attr("data-dish-standard")==standard_current){
+                            $(this).remove();
+                        }
+                    });
+                    if($(".cate_id_"+sort_id).find(".qingkong_g").length == '0'){
+                        $(".cate_id_"+sort_id).css('display','none');
+                    }
+                    return false;
+                }
+
+            }
+    }
+</script>

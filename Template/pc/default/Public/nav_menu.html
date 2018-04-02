@@ -1,0 +1,86 @@
+<!--<link href="__PUBLIC__/layui/css/layui.css" rel="stylesheet">-->
+<!--<script src="__PUBLIC__/layui/layui.js"></script>-->
+<div></div>
+<div class="ab_left" style="border: 3px solid #ddd;border-radius:10px;    width: 29%;">
+    <!--<div class="ab_l_tt">首页</div>-->
+    <div class="ab_l_tt">
+        <a href="{:U('Home/Checklogin/index')}" <if condition="$act eq 'index'">style='color:red'<else />class=""</if> >办理流程</a>
+    </div>
+    <!--<div class="ab_l_tt">关于我们</div>-->
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/shebao_dj')}" <if condition="$act eq 'shebao_dj'">class="on"<else />class=""</if> >社保代缴</a>
+    </div>
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/shebao_bujiao')}" <if condition="$act eq 'shebao_bujiao'">class="on"<else />class=""</if> >社保补缴</a>
+    </div>
+
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Checklogin/gjj_daijiao')}" <if condition="$act eq 'gjj_daijiao'">class="on"<else />class=""</if> >公积金代缴</a>-->
+    <!--</div>-->
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Checklogin/gongjijin_bujiao')}" <if condition="$act eq 'gongjijin_bujiao'">class="on"<else />class=""</if> >公积金补缴</a>-->
+    <!--</div>-->
+
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/shebao_zhuanyi')}" <if condition="$act eq 'shebao_zhuanyi'">class="on"<else />class=""</if> >社保转移</a>
+    </div>
+   <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/gjj_zhuanyi')}" <if condition="$act eq 'gjj_zhuanyi'">class="on"<else />class=""</if> >公积金转移</a>
+    </div>
+       <span id="span" style="display: none;">
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/gjj_tiqu')}" <if condition="$act eq 'gjj_tiqu'">class="on"<else />class=""</if> >住房公积金提取</a>
+    </div>
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/yl_sgz')}" <if condition="$act eq 'yl_sgz'">class="on"<else />class=""</if> >医疗手工报销</a>
+    </div>
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/sy_shenqing')}" <if condition="$act eq 'sy_shenqing'">class="on"<else />class=""</if> >生育待遇申领</a>
+    </div>
+
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/yd_bajy')}" <if condition="$act eq 'yd_bajy'">class="on"<else />class=""</if> >异地就医备案</a>
+    </div>
+
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/sb_editinfo')}" <if condition="$act eq 'sb_editinfo'">class="on"<else />class=""</if> >社保信息修改</a>
+    </div>
+
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/own_money')}"  <if condition="$act eq 'own_money'">class="on"<else />class=""</if>>个人所得税申报</a>
+    </div>
+
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/tx_yanglao')}"  <if condition="$act eq 'tx_yanglao'">class="on"<else />class=""</if>>退休养老办理</a>
+    </div>
+
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/school_info')}"  <if condition="$act eq 'school_info'">class="on"<else />class=""</if>>孩子上学材料</a>
+    </div>
+
+    <div class="ab_l_li">
+        <a href="{:U('Home/Checklogin/rc_yingjin')}"  <if condition="$act eq 'rc_yingjin'">class="on"<else />class=""</if>>天津人才引进</a>
+    </div>
+    </span>
+
+    <div class="ab_l_tt" style="cursor: pointer;" id="c_btn">
+        查看更多>>
+    </div><br>
+    <!--<div class="ab_l_tt">-->
+        <!--&lt;!&ndash;<button type="button" class="btn btn-default">按钮 1</button>&ndash;&gt;-->
+        <!--<input class="btn btn-default" type="button" value="Input">-->
+    <!--</div>-->
+
+    <div class="ab_l_box">
+        <div class="ab_lb_top"><img src="">全国联系热线:<br>400-086-4500</div>
+        <div class="ab_lb_bt"><img src="">售后咨询热线:<br>010-82753969</div>
+    </div>
+</div>
+<script>
+    $("#c_btn").click(function(){
+       var s= $("#span").show();
+       // alert(s);
+        $("#c_btn").hide();
+    })
+
+</script>

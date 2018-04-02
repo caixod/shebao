@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>订单选择</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/order/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/order/css/User.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body>
+<section>
+    <div class="xuanze_div">
+        <a href="{:U('Dish/Index/myOrderList',array('take_away'=>1))}">
+            <div class="xuanze_left">
+                <h3>堂食订单</h3>
+                <p>堂食美味 好吃不用等</p>
+            </div>
+            <div class="xuanze_right"><img src="__STATIC__/order/images/1.png"> </div>
+        </a>
+    </div>
+    <div class="xuanze_div">
+        <a href="{:U('Dish/Index/myOrderList',array('take_away'=>2))}">
+            <div class="xuanze_left">
+                <h3>外卖订单</h3>
+                <p>专人专送 美味享不停</p>
+            </div>
+            <div class="xuanze_right"><img src="__STATIC__/order/images/2.png"> </div>
+        </a>
+    </div>
+    <div class="xuanze_div">
+        <a href="{:U('Dish/Index/myOrderList',array('take_away'=>3))}">
+            <div class="xuanze_left">
+                <h3>自提订单</h3>
+                <p>提前制作 好吃不耗时</p>
+            </div>
+            <div class="xuanze_right"><img src="__STATIC__/order/images/3.png"> </div>
+        </a>
+    </div>
+</section>
+</body>
+</html>

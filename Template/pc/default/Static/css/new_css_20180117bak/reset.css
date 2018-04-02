@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	}
+html, body{ 
+    height:100%;
+     }
+body{
+	background: #fff;
+	font-family:'Microsoft Yahei';
+	color: black;
+	font-size: 12px;
+}
+ul{
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+em{
+	font-style: normal;
+}
+select::-ms-expand { display: none; }
+img{
+	border-style: none;
+}

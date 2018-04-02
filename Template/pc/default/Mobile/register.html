@@ -1,0 +1,187 @@
+<include file="Public/new_header" />
+
+<div class="box1" style="width: 100%">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="denglu">
+                    <h3>用户注册</h3>
+                    <div class="denglu_div">
+                        <form role="form" action="{:U('Home/Checklogin/register')}" method="post" onsubmit="return check_feld();">
+                            <div class="form-group">
+                                <label for="phone">请输入手机号码</label>
+                                <input type="text" class="form-control" id="phone"  name="account_name" value=""  placeholder="请输入手机号码" >
+
+                            </div>
+                            <div class="form-group">
+                                <label for="password">密码</label>
+                                <input type="password" class="form-control" id="password"  name="pwd" value="" placeholder="请输入密码">
+                                <span class="error" style="display: none;color: red;">请填写此字段</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password2">请再输入一次密码</label>
+                                <input type="password" class="form-control" id="r_pwd"  name="r_pwd" value=""  placeholder="请再输入一次密码">
+                                <span class="error" style="display: none;color: red;">两次密码不一致</span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="code"  name="code" value=""  placeholder="请输入验证码" style="width: 60%;display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-success" id="btn">发送验证码</button>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="password2">请输入验证码</label><br>
+                                <input type="text" class="form-control" id="check_f" placeholder="请输入验证码" name="check_f" value="" style="width: 40%;display: inline-block;">
+                                <span class="error" style="display: none;color: red;">请填写此字段</span>
+                                <img class="po-ab to0" id="verify_code_img" width="120" height="40" src="{:U('Home/Checklogin/verify')}"  onclick="verify(this)" />
+                                <!--<a><img class="ma-le-142 po-ab to18" src="__STATIC__/images/chg_image.png" id="verify_code_img2"  onclick="verify(this)" /></a>-->
+                            </div>
+
+                            <button type="submit" class="btn btn-default">提交</button>
+                        </form>
+                        <br>
+                        <p class="text-right">已有账号?<a href="{:U('Home/Checklogin/login')}" style="font-size:17px;font-weight: 100; "> 直接登录</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="denglu">
+                    <h3>业务城市</h3>
+                    <div class="denglu_div denglu_div2">
+                        <foreach name="area_list" item="vo" key="k" >
+                            <div class="chengshi">
+                                <h5>{$k}</h5>
+                                <div class="qu">
+                                    <ul>
+                                        <foreach name="vo" item="v" key="k" >
+                                            <li><a href="#">{$v.name}</a></li>
+
+                                        </foreach>
+                                    </ul>
+                                </div>
+                            </div>
+                        </foreach>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="denglu">
+                    <h3>业务内容</h3>
+                    <div class="denglu_div denglu_div2">
+                        <div class="chengshi">
+                            <h5>企业服务</h5>
+                            <div class="qu">
+                                <ul>
+                                    <li><a href="#">企业社保代办</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chengshi">
+                            <h5>个人服务</h5>
+                            <div class="qu">
+                                <ul>
+                                    <li><a href="#">社保代缴</a></li>
+                                    <li><a href="#">社保补缴</a></li>
+                                    <li><a href="#">公积金代缴</a></li>
+                                    <li><a href="#">公积金补缴</a></li>
+                                    <li><a href="#">社保转移</a></li>
+                                    <li><a href="#">公积金转移</a></li>
+                                    <li><a href="#">住房公积金提取</a></li>
+                                    <li><a href="#">医疗手工报销</a></li>
+                                    <li><a href="#">生育待遇申领</a></li>
+                                    <li><a href="#">异地就医备案</a></li>
+                                    <li><a href="#">社保信息修改</a></li>
+                                    <li><a href="#">个人所得税申报</a></li>
+                                    <li><a href="#">退休养老办理</a></li>
+                                    <li><a href="#">孩子上学材料</a></li>
+                                    <li><a href="#">天津人才引进</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function verify(){
+        $('#verify_code_img').attr('src','/index.php?m=Home&c=Checklogin&a=verify&r='+Math.random());
+    }
+
+    $("#btn").click(function(){
+        var phone=  $.trim($("#phone").val());
+        var pattern = /^1[34578]\d{9}$/;
+        if(phone=='' || !pattern.test(phone)){
+            layer.alert('请输入正确的手机号', {icon: 2});
+            return false;
+        }
+        $.ajax({
+            url:"{:U('Home/Checklogin/send_sms')}",
+            type:"post",
+            data:{'mobile':phone},
+            dataType:'json',
+            success:function(e){
+                layer.alert('已发送', {icon: 1});
+            }
+        })
+       time();
+    })
+    var wait=60;
+    function time(){
+//        alert(33);
+        if (wait == 0){
+            $("#btn").removeAttr("disabled");
+            $("#btn").html("获取验证码");
+            wait = 60;
+        } else {
+            $("#btn").attr("disabled", true);
+            $("#btn").html(wait+" 秒")
+            wait--;
+            setTimeout(function(){
+                        time();
+                    }, 1000);
+        }
+    }
+
+    function check_feld(){
+
+
+      var password=  $.trim($("#password").val());
+      var check_f=  $.trim($("#check_f").val());
+      var r_pwd=  $.trim($("#r_pwd").val());
+      var phone=  $.trim($("#phone").val());
+        var reg = /^(\w){6,18}$/;
+
+        var pattern = /^1[34578]\d{9}$/;
+        if(phone=='' || !pattern.test(phone)){
+            layer.alert('请输入正确的手机号', {icon: 2});
+            return false;
+        }
+
+        if(password=='' || !reg.test(password)){
+            layer.alert('密码为6-18位数字字母下划线', {icon: 2});
+            return false;
+        }
+        if(r_pwd != password){
+            layer.alert('两次密码不一致', {icon: 2});
+            return false;
+        }
+
+        if(check_f==''){
+            layer.alert('请输入验证码', {icon: 2});
+            return false;
+        }
+
+        return true;
+
+    }
+
+    </script>
+<include file="Public/footer2"/>

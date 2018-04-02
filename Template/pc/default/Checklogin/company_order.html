@@ -1,0 +1,159 @@
+<include file="Public/new_header" />
+<script src="__STATIC__/laydate/laydate.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/layui/css/layui.css">
+<div class="con3">
+    <div class="container m_p_none">
+        <div class="ab_left" style="border: 3px solid #ddd;border-radius:10px;    width: 29%;">
+            <div class="ab_l_tt">
+                <a href="{:U('Home/Checklogin/index')}" <if condition="$act eq 'index'">style='color:red'<else />class=""</if> >企业服务</a>
+            </div>
+            <div class="ab_l_li">
+                <a href="{:U('Home/Checklogin/company_order')}" <if condition="$act eq 'company_order'">class="on"<else />class=""</if> >企业社保办理</a>
+                <br> <br>
+                <div class="ab_l_box">
+                    <div class="ab_lb_top"><img src="">全国联系热线:<br>400-086-4500</div>
+                    <div class="ab_lb_bt"><img src="">售后咨询热线:<br>010-82753969</div>
+                </div>
+            </div>
+        </div>
+        <div class="ab_right" style="border-radius:10px;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">企业社保办理</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">企业社保办理</a>&gt;
+            </div>
+            <div class="ab_r_cc"  >
+                <p class="text-right"><abbr title="添加员工信息"> <a href="{:U('Home/Order/company_staff')}"><i class="layui-icon" style="font-size: 30px; color: green;" > &#xe654;</i></a></abbr></p>
+                <div class="row">
+                    <div class="hhh">   </div>
+                    <div class="col-sm-10">
+
+                        <div class="denglu">
+                            <div class="denglu_div">
+                                <form role="form" action="" method="post" onsubmit="return btn_fee();" >
+
+                                    <table class="table table-condensed table-hover table-bordered">
+                                        <caption>单位名称：{$company.company_name}</caption>
+                                        <thead>
+                                        <tr>
+                                            <th>选择</th>
+                                            <th>姓名</th>
+                                            <th>身份证号</th>
+                                            <th>社保基数</th>
+                                            <th>公积金基数</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <volist name="friend" id="vo">
+                                        <tr>
+                                            <td style="text-align: center;"><input type="checkbox" name="user_id[]" value="{$vo.user_id}"></td>
+                                            <td>{$vo.username}</td>
+                                            <td>{$vo.idcard}</td>
+                                            <td><input type="text" name="sb_base[{$vo.user_id}]" style="width: 50px;" onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}">元</td>
+                                            <td><input type="text" name="gjj_base[{$vo.user_id}]"  style="width: 50px;" onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}">元</td>
+                                        </tr>
+                                        </volist>
+                                        </tbody>
+                                    </table>
+
+
+                                    <div class="form-group">
+                                        <label for="mobile">办理方式：</label>&nbsp;&nbsp;
+                                        <label class="radio-inline">
+                                            <input type="radio" name="ways"  value="1" checked="checked" val="1" >挂靠
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="ways"  value="2">代理
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mobile">是否办理公积金：</label>&nbsp;&nbsp;
+                                        <label class="radio-inline">
+                                            <input type="radio" name="is_gjj"  value="1" checked="checked" val="1" >办理
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="is_gjj"  value="2">不办
+                                        </label>
+                                    </div>
+                                    <label for="to_province">请选择城市</label>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_province" id="to_province" onChange="get_city_t(this);">
+                                                <option  value="0">请选择</option>
+                                                <volist name="province" id="p">
+                                                    <option  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_city" id="to_city">
+                                                <option  value="0">请选择</option>
+                                                <volist name="city" id="p">
+                                                    <option   value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="start_time">代缴时间 </label><br>
+                                        <input type="text" class="form-control" name="start_time" value="" style="width: 150px;display: inline-block;"  id="start_time" data-beatpicker="true">&nbsp;月
+                                        <input type="text" class="form-control" name="end_time" value="" style="width: 150px;display: inline-block;"  id="end_time" data-beatpicker="true">&nbsp;月
+                                    </div>
+                                    <button type="submit" class="btn btn-default">提交</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+<script>
+    //点击计算费用
+    function btn_fee(){
+        var city=$("#to_city").val();
+        var to_province=$("#to_province").val();
+        var start_time = $.trim($('#start_time').val());
+        var end_time = $.trim($('#end_time').val());
+       var is_check=0;
+        $("input[name='user_id[]']").each(function(i){
+            if($(this).is(":checked")){
+                is_check=1;
+            }
+        })
+
+        if(is_check==0){
+            layer.alert('请选择办理人员', {icon: 2});
+            return false;
+        }
+        if(city==0){
+            layer.alert('请选择办理城市', {icon: 2});
+            return false;
+        }
+        if(end_time=='' || start_time=='' || end_time<=start_time){
+            layer.alert('请选择正确的时间', {icon: 2});
+            return false;
+        }
+
+        return true;
+    }
+    laydate.render({
+        elem: '#start_time'
+        ,min: 0
+        ,max: 2000
+    });
+    laydate.render({
+        elem: '#end_time'
+        ,min: 0
+        ,max: 2000
+    });
+</script>
+<include file="Public/footer2" />

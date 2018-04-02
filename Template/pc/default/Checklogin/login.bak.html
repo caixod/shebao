@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录</title>
+
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css//style_login.css" />
+
+    <script src="__STATIC__/js/jquery-1.11.0.min.js"></script>
+    <script src="__PUBLIC__/js/layer/layer.js"></script><script type="text/javascript">
+
+
+    </script>
+    <style>
+        .psd{height: 40px; font-size: 18px; outline: 0px; border-radius: 10px; border: 1px solid #CCCCCC; width: 95%; }
+    </style>
+</head>
+
+<body class="login_body">
+
+<div class="login_div" style="background-color: #e2efd7;">
+    <div class="col-xs-12 login_title">用户登录</div>
+    <form role="form" action="{:U('Home/Checklogin/do_login')}" method="post" id="form1">
+    <div class="nav">
+            <div class="nav login_nav">
+                <div class="col-xs-4 login_username">
+                    手机号码:
+                </div>
+                <div class="col-xs-6 login_usernameInput">
+                    <input type="text" name="account_name" id="account_name"  class="psd" value="" placeholder="&nbsp;&nbsp;手机号"  />
+                </div>
+
+            </div>
+            <div class="nav login_psdNav">
+                <div class="col-xs-4">
+                    密&nbsp;&nbsp;&nbsp;码:
+                </div>
+                <div class="col-xs-6">
+                    <input type="password" name="pwd" id="password" class="psd" value="" placeholder="&nbsp;&nbsp;密码"  />
+                </div>
+
+            </div>
+            <div class="nav login_psdNav">
+                <div class="col-xs-4">
+                   验证码:
+                </div>
+                <div class="col-xs-3" style="padding-left: 0px;font-size: 30px;">
+                    <input type="text" name="check_f" id="check_f" class="psd" value="" placeholder="&nbsp;&nbsp;请输入验证码"  />
+                </div>
+                <div class="col-xs-3">
+                    <img class="po-ab to0" id="verify_code_img" width="120" height="40" src="{:U('Home/Checklogin/verify')}"  onclick="verify(this)" />
+                </div>
+
+            </div>
+            <div class="col-xs-12 login_btn_div">
+                <input type="hidden" value="0" name="user_type"/>
+                <input type="button" class="sub_btn" value="登录" id="login" style="background-color: #3c763d;" onclick="check_feld();"/>
+            </div>
+        </div>
+    </form>
+
+    <div class="col-xs-12 barter_btnDiv">
+        <a href="{:U('Home/Checklogin/forget_login')}" class="barter_btn" >忘记密码?找回密码</a>
+    </div>
+</div>
+
+
+<script>
+    function verify(){
+        $('#verify_code_img').attr('src','/index.php?m=Home&c=Checklogin&a=verify&r='+Math.random());
+    }
+
+    function check_feld(){
+        var account_name=  $.trim($("#account_name").val());
+        var password=  $.trim($("#password").val());
+        var check_f=  $.trim($("#check_f").val());
+
+        var reg = /^(\w){6,18}$/;
+
+        var pattern = /^1[34578]\d{9}$/;
+        if(account_name=='' || !pattern.test(account_name)){
+            layer.alert('请输入正确的手机号', {icon: 2});
+            return false;
+        }
+        if(password=='' || !reg.test(password)){
+            layer.alert('密码为6-18位数字字母下划线', {icon: 2});
+            return false;
+        }
+
+        if(check_f==''){
+            layer.alert('请输入验证码', {icon: 2});
+            return false;
+        }
+
+     $("#form1").submit();
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!--store list start-->
+<div class="store_list" id="store_list">
+    <volist name="list" id="list">
+    <section>
+        <!--<a href='{:U("Dish/Index/dishList",array("store_id"=>$list["id"]))}'>-->
+        <a href='{:U("Dish/Index/cake_login",array("store_id"=>$list["id"]))}'>
+            <div class="h_20"></div>
+            <div class="mendian_div">
+                <div class="clumg">
+                    <h3>{$list.name}</h3>
+                    <div class="h_10"></div>
+                    <p class="p1">营业时间：
+                        <php>
+                        $o_t = $list['opening_time'];
+                        $c_t = $list['close_time'];
+                        echo $o_t[0].$o_t[1].':'.$o_t[2].$o_t[3].'-'.$c_t[0].$c_t[1].':'.$c_t[2].$c_t[3];
+                    </php>
+                    </p>
+                    <p class="p2"><php>echo substr($list['address'],0,72);</php></p>
+                </div>
+                <div class="clumg2">
+                    <a href='{:U("Dish/Index/cake_login",array("store_id"=>$list["id"]))}'><p class="p3">立即点餐</p></a>
+                    <p class="p4" id="kilometre-{$list.id}">{$list.kilometre}km</p>
+                    <span class="kilometre" data-longitude="{$list.longitude}" data-latitude="{$list.latitude}" style="display:none;"></span>
+                    <a href='{:U("Dish/Index/gpsBusSubway",array("lng1"=>$lng_now,"lat1"=>$lat_now,"lng2"=>$list["longitude"],"lat2"=>$list["latitude"]))}'> <p class="p4 p5"><img src="__STATIC__/images/daohang.png"/> 导航 </p></a>
+                </div>
+
+            </div>
+        </a>
+    </section>
+    </volist>
+</div>
+<!--store list end-->
+
+<!--<div class="row">
+    <div class="col-sm-3 text-left"></div>
+    <div class="col-sm-9 text-right">{$page}</div>
+</div>-->
+<script>
+    $(function(){
+        /*obj = $(".kilometre");
+        for(i=0;i<obj.length;i++){
+            long = obj.getAttribute("data-longitude");
+            lat = obj.getAttribute("data-latitude");
+        }*/
+        /*$("<script>")
+                .attr({ rel: "script",
+                    type: "text/javascript",
+                    //src: "https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"
+                    src: "__PUBLIC__/layui/layui.js"
+                })
+                .appendTo("head");
+        $("<link>")
+                .attr({ rel: "stylesheet",
+                    type: "text/css",
+                    //href: "https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+                    href: "__PUBLIC__/layui/css/layui.css"
+                })
+                .appendTo("head");*/
+    });
+</script>

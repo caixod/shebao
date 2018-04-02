@@ -1,0 +1,86 @@
+<div class="top_out">
+    <div class="container">
+        <div class="row top text-center">
+            <div class="col-xs-2">
+                <img class="logo" src="http://pc.zhongguoshebaodaili.cn/Public/Home/images/logo.png" style="width: 260px;height: 50px;" alt="">
+            </div>
+
+            <div class="row col-xs-8 g_nav">
+
+                <if condition="($username eq '游客') || ($user_type eq 0)">
+                <div class="col-xs-2 col-xs-offset-2" style="margin-left: 0px;">
+                    <a href="{:U('Home/Checklogin/shebao_dj')}" <if condition="$act eq 'shebao_dj'">class="active"<else />class=""</if> >个人社保服务</a>
+                </div>
+                    </if>
+
+                <if condition="($username eq '游客') ||($user_type eq 1)">
+                <div class="col-xs-2">
+                    <a href="{:U('Home/Checklogin/company_order')}" <if condition="$act eq 'company_order'">class="active"<else />class=""</if>>企业社保服务</a>
+                </div>
+                    </if>
+                <div class="col-xs-2">
+                    <a href="{:U('Home/Checklogin/shebao_bujiao')}" <if condition="$act eq 'shebao_bujiao'">class="active"<else />class=""</if>>社保补缴</a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="{:U('Home/Checklogin/search')}"  <if condition="$act eq 'search'">class="active"<else />class=""</if>>社保计算器</a>
+                </div>
+                <div class="col-xs-2 dropdown_out">
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            更多服务
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{:U('Home/Checklogin/shebao_zhuanyi')}">社保转移</a></li>
+                            <li><a href="{:U('Home/Checklogin/gjj_zhuanyi')}">公积金转移</a></li>
+                            <li><a href="{:U('Home/Checklogin/gjj_tiqu')}">住房公积金提取</a></li>
+                            <li><a href="{:U('Home/Checklogin/yl_sgz')}">医疗手工报销</a></li>
+                            <li><a href="{:U('Home/Checklogin/sy_shenqing')}">生育待遇申领</a></li>
+                            <li><a href="{:U('Home/Checklogin/yd_bajy')}">异地就医备案</a></li>
+                            <li><a href="{:U('Home/Checklogin/sb_editinfo')}">社保信息修改</a></li>
+                            <li><a href="{:U('Home/Checklogin/own_money')}">个人所得税申报</a></li>
+                            <li><a href="{:U('Home/Checklogin/tx_yanglao')}">退休养老办理</a></li>
+                            <li><a href="{:U('Home/Checklogin/school_info')}">孩子上学材料</a></li>
+                            <li><a href="{:U('Home/Checklogin/rc_yingjin')}">天津人才引进</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="col-xs-2">
+                <a href="{:U('Home/Order/index')}"  <if condition="$act eq 'index'">class="active"<else />class=""</if>>个人中心</a>
+            </div>
+            </div>
+            <div class="col-xs-2 dropdown_out" style="width: 16%;">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                       {$username}
+                        <b class="caret"></b>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <if condition="$username eq '游客'">
+                            <li><a href="{:U('Home/Checklogin/login')}">登录</a></li>
+                            <li><a href="{:U('Home/Checklogin/register')}">注册</a></li>
+
+                            <else />
+                            <li class="li2"><a href="{:U('Home/Checklogin/logout')}">退出</a></li>
+                        </if>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--百度商桥-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?dfb8cdc0e8936389353c1a32560fbcb2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>

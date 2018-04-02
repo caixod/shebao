@@ -1,0 +1,76 @@
+<include file="Public/new_header" />
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/nav_menu" />
+        <div class="ab_right">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">社保补缴</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">首页</a>&gt;<a href="">关于我们</a>&gt;<a style="color:#ae2c26;">社保补缴</a></span>
+            </div>
+            <div class="ab_r_cc">
+                <div class="row">
+                    <div class="hhh"></div>
+                    <div class="col-sm-8">
+
+                        <div class="denglu">
+                            <div class="denglu_div">
+                                <form role="form" action="{:U('Home/Checklogin/shebao_bujiao')}" method="post" onsubmit="return checkForm();" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label class="" for="inputfile">上传身份证正面</label>
+                                        <input type="file" value="" name="image" id="inputfile">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="" for="inputfile2">上传身份证反面</label>
+                                        <input type="file" value="" name="image_t" id="inputfile2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bj_time">补缴多久 </label>
+                                        <input type="text" class="form-control" name="bj_time" value="" id="bj_time" placeholder="请输入补缴时间">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">提交</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hhh"></div>
+                    <div class="col-sm-12">
+                        <p class="p_sh">资料提交完成后可在个人中心里面查看订单进度 </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+<script>
+    function checkForm() {
+        var inputfile = $('#inputfile').val();
+        var inputfile2 = $('#inputfile2').val();
+        var bj_time = $.trim($('#bj_time').val());
+        var error = '';
+        if (inputfile == '') {
+            error += '身份证正面未上传 <br/>';
+        }
+        if (inputfile2 == 0) {
+            error += '身份证反面未上传 <br/>';
+        }
+        if (bj_time == 0) {
+            error += '补缴时间请填写 <br/>';
+        }
+        if (error) {
+//alert(error);
+            layer.alert(error, {icon: 2});
+//	layer.msg('只想弱弱提示');
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</div>
+<include file="Public/footer2" />
+
+

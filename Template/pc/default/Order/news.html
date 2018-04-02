@@ -1,0 +1,69 @@
+<include file="Public/new_header" />
+<include file="Public/new_nav_menu" />
+<link rel="stylesheet" href="__PUBLIC__/layui/css/layui.css">
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/order_nav_menu" />
+        <div class="ab_right" style="border-radius: 10px;border: 1px solid #ddd;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">我的消息</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="#">个人中心</a>> <a style="color:#ae2c26;">我的消息</a></span>
+            </div>
+            <div class="ab_r_cc">
+                <div class="row">
+                    <!--<hr style="border: 2px solid #ddd;">-->
+                    <div class="col-sm-10">
+                        <div class="denglu">
+                            <div class="denglu_div" style="background-color: #ffffff;width: 120%;">
+
+                                <table class="table table-striped">
+                                    <!--<caption>条纹表格布局</caption>-->
+                                    <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>消息内容</th>
+                                        <th>接收时间</th>
+                                        <th>查看>></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <volist name="info" id="vo">
+                                        <tr>
+                                            <td>{$vo.id}</td>
+                                            <td>{$vo.question_content|mb_substr=0,10,'utf-8'}</td>
+                                            <td>{$vo.time|date='Y-m-d H:i:s',###}</td>
+                                            <td><i class="layui-icon" style="font-size: 24px; color: #1E9FFF;cursor: pointer;" onclick="show_mess(this,{$vo.id});" t="1">&#xe624;</i></td>
+                                        </tr>
+                                        <tr id="tr{$vo.id}" style="display: none;"><td colspan="4">{$vo.question_content}</td></tr>
+                                    </volist>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="hhh"></div>-->
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+  function show_mess(obj,id){
+      if($(obj).attr('t')==1){
+          $("#tr"+id).show();
+          $(obj).attr('t',2);
+      }else{
+          $("#tr"+id).hide();
+          $(obj).attr('t',1);
+      }
+
+  }
+</script>
+<include file="Public/footer2" />

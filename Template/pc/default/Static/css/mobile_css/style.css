@@ -1,0 +1,615 @@
+.container .top div{
+    padding-left:0;
+    padding-right:0;
+}
+a:active{
+    text-decoration: none;
+}
+.no_margin{
+    margin:0;
+}
+.container{
+    padding:10px;
+    box-shadow: 0 2px 4px #ccc;
+}
+.dropdown-menu{
+    min-width: 90px;
+}
+._title a{
+    display: inline-block;
+    line-height: 40px;
+}
+.s_title{
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color:grey;
+    margin-top:10px;
+}
+.s_city{
+    font-size: 18px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    color:grey;
+    margin-bottom: 20px;
+    text-indent: 10px;
+    margin:20px auto;
+    padding-bottom:10px;
+    width: 98%;
+}
+.slide_out{
+    overflow: hidden;
+    padding:0 10px;
+}
+.slide_out>.slide1{
+    float:left;
+    width:20%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+}
+.slide_out>.slide2{
+    float:left;
+    width:26%;
+    font-size: 14px;
+    line-height: 34px;
+}
+.slide-wapper{
+    width: 46%;
+    float: left;
+}
+.form-control{
+    height: 26px;
+    line-height: 26px;
+    margin-top:4px;
+    border-radius: 4px;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+    background-color: white;
+}
+#datetitle {
+    padding-top:10px;
+}
+._date{
+    padding:0 10px;
+    margin:10px 0;
+}
+._date span{
+    font-size:16px;
+    display: inline-block;
+    width:70px;
+    text-align: left;
+    padding-left: 6px;
+
+}
+._date input{
+    width:26%;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    margin-right:10px;
+    text-align: center;
+}
+.tip span{
+    color:#ff8a00;
+}
+.ft-footer{
+    background: #283243;
+    margin-top:20px;
+    padding: 8px;
+}
+.about-us{
+    overflow: hidden;
+}
+.about-us li{
+    float: left;
+    margin:5px;
+}
+.about-us li a{
+    color:white;
+}
+._url{
+    padding:6px;
+    text-align: center;
+}
+._url a{
+    color:white;
+}
+.ads{
+    color:white;
+}
+.user{
+    text-align:center;
+    overflow: hidden;
+}
+.user>.li{
+    float: left;
+    width:30%;
+    margin-top:10px;
+}
+.user>.li input{
+    display: inline-block;
+    width:90%;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+.close{
+    float:left;
+    margin-top:12px;
+}
+._add{
+    margin-left:10px;
+    margin-top:16px;
+}
+.btn{
+    padding:3px;
+}
+/*.g_alert{
+    width: 750px;
+    height: 400px;
+    background: #fff;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden !important;;
+}*/
+.g_alert2{
+    width:90%;
+    max-height: 400px;
+    background: #fff;
+    margin: 0 auto;
+    position: fixed;
+    top: 60px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*overflow: hidden !important;;*/
+}
+.alert_footer{
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    bottom: 26px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.alert_footer2{
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    left: 30px;
+    right: 0;
+    overflow: hidden;
+    margin:20px 0;
+}
+.alert_footer>button,.alert_footer2>button{
+    float: left;
+    margin: 0 15px;
+    padding: 5px 16px;
+}
+.modal-dialog{
+    width: 80%;
+    height: 50%;
+    margin: 30% 10%;
+    position: relative;
+    background:white;
+    border-radius: 6px;
+}
+.g_rela2{
+    margin:6%;
+}
+.g_title{
+    width: 90%;
+    margin:20px auto 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.g_title>label{
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: lighter;
+    margin-top:20px;
+}
+.e-closePop{
+    font-size: 26px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+.g_box{
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    border: 1px solid #337ab7;
+    margin-left: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: left;
+}
+.select_s{
+    border:1px solid #5CB85C;
+}
+.g_box:hover a{
+    color: blue;
+}
+.g_on_off{
+    position: absolute !important;
+    left: 400px;
+    top: 70px;
+}
+.pop-content-left{
+    margin-top: 20px;
+}
+.gg{
+    overflow: hidden;
+    margin:20px 0 20px 20px;
+}
+.gg>p{
+    float: left;
+    width: 187px;
+}
+.gg>p>input{
+    width: 100%;
+    border-radius: 5px;
+}
+.g_in{
+    display: block;
+    margin-top: 20px;
+}
+.g_in>span{
+    width: 84px;
+    text-align: right;
+    display: inline-block;
+}
+.g_in>input{
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.main-content-fun{
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 5px;
+}
+.g_tips{
+    height: 269px;
+    padding: 5px 20px;
+    border: 1px solid #e1e1e1;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.g_tips>p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.g_city{
+    height: 190px;
+    padding-bottom: 15px;
+    overflow-y: auto;
+}
+.g_city>li>p{
+    color: #ff8a00;
+    font-size: 14px;
+}
+.g_city>li>span{
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 15px;
+}
+.g_city>li{
+    margin-bottom: 10px;
+}
+.g_city>li>p{
+    margin-bottom: 0px;
+}
+.friendly-url>span{
+    font-size: 18px !important;
+}
+.ui-close-date{
+    color: #fff;
+}
+/*.ui-icon-circle-triangle-w{
+	color: #000;
+}*/
+.main-content-fun-tips p{
+    display: inline-block;
+}
+
+.g_titel_2{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.g_titel_2>span{
+    margin-left: 15px;
+}
+.new>h4{
+    text-align: left !important;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    color: #449d44;
+}
+.i_agree{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #449d44;
+}
+.i_agree>label{
+    margin-left: 20px;
+
+}
+.g_in>label{
+    font-weight: lighter !important;
+    vertical-align: top;
+    margin-left: 5px;
+    color: #449d44;
+}
+.g_wxd{
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+.g_name{
+    position: relative;
+    left: 5px;
+}
+.cont2{
+    margin:20px auto;
+}
+._left{
+    float: left;
+    width:260px;
+    text-align: center;
+    font-size: 16px;
+}
+._left li{
+    height:60px;
+    line-height: 60px;
+    border-bottom: 1px solid #E4E4E4;
+    cursor: pointer;
+}
+.center_title{
+    font-size: 26px;
+    color:#AE2C26;
+}
+._left .on{
+    color:#D01F2F;
+}
+.me_info{
+    position: relative;
+}
+.me_info span{
+    position: absolute;
+    display: block;
+    padding:0px 2px;
+    background: #D01F2F;
+    border-radius: 100%;
+    line-height: 20px;
+    font-size: 12px;
+    color: white;
+    right:80px;
+    top:10px;
+    z-index: 10;
+}
+._right{
+    float: right;
+    width:900px;
+}
+.o_title{
+    font-size: 18px;
+    color: #ae2c26;
+    line-height: 60px;
+    border-bottom:1px solid #E4E4E4;
+    margin-bottom:20px;
+    text-indent: 20px;
+}
+.o_info{
+    color:#888;
+    font-size: 12px;
+    margin-bottom:45px;
+}
+.o_ul li{
+    line-height: 50px;
+    height:50px;
+    font-size: 16px;
+    margin-top:16px;
+}
+.o_span{
+    display: inline-block;
+    border:1px solid #E4E4E4;
+    border-radius: 4px;
+    min-width:400px;
+    line-height: 40px;
+    height:40px;
+    text-indent: 10px;
+}
+._right>li{
+    display: none;
+}
+._right>.o_active{
+    display: block;
+}
+.o_ul_sub{
+    line-height: 30px;
+    font-size: 16px;
+    display: inline-block;
+    height:40px;
+    width:200px;
+    text-align: center;
+    color:white;
+    background: #ae2c26;
+    border-radius: 4px;
+    border:none;
+    margin-left:60px;
+}
+.info_n{
+    min-height: 40px;
+}
+.pop-content-left .upload span {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+.gg input{
+    display: inline-block;
+    margin-top:10px;
+}
+.b_on{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding:2px;
+    background-color: transparent;
+    outline: none;
+}
+.b_on2{
+    background-color: #EAEAEA;
+}
+.slide_out_ul{
+    margin-left:-38px;
+}
+#new_person input{
+ border:1px solid #ccc;
+ border-radius: 4px;
+ text-indent: 10px;
+ font-size: 14px;
+}
+p.upload {
+    padding-left: 14px;
+}
+.pop-content-right.e-registry.g_abso {
+    padding-left: 15px;
+    margin-top:10px;
+    font-size: 12px;
+}
+.m_title{
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    color:#ae2c26;
+}
+.conunt_m form label{
+    display: block;
+    padding:0 10px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.conunt_m form label span{
+    display: inline-block;
+    width:35%;
+}
+.money_num3{
+    display: inline-block;
+    width:143px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+.slide-item2{
+    margin-left:33px;
+    width:143px;   
+}
+._sub2{
+    width: 70px;
+    height: 24px;
+    background: #5cb85c;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top:20px;
+
+}
+._sub2_out{
+    margin-left:10px;
+}
+table{
+    box-sizing: border-box;
+}
+tr td {
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+.m_table{
+    width:90%;
+    margin:30px auto;
+}
+.main-content-detail.t-countDetail.m_table {
+    font-size: 12px;
+}
+form {
+    padding-left: 20px;
+}
+.form-control2 {
+    height: 23px;
+    line-height: 23px;
+    margin-top: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.d_sub{
+    width:40%;
+    display: block;
+    margin:20px auto;
+}
+select{
+    outline: none;
+}
+#province7{
+    width:45%;
+    float: left;
+    font-size: 12px;
+    margin-right:10px;
+    padding: 2px 0px;
+}
+#city7{
+    width:45%;
+    font-size: 12px;
+    float: left;
+    padding: 2px 0px;
+}
+select option{
+    margin-top:10px;
+}
+.dist{
+    width:66%;
+    float: right;
+}
+.g_box_out{
+    overflow: auto;
+    max-height: 160px;
+}
+.g_box span{
+    font-size: 12px;
+}
+.g_box div{
+    line-height: 24px;
+}
+.select_s div{
+    color:#5CB85C;
+}
+.glyphicon{
+    visibility: hidden;
+    top:10px;
+    right:3px;
+}
+.select_s .glyphicon{
+    visibility: visible;
+}

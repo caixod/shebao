@@ -1,0 +1,127 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+                <!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 增值服务订单处理</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">详情</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <!--<form method="post" id="addEditBusinessUserForm" onsubmit="return checkName();">-->
+                    <form method="post" id="addEditDishForm" action="">
+                        <!--通用信息-->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab_tongyong">
+
+                                <table class="table table-bordered table-striped" >
+                                    <tbody>
+                                    <tr>
+                                        <td>下单账号:</td>
+                                        <td>
+                                            <input type="text" value="{$info.account_name}" name="account_name" readonly class="form-control" style="width:250px;"/>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>下单人姓名:</td>
+                                        <td>
+                                            <input type="text" value="{$info.username}" name="username" id="username" readonly  class="form-control" style="width:250px;"/>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>办理状态</td>
+                                        <td >
+                                            <label class="radio-inline">
+                                                <input type="radio" name="status" value="0" <if condition="$info.status eq 0">checked="checked"</if>>待处理
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio"  name="status"  value="1" <if condition="$info.status eq 1">checked="checked"</if>>已完成
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio"  name="status"  value="2" <if condition="$info.status eq 2">checked="checked"</if>>无法办理
+                                            </label>
+
+                                        </td>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <input type="hidden" name="id" id="id" value="{$info.id}">
+                            <button class="btn btn-primary" data-toggle="tooltip" type="submit"  data-original-title="确定">确定</button>
+                        </div>
+                    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+
+
+<script src="__PUBLIC__/js/global.js"></script>
+<script src="__PUBLIC__/js/pc_common.js"></script>
+<script>
+    //发送短信通知
+    function send_mess(id){
+
+        var mobile=$.trim($("#mobile").val());
+        var content=$.trim($("#content").val());
+        if(mobile==''){
+            layer.msg('请输入该用户的手机号码', {icon: 2,time: 3000});
+            return false;
+        }
+        if(content==''){
+            layer.msg('请输入发送的内容', {icon: 2,time: 3000}); //alert(v.msg);
+            return false;
+        }
+
+        var url = "/index.php?m=Admin&c=Order&a=ajax_send_mess&table_name=rc_yingjin&mobile="+mobile+'&content='+content+"&id="+id;
+        $.ajax({
+            url:url,
+            type:'get',
+            dataType:'json',
+            success:function(e){
+                if(e.code==1){
+                    layer.msg('已发送', {icon: 1,time: 3000}); //alert(v.msg);
+                }else{
+                    layer.msg('发送失败，请重试', {icon: 2,time: 3000}); //alert(v.msg);
+                }
+                window.location.reload();
+
+            },
+            error:function(a){
+                layer.msg('错误……', {icon: 2,time: 3000}); //alert(v.msg);
+                window.location.reload();
+            }
+
+
+        })
+    }
+    laydate.render({
+        elem: '#record_book'
+    });
+    laydate.render({
+        elem: '#bankbook_time'
+    });
+    laydate.render({
+        elem: '#ht_time'
+    });
+    laydate.render({
+        elem: '#ht_end_time'
+    });
+</script>
+</body>
+</html>

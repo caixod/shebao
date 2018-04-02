@@ -1,0 +1,113 @@
+<include file="Public/new_header" />
+
+<div class="con3">
+    <div class="container m_p_none">
+        <!--左边按钮 nb_left-->
+        <include file="Public/nav_menu" />
+        <!--右边按钮-->
+        <div class="ab_right" style="border-radius:10px;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">生育待遇申领</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">服务办理</a>&gt;<a style="color:#ae2c26;">生育待遇申领</a></span>
+            </div>
+            <div class="ab_r_cc"  >
+                <div class="row">
+
+                    <div class="hhh"></div>
+                    <div class="col-sm-8">
+                        <div class="tex_div tex_div2">
+                            <p class="p_sh">医疗手工报销所需材料</p>
+
+                            <div class="tab_main2">
+                                <div class="tab1" style="display: block;">
+                                    <p>a)出生证明</p>
+                                    <p>b)诊断证明   </p>
+                                    <p>c)结婚证   </p>
+                                    <p>d)医院等级证明 （外地生育） </p>
+                                    <p>e)准生证（外地人生育服务单） </p>
+                                    <p>f)双方婚育证明 </p>
+                                    <p>g)票据 </p>
+                                    <p>h)明细 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hhh"></div>
+                    <div class="col-sm-8">
+                        <div class="denglu">
+                            <form role="form" method="post" action="" onsubmit="return checkForm();">
+                                <div class="form-group">
+                                    <label for="name">办理人</label>
+                                    <select class="form-control" style="width: 50%;" name="username">
+                                        <volist name="friend" id="data">
+                                            <option value="{$data.user_id}">{$data.username}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                                <label for="to_province">请选择城市</label>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <select class="form-control" name="to_province" id="to_province" onChange="get_city_t(this);">
+                                            <option  value="0">请选择</option>
+                                            <volist name="province" id="p">
+                                                <option  value="{$p.id}">{$p.name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <select class="form-control" name="to_city" id="to_city" onChange="get_area_t(this)" >
+                                            <option  value="0">请选择</option>
+                                            <volist name="city" id="p">
+                                                <option   value="{$p.id}">{$p.name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <select class="form-control" name="to_district" id="to_district"  >
+                                            <option  value="0">请选择</option>
+                                            <volist name="to_district" id="p">
+                                                <option   value="{$p.id}">{$p.name}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                </div><br>
+                                <div class="form-group">
+                                    <div class=""><button type="submit" class="btn btn-default">提交服务申请</button>
+                                        <input type="hidden" name="id" value="">
+                                    </div>
+                                </div>
+                                <div style="clear: both;"></div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="hhh" style="height: 3px;"></div>
+                    <div class="col-sm-12">
+                        <p class="p_sh">提交申请之后请等待，审核通过之后,请将以上资料邮寄至我公司（审核进度可在个人中心查看）</p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    function checkForm() {
+
+        var to_province = $('#to_province').val();
+        var to_city = $('#to_city').val();
+        var to_district = $('#to_district').val();
+
+        if (to_province == 0 || to_city==0) {
+            layer.alert('请选择城市', {icon: 2});
+            return false;
+        }
+
+        return true;
+    }
+</script>
+<include file="Public/footer2" />

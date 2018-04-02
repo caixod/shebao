@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>门店销售明细表</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="__STATIC__/css/zhangmu.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <!--<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--[endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="__STATIC__/js/jquery2.14.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="__STATIC__/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="__STATIC__/js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script src="__STATIC__/js/Other.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <p class="nav_li nav_li1"><a href="#"><img src="__STATIC__/images/zuo.png"> 返回</a> </p>
+    <p class="nav_li nav_title  nav_li2">门店销售明细表</p>
+    <p class="nav_li nav_li3"></p>
+</nav>
+<section class="topheight">
+    <!--查询日期的div-->
+    <div class="chaxun_div">
+    <div class="form-group">
+    <label class="col-md-2 control-label">查询日期</label>
+    <div  id="datetimepicker" class="input-group date form_date col-md-5" data-date="" data-link-field="dtp_input2">
+    <input class="form-control" size="16" type="text" value="" readonly>
+
+    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+    </div>
+    <input type="hidden" id="dtp_input1" value="" /><br/>
+    </div>
+    <div class="form-group ri">
+    <label class="col-md-2 control-label">至</label>
+    <div  id="datetimepicker2" class="input-group date form_date col-md-5" data-date="" data-link-field="dtp_input2">
+    <input class="form-control" size="16" type="text" value="" readonly>
+
+    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+    </div>
+    <input type="hidden" id="dtp_input2" value="" /><br/>
+    </div>
+        <section class="but_div">
+            <button class="tixian_but">查询</button>
+        </section>
+    </div>
+
+
+    <div class="mingxi_div bodes_table">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="td1" rowspan="4">2017-04-10</td>
+                    <td class="td2">支出1</td>
+                    <td class="td4">&yen;8.00</td>
+                    <td class="td3"><span class="wei">未结算</span></td>
+                </tr>
+                <tr>
+                    <td class="td2">支出2</td>
+                    <td class="td4">&yen;8.00</td>
+                    <td class="td3"><span class="yi">已结算</span></td>
+                </tr>
+                <tr>
+                    <td class="td2">支出3</td>
+                    <td class="td4">&yen;8.00</td>
+                    <td class="td3"><span class="yi">已结算</span></td>
+                </tr>
+                <tr>
+                    <td class="td2">支出支出支出支出支出支出支出支出支出支出支出支出</td>
+                    <td class="td4">&yen;8.00</td>
+                    <td class="td3"><span class="yi">已结算</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td class="td1" rowspan="4">2017-04-10</td>
+                <td class="td2">支出1</td>
+                <td class="td4">&yen;8.00</td>
+                <td class="td3"><span class="wei">未结算</span></td>
+            </tr>
+            <tr>
+                <td class="td2">支出2</td>
+                <td class="td4">&yen;8.00</td>
+                <td class="td3"><span class="yi">已结算</span></td>
+            </tr>
+            <tr>
+                <td class="td2">支出3</td>
+                <td class="td4">&yen;8.00</td>
+                <td class="td3"><span class="yi">已结算</span></td>
+            </tr>
+            <tr>
+                <td class="td2">支出支出支出支出支出支出支出支出支出支出支出支出</td>
+                <td class="td4">&yen;8.00</td>
+                <td class="td3"><span class="yi">已结算</span></td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td class="td1" rowspan="4">2017-04-10</td>
+                <td class="td2">支出1</td>
+                <td class="td4">&yen;8.00</td>
+                <td class="td3"><span class="wei">未结算</span></td>
+            </tr>
+            <tr>
+                <td class="td2">支出2</td>
+                <td class="td4">&yen;8.00</td>
+                <td class="td3"><span class="yi">已结算</span></td>
+            </tr>
+            <tr>
+                <td class="td2">支出3</td>
+                <td class="td4">&yen;8.00</td>
+                <td class="td3"><span class="yi">已结算</span></td>
+            </tr>
+            <tr>
+                <td class="td2">支出支出支出支出支出支出支出支出支出支出支出支出</td>
+                <td class="td4">&yen;8.00</td>
+                <td class="td3"><span class="yi">已结算</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+<script type="text/javascript">
+    $("#datetimepicker").datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+    $("#datetimepicker2").datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+</script>
+</body>
+</html>

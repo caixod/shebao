@@ -1,0 +1,104 @@
+<div class="ab_left" style="border: 1px solid #ddd;border-radius:10px;    width: 29%;">
+    <div class="ab_l_tt" ><i class="fa fa-user-circle-o " aria-hidden="true" style="color: #0a0a0a;"></i>&nbsp;个人中心</div>
+
+    <if condition="$user_type eq 0">
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/index')}" <if condition="($act eq 'index') or ($act eq 'sb_bujiao') or ($act eq 'sb_daijiao') or ($act eq 'sb_zhuanyi') or ($act eq 'gjj_zhuanyi') or ($act eq 'gjj_tiqu') or ($act eq 'yl_sgz') or ($act eq 'sy_shenqing') or ($act eq 'yd_bajy') or ($act eq 'sb_editinfo')">style="color:red;"</if> > <i class="fa fa-window-maximize " aria-hidden="true" ></i>&nbsp;我的订单</a>
+    </div>
+    </if>
+
+    <if condition="$user_type eq 1">
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/company_index')}" <if condition="($act eq 'company_index') or ($act eq 'company_info')">style="color:red;"</if> ><i class="fa fa-window-restore " aria-hidden="true" ></i>&nbsp;企业订单</a>
+    </div>
+    </if>
+
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/edit_info')}" <if condition="$act eq 'edit_info'">style="color:red;"</if> > <i class="fa fa-address-card " aria-hidden="true" ></i>&nbsp;基本信息修改</a>
+    </div>
+
+    <if condition="$user_type eq 1">
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/company')}" <if condition="$act eq 'company'">style="color:red;"</if> ><i class="fa fa-building " aria-hidden="true" ></i>&nbsp;公司信息</a>
+    </div>
+
+
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/company_staff')}" <if condition="($act eq 'company_staff') or ($act eq 'company_staff_add')">style="color:red;"</if> ><i class="fa fa-users " aria-hidden="true" ></i>&nbsp;员工信息</a>
+    </div>
+    </if>
+
+    <if condition="$user_type eq 0">
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/friend_info')}" <if condition="($act eq 'friend_info')  or ($act eq 'add_friend_info')">style="color:red;"</if> > <i class="fa fa-user " aria-hidden="true" ></i>&nbsp;朋友信息</a>
+    </div>
+    </if>
+
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/account')}" <if condition="$act eq 'account'">style="color:red;"</if> ><i class="fa fa-user-plus " aria-hidden="true" ></i>&nbsp; 修改账号信息</a>
+    </div>
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/up_question')}" <if condition="$act eq 'up_question'">style="color:red;"</if> ><i class="fa fa-envelope-open-o " aria-hidden="true" ></i>&nbsp; 问题反馈</a>
+    </div>
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/added_service')}" <if condition="$act eq 'added_service'">style="color:red;"</if> ><i class="fa fa-hand-paper-o " aria-hidden="true" ></i>&nbsp; 增值服务提报</a>
+    </div>
+    <div class="ab_l_li" style="text-align: left;padding-left: 35%;">
+        <a href="{:U('Home/Order/news')}" <if condition="$act eq 'news'">style="color:red;"</if> ><i class="fa fa-comments-o " aria-hidden="true" ></i>&nbsp;我的消息</a>
+    </div>
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/shebao_bujiao')}" <if condition="$act eq 'shebao_bujiao'">class="on"<else />class=""</if> >社保补缴</a>-->
+    <!--</div>-->
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/gongjijin_bujiao')}" <if condition="$act eq 'gongjijin_bujiao'">class="on"<else />class=""</if> >公积金补缴</a>-->
+    <!--</div>-->
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/shebao_zhuanyi')}" <if condition="$act eq 'shebao_zhuanyi'">class="on"<else />class=""</if> >社保转移</a>-->
+    <!--</div>-->
+   <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/gjj_zhuanyi')}" <if condition="$act eq 'gjj_zhuanyi'">class="on"<else />class=""</if> >公积金转移</a>-->
+    <!--</div>-->
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/gjj_tiqu')}" <if condition="$act eq 'gjj_tiqu'">class="on"<else />class=""</if> >住房公积金提取</a>-->
+    <!--</div>-->
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/yl_sgz')}" <if condition="$act eq 'yl_sgz'">class="on"<else />class=""</if> >医疗手工报销</a>-->
+    <!--</div>-->
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/sy_shenqing')}" <if condition="$act eq 'sy_shenqing'">class="on"<else />class=""</if> >生育待遇申领</a>-->
+    <!--</div>-->
+
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/yd_bajy')}" <if condition="$act eq 'yd_bajy'">class="on"<else />class=""</if> >异地就医备案</a>-->
+    <!--</div>-->
+
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/sb_editinfo')}" <if condition="$act eq 'sb_editinfo'">class="on"<else />class=""</if> >社保信息修改</a>-->
+    <!--</div>-->
+
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/own_money')}"  <if condition="$act eq 'own_money'">class="on"<else />class=""</if>>个人所得税申报</a>-->
+    <!--</div>-->
+
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/tx_yanglao')}"  <if condition="$act eq 'tx_yanglao'">class="on"<else />class=""</if>>退休养老办理</a>-->
+    <!--</div>-->
+
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/school_info')}"  <if condition="$act eq 'school_info'">class="on"<else />class=""</if>>孩子上学材料</a>-->
+    <!--</div>-->
+
+    <!--<div class="ab_l_li">-->
+        <!--<a href="{:U('Home/Order/rc_yingjin')}"  <if condition="$act eq 'rc_yingjin'">class="on"<else />class=""</if>>天津人才引进</a>-->
+    <!--</div>-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--<div class="ab_l_box">-->
+        <!--<div class="ab_lb_top"><img src="">全国联系热线:<br>400-086-4500</div>-->
+        <!--<div class="ab_lb_bt"><img src="">售后咨询热线:<br>010-82753969</div>-->
+    <!--</div>-->
+</div>

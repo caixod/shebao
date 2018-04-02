@@ -1,0 +1,143 @@
+<include file="Public/new_header" />
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/nav_menu" />
+        <div class="ab_right" style="border-radius:10px;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">社保信息修改</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">服务办理</a>&gt;<a style="color:#ae2c26;">社保信息修改</a></span>
+            </div>
+            <div class="ab_r_cc">
+                <div class="row">
+
+                    <div class="hhh"></div>
+                    <div class="col-sm-8">
+                        <div class="denglu">
+                            <div class="denglu_div">
+                                <form role="form" enctype="multipart/form-data" method="post" action="" onsubmit=" return checkForm();">
+                                    <div class="form-group">
+                                        <label for="name">办理人</label>
+                                        <select class="form-control" style="width: 50%;" name="username">
+                                            <volist name="friend" id="data">
+                                                <option value="{$data.user_id}">{$data.username}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="" for="image">上传身份证正面</label>
+                                        <input type="file" name="image" value="" id="image">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class=""  for="image_t">上传身份证反面</label>
+                                        <input type="file" name="image_t" value="" id="image_t">
+                                    </div>
+                                    <!--<div class="form-group">-->
+                                        <!--<label for="name">姓名</label>-->
+                                        <!--<input type="text" class="form-control" id="username" placeholder="请输入姓名" name="username" value="">-->
+                                    <!--</div>-->
+                                    <!--<div class="form-group">-->
+                                        <!--<label for="name">身份证号</label>-->
+                                        <!--<input type="text" class="form-control" id="idcard" placeholder="请输入身份证号" name="idcard" value="">-->
+                                    <!--</div>-->
+                                    <!--<div class="form-group">-->
+                                        <!--<label for="" class=" control-label">户口性质</label>-->
+                                        <!--<div class="">-->
+                                            <!--<label class="radio-inline">-->
+                                                <!--<input type="radio" name="hk" id="inlineRadio1" value="1" checked="checked"> 城镇户口-->
+                                            <!--</label>-->
+                                            <!--<label class="radio-inline">-->
+                                                <!--<input type="radio" name="hk" id="inlineRadio2" value="2"> 农村户口-->
+                                            <!--</label>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <label for="to_province">请选择城市</label>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_province" id="to_province" onChange="get_city_t(this);">
+                                                <option  value="0">请选择</option>
+                                                <volist name="province" id="p">
+                                                    <option  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_city" id="to_city" onChange="get_area_t(this)" >
+                                                <option  value="0">请选择</option>
+                                                <volist name="city" id="p">
+                                                    <option   value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_district" id="to_district"  >
+                                                <option  value="0">请选择</option>
+                                                <volist name="to_district" id="p">
+                                                    <option   value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                    </div><br>
+                                    <div class="form-group">
+                                        <label for="name">办理要求</label>
+                                        <textarea class="form-control" rows="3" name="mark"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">办理社保信息修改</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hhh" style="height: 3px;"></div>
+
+                    <div class="col-sm-12">
+                        <p class="p_sh">提交申请之后请等待，审核通过之后,请将以上资料邮寄至我公司（审核进度可在个人中心查看）</p>
+                    </div>
+                    <div class="hhh"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+
+<script>
+    function checkForm() {
+
+        var image = $('#image').val();
+        var image_t = $('#image_t').val();
+        var to_province = $('#to_province').val();
+        var to_city = $('#to_city').val();
+        var to_district = $('#to_district').val();
+//        var username = $.trim($('#username').val());
+//        var idcard = $.trim($('#idcard').val());
+
+//        var t_pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+//        if (idcard == '' || !t_pattern.test(idcard)) {
+//            layer.alert('请填写正确的身份证号码', {icon: 2});
+//            return false;
+//        }
+        if (image == '') {
+            layer.alert('身份证正面未上传', {icon: 2});
+            return false;
+        }
+        if (image_t == 0) {
+            layer.alert('身份证反面未上传', {icon: 2});
+            return false;
+        }
+//        if (username == '') {
+//            layer.alert('请填写姓名', {icon: 2});
+//            return false;
+//        }
+
+
+        if (to_province == 0 || to_city==0) {
+            layer.alert('请选择城市城市', {icon: 2});
+            return false;
+        }
+
+        return true;
+    }
+</script>
+<include file="Public/footer2" />

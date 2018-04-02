@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>点菜</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/new-20170414/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/new-20170414/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <p class="nav_li nav_li1"><img src="__STATIC__/new-20170414/images/back.png" class="nav_img2"> </p>
+    <p class="nav_li nav_title  nav_li2">螺蛳粉</p>
+    <p class="nav_li nav_li1"><img src="__STATIC__/new-20170414/images/navs2.png" class="nav_img1" /> </p>
+</nav>
+<div class="main">
+    <div class="soll_title">
+        <div class="s_t_l">
+            <p class=" glyphicon glyphicon-volume-up"></p>
+        </div>
+        <div class="s_t_r">
+            <div id="out">
+                <div id="scroll_text1">
+                    <span>满50减3元，满100减7元，满200减15元</span>
+                </div>
+                <div id="scroll_text2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--风格1的主体-->
+    <div class="mains mains2" id="main_1" style="height: 50px;text-align: center;">
+        <!--ajax动态加载style1-->
+        <img src="/Public/images/loading.gif" style="margin-top: 50px;"/>
+    </div>
+
+    <!--风格2主体-->
+    <div class="mains" id="main_2" >
+        <!--ajax 动态加载style2-->
+        <img src="/Public/images/loading.gif" style="margin-top: 50px;"/>
+    </div>
+</div>
+
+<div class="foot navbar-default navbar-fixed-bottom" role="navigation" >
+    <div class="footer" >
+        <div class="foot_left">
+            <img src="__STATIC__/new-20170414/images/gouwuche.png">
+            <p class="p_wu">购物车什么都没有</p>
+            <p class="p_zongji">总计：<span id="p_zongji">0</span></p>
+            <p class="p_shuzi">0</p>
+        </div>
+        <div class="foot_right">
+            <button id="order-ok">选好了</button>
+        </div>
+    </div>
+</div>
+<!--购物车弹出-->
+<!--遮罩层--><div class="z_div" style="display:none;"></div>
+<div class="gouwuche_t" style="display:none;">
+    <div class="g_div1">
+        <h3>购物车</h3>
+        <!--<button id="qingkong">清空购物车</button>-->
+    </div>
+    <div class="g_div2">
+        <div class="gw1 table-responsive">
+
+
+            <!--<table class="names_g cate_id_1 table" style="display:block;">
+                <tbody>
+                    <tr>
+                         <td colspan="3" class="gwc_td" cate_id="1">新品推荐</td>
+                    </tr>
+                    <tr class="qingkong_g">
+                        <td class="gwc_td1"><h3>原味螺蛳粉</h3></td>
+                        <td class="gwc_td2">&yen;18.98</td>
+                        <td class="gws_td3">
+                            <div class="shuliang shuliang2">
+                                <p class="food_p2 line3"><span class="glyphicon glyphicon-plus"></span> </p>
+                                <p class="food_p2 food_p3">1</p>
+                                <p class="food_p2 line4"><span class=" glyphicon glyphicon-minus"></span> </p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>-->
+            <foreach name="sort_list" item="s_l">
+            <table class="names_g cate_id_{$s_l.id} table" style="display:none;">
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="gwc_td" cate_id="{$s_l.id}">{$s_l.name}</td>
+                    </tr>
+                </tbody>
+            </table>
+            </foreach>
+        </div>
+    </div>
+</div>
+<!--详情弹窗-->
+<div class="tanchuang">
+    <div class="tangc_top">
+        <div class="title_div">
+            <p class="p_title" goods_id="10">原味螺蛳粉(微辣)</p>
+            <p class="close"><img src="__STATIC__/new-20170414/images/close.png"> </p>
+        </div>
+    </div>
+    <div class="tanc_main" zhekous="5.0">
+        <img src="__STATIC__/new-20170414/images/tp1.jpg" class="tanc_img">
+        <div class="tangc_jieshao">
+            <span>介绍：</span>
+            原味螺蛳粉(微辣)
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script language="javascript" type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="__STATIC__/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__STATIC__/new-20170414/js/app.js"></script>
+</body>
+</html>
+<script language="javascript" type="text/javascript">
+    //大小份////////////
+    var standard_name_arr = new Array();
+        standard_name_arr[0]='标准';
+    <foreach name="s_standard" item="s_s" >
+        standard_name_arr[{$s_s.id}] = "{$s_s.name}";
+    </foreach>
+        //大小份////////////
+
+    window.onload=function(){
+        //清空localStorage
+        window.localStorage.clear();
+    }
+    $(document).ready(function(){
+
+        //主页面载入时自动加载style1列表
+        $.ajax({
+            type:"GET",
+            cache:true,
+            url:'{:U("Dish/Index/dishListStyleAjaxNew_one",array("store_id"=>$store_id))}',
+            success:function(data){
+                $("#main_1").html('').html(data);
+                //绑定点击加减号
+                $(".guige .line").bind("click",function(){
+
+                });
+            },
+            error:function(e){
+
+            },
+            complete:function(){
+                //code...
+            }
+        });
+
+        //点击切换风格图片的时候加载style2
+        $("#cut").click(function(){
+            $.ajax({
+                type:"GET",
+                //cache:true,
+                url:'{:U("Dish/Index/dishListStyleAjaxNew_two",array("store_id"=>$store_id))}',
+                success:function(data){
+                    $("#main_2").html('').html(data);
+                },
+                error:function(e){
+                    //code..
+                },
+                complete:function(){
+                    //code..
+                }
+            });
+        });
+
+        //点击关闭购物车
+        $(".z_div").click(function(){
+            //$(".cate_id_"+$(this).attr("data-sort-id")).css("display","block");
+            $(this).css("display","none");
+            $(".gouwuche_t").css("display","none");
+            /*$(".foot_left img").attr("src","/Template/mobile/dish/Static/new-20170414/images/gouwuche.png");
+            $(".foot_right button").css("background","#aaaaaa");*/
+        });
+        $(".foot_left").click(function(){
+            $(".z_div").css("display","block");
+            $(".gouwuche_t").css("display","block");
+            //展开购物车的时候动态插入即时数据
+            $(".names_g").each(function(){
+                if($(this).css('display')!='none'){
+                    $(this).find("tr").each(function(){
+                        if($(this).index()>0){
+                            //alert($(this).attr("data-dish-standard"));
+                            d_standard = $(this).attr("data-dish-standard");
+                            d_sort = $(this).attr("data-sort-id");
+                            d_dish = $(this).attr("data-dish-id");
+                            dish_info = JSON.parse(window.localStorage.getItem("data_dish_"+d_sort+"_"+d_dish+"_"+d_standard));
+                            $(this).children(".gwc_td1").children("h3").text('['+standard_name_arr[d_standard]+']'+dish_info.dish_name);
+                            $(this).children(".gwc_td3").children(".shuliang").children(".food_p3").text(dish_info.dish_num);
+                        }
+                    });
+                }
+            });
+
+        });
+
+        //购物车中点击加减号
+        /*$(".cart-line").click(function(){
+            alert($(this).attr("operate"));
+        });*/
+
+        //选好了提交
+        $("#order-ok").click(function(){
+            if($("#p_zongji").text()!="0"){
+                //alert($("#p_zongji").text());
+                //console.log(JSON.parse(window.localStorage.getItem(window.localStorage.key(1))));
+                sub = new Array();
+                //temp_sub = new Array();
+                l_s = window.localStorage;
+                for(i=0;i<l_s.length;i++){
+                    //sub[i] = JSON.parse(l_s.getItem(l_s.key(i)));
+                    temp = JSON.parse(l_s.getItem(l_s.key(i)));;
+                    if(parseInt(temp.dish_num) != '0'){
+                        sub[i] = l_s.getItem(l_s.key(i));
+                    }
+                    //console.log(l_s.getItem(l_s.key(i)));
+
+                }
+                for(m=0;m<sub.length;m++){
+                    if(sub[m] == undefined){
+                        sub.splice(m,1);
+                    }
+                }
+                console.log(sub);
+                if(sub.length<=0){
+                    alert('购物车中没有菜品');
+                    return false;
+                }
+                $.ajax({
+                    url:'{:U("Dish/Index/confirmList",array("store_id"=>$store_id))}',
+                    type:'POST',
+                    data:{dish:sub,total_fee:$("#p_zongji").text()},
+                    success:function(data){
+                        //console.log(data);
+                    },
+                    error:function(e){
+
+                    },complete:function(){
+                        location.href = '{:U("Dish/Index/confirmList",array("store_id"=>$store_id))}';
+                    }
+                });
+            }
+
+        });
+    });
+</script>

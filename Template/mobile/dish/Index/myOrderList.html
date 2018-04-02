@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>蛋糕订单</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/order/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/order/css/User.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body class="body_user">
+    <section>
+        <div class="dingdan_top">
+            <ul>
+                <li li_num="1">
+                <if condition="$o_s_t eq 1">
+                    <span class="sp1">
+                        <span class="sp2"></span>
+                    </span>
+                </if>
+            </li>
+                <li li_num="2">已购买<if condition="$dwt neq 0"><p class="shuzi">{$dwt}</p></if>
+                    <if condition="$o_s_t eq 2">
+                    <span class="sp1">
+                        <span class="sp2"></span>
+                    </span>
+                    </if>
+                </li>
+                <li li_num="3">
+                    <if condition="$o_s_t eq 3">
+                    <span class="sp1">
+                        <span class="sp2"></span>
+                    </span>
+                    </if>
+                </li>
+                <li li_num="4">退款记录
+                    <if condition="$o_s_t eq 4">
+                    <span class="sp1">
+                        <span class="sp2"></span>
+                    </span>
+                    </if>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="dingdan dingdan_1 <if condition='$o_s_t eq 1'>dingdan_block</if>">
+        <foreach name="list" item="l">
+            <if condition="$l.paid eq 0">
+        <div class="dingdan_div">
+            <div class="mxs_div">
+                <div class="mxs mxs2 boder_ddd">
+                    <p class="mxs_span">订单号:{$l.system_order_id}</p>
+
+                    <p class="mxs_span2"><php>echo getStoreInfo($l['store_id'])['name'];</php></p>
+                </div>
+                <php>
+                    $son_arr = getOrdersItem($l['id'],$l['store_id']);
+                </php>
+                <foreach name="son_arr" item="son_list">
+                <div class="mxs">
+                    <p class="mxs_span">[{:getStandardName($son_list['standard_id'])}]{:getDishInfo($son_list['dish_id'])['dish_name']}</p>
+                    <p class="mxs_span2">&times;{$son_list.dish_num}</p>
+                    <p class="mxs_span3">&yen;<php>echo priceFormat($son_list['total_fee_current']);</php></p>
+                </div>
+                </foreach>
+                <div class="mxs">
+                    <p class="mxs_span">总计：<span class="zongjis">&yen;<php>echo priceFormat($l['actually_total_fee']);</php></span></p>
+                    <p class="mxs_span3"><a href="{:U('Dish/Index/pay',array('system_order_id'=>$l['system_order_id']))}"> <button class="buttons">去支付</button></a></p>
+                </div>
+
+            </div>
+        </div>
+            </if>
+        </foreach>
+        <!---->
+        <if condition="$cwp eq 0">
+            <div class="dingdan_div" style="text-align: center;">
+                Hi,亲亲...没有待支付的订单哦(*^__^*)
+            </div>
+        </if>
+        <!---->
+    </section>
+    <section class="dingdan dingdan_2 <if condition='$o_s_t eq 2'>dingdan_block</if>">
+        <foreach name="list" item="l">
+            <if condition="($l['paid'] eq 1) AND (($l['order_state'] eq 1) OR ($l['order_state'] eq 2))">
+        <div class="dingdan_div">
+            <div class="mxs_div">
+                <div class="mxs mxs2 boder_ddd">
+                    <p class="mxs_span">取餐号:{$l.queue_number}</p>
+                    <p class="mxs_span3"><php>echo getStoreInfo($l['store_id'])['name'];</php></p>
+                </div>
+                <php>
+                    $son_arr = getOrdersItem($l['id'],$l['store_id']);
+                </php>
+                <foreach name="son_arr" item="son_list">
+                <div class="mxs">
+                    <p class="mxs_span">[{:getStandardName($son_list['standard_id'])}]{:getDishInfo($son_list['dish_id'])['dish_name']}</p>
+                    <p class="mxs_span2">&times;{$son_list.dish_num}</p>
+                    <p class="mxs_span3">&yen;<php>echo priceFormat($son_list['total_fee_current']);</php></p>
+                </div>
+                </foreach>
+                <div class="mxs">
+                    <p class="mxs_span">总计：<span class="zongjis">&yen;<php>echo priceFormat($l['actually_total_fee']);</php></span></p>
+                    <p class="mxs_span3"><button class="buttons2" disabled="disabled">已支付</button></p>
+                </div>
+
+            </div>
+        </div>
+            </if>
+        </foreach>
+
+        <!---->
+        <if condition="$dwt eq 0">
+            <div class="dingdan_div" style="text-align: center;">
+                你不饿呀..,我都饿了，赶紧去点餐呗...(*^__^*)
+            </div>
+        </if>
+        <!---->
+    </section>
+    <section class="dingdan dingdan_3 <if condition='$o_s_t eq 3'>dingdan_block</if>">
+        <foreach name="list" item="l">
+          <if condition="($l['paid'] eq 1) AND ($l['order_state'] eq 3)">
+        <div class="dingdan_div">
+            <div class="mxs_div">
+                <div class="mxs mxs2 boder_ddd">
+                    <p class="mxs_span">取餐号:{$l.queue_number}</p>
+                    <p class="mxs_span3"><php>echo getStoreInfo($l['store_id'])['name'];</php></p>
+                </div>
+                <php>
+                    $son_arr = getOrdersItem($l['id'],$l['store_id']);
+                </php>
+                <foreach name="son_arr" item="son_list">
+                    <div class="mxs">
+                        <p class="mxs_span">[{:getStandardName($son_list['standard_id'])}]{:getDishInfo($son_list['dish_id'])['dish_name']}</p>
+                        <p class="mxs_span2">&times;{$son_list.dish_num}</p>
+                        <p class="mxs_span3">&yen;<php>echo priceFormat($son_list['total_fee_current']);</php></p>
+                    </div>
+                </foreach>
+                <div class="mxs">
+                    <p class="mxs_span">总计：<span class="zongjis">&yen;<php>echo priceFormat($l['actually_total_fee']);</php></span></p>
+                    <p class="mxs_span3"><button class="buttons2" disabled="disabled">已完成</button></p>
+                </div>
+
+            </div>
+        </div>
+          </if>
+        </foreach>
+        <!---->
+        <if condition="$dish_done_count eq 0">
+            <div class="dingdan_div" style="text-align: center;">
+                啊噢!..Hi..你都十天没来了..￣へ￣
+            </div>
+        </if>
+        <!---->
+    </section>
+    <section class="dingdan dingdan_4 <if condition='$o_s_t eq 4'>dingdan_block</if>">
+        <foreach name="list" item="l">
+            <if condition="($l['paid'] eq 1) AND ($l['refund_state'] neq 0)">
+        <div class="dingdan_div">
+            <div class="mxs_div">
+                <div class="mxs mxs2 boder_ddd">
+                    <p class="mxs_span">取餐号:{$l.queue_number}</p>
+                    <p class="mxs_span3"><php>echo getStoreInfo($l['store_id'])['name'];</php></p>
+                </div>
+                <php>
+                    $son_arr = getOrdersItem($l['id'],$l['store_id']);
+                </php>
+                <foreach name="son_arr" item="son_list">
+                    <div class="mxs">
+                        <p class="mxs_span">[{:getStandardName($son_list['standard_id'])}]{:getDishInfo($son_list['dish_id'])['dish_name']}</p>
+                        <p class="mxs_span2">&times;{$son_list.dish_num}</p>
+                        <p class="mxs_span3">&yen;<php>echo priceFormat($son_list['total_fee_current']);</php></p>
+                    </div>
+                </foreach>
+                <div class="mxs">
+                    <p class="mxs_span">总计：<span class="zongjis">&yen;<php>echo priceFormat($l['actually_total_fee']);</php></span></p>
+                    <p class="mxs_span3">
+                        <button class="buttons2" disabled="disabled">
+                            <php>
+                                $bu_name = ($l['refund_state']==1)?'退款中..':'退款完成..';
+                            </php>
+                        </button>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+            </if>
+        </foreach>
+        <!---->
+        <if condition="$refund_count eq 0">
+        <div class="dingdan_div" style="text-align: center;">
+            没有记录哦..O(∩_∩)O~
+        </div>
+        </if>
+        <!---->
+    </section>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script language="javascript" type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="__STATIC__/order/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__STATIC__/order/js/other.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input[name='pay_radio']").first().trigger('click');
+        });
+        // 切换支付方式
+        function change_pay(obj)
+        {
+            $(obj).parent().siblings('input[name="pay_radio"]').trigger('click');
+        }
+
+        function pay(){
+            $('#cart4_form').submit();
+            return;
+            //微信JS支付
+        }
+
+    </script>
+</body>
+</html>

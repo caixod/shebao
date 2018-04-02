@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="__PUBLIC__/images/b.ico" type="img/x-ico" />
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>首页</title>
+    <script src="__STATIC__/js/jquery-1.11.0.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/style.css" rel="stylesheet">
+    <script src="__PUBLIC__/js/layer/layer.js"></script>
+    <script src="__STATIC__/js/other.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--<link href="__STATIC__/css/zzsc.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="__STATIC__/css/sq.style.css" rel="stylesheet" type="text/css"/>-->
+
+    <script src="__STATIC__/js/global_no.js"></script>
+    <!--<script src="__STATIC__/js/pc_common.js"></script>-->
+    <script src="__STATIC__/laydate/laydate.js"></script> <!-- 改成你的路径 -->
+    <link rel="stylesheet" href="__STATIC__/css/new_css/reset.css">
+    <script src="__STATIC__/js/new_js/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<script src="__STATIC__/js/other.js"></script>-->
+    <!--<script src="__STATIC__/js/global_no.js"></script>-->
+    <link rel="stylesheet" href="__STATIC__/css/new_css/style.css">
+
+    <link rel="stylesheet" href="__STATIC__/css/new_css/bootstrap-switch.css">
+    <script src="__STATIC__/js/new_js/bootstrap-switch.min.js"></script>
+    <script src="__STATIC__/js/new_js/plupload.full.min.js"></script>
+    <script src="__STATIC__/js/new_js/laydate/laydate.js"></script>
+    <script src="__STATIC__/js/new_js/layer/layer.js"></script>
+    <link type="text/css" rel="stylesheet" href="__STATIC__/css/new_css/jquery-ui-1.9.2.custom.css">
+    <script src="__STATIC__/js/other.js"></script>
+    <script src="__STATIC__/js/global_no.js"></script>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/js/uploader/webuploader.css">
+    <!--引入JS-->
+
+    <script type="text/javascript" src="__STATIC__/js/uploader/webuploader.js"></script>
+    <link rel="stylesheet" href="__STATIC__/css/new_css/comeon.css">
+    <script>
+
+        $(function () {
+            $('.g_month>.start').hover(function () {
+                layer.tips('包涵当前月份，例如选择 2018-2 到 2018-5，则交的是2018年2月1号 到 2018年5月1号之间的社保', $(this), {
+                    tips: [1, '#78BA32'],
+                    time: 5000
+                });
+            });
+            $('.g_month>.end').hover(function () {
+                layer.tips('不包涵当前月份，例如选择 2018-2 到 2018-5，则交的是2018年2月1号 到 2018年5月1号之间的社保', $(this), {
+                    tips: [1, '#78BA32'],
+                    time: 5000
+                });
+            });
+            $('.g_zuidi').hover(function () {
+                layer.tips('点击使用当前城市最小基数', $(this), {
+                    tips: [1, '#78BA32'],
+                    time: 2000
+                });
+            });
+
+            $('select[name="city"]').change(function () {
+                //n =
+                var num = Math.floor(Math.random()*1000);
+                var innerH = num.toString()+' 元 ~ '+(num+1234).toString()+' 元';
+                $(".g_li>input").attr('placeholder',innerH);
+            })
+        });
+
+
+    </script>
+    <style>
+        .main-content-fun h4{
+            color:grey;
+            font-weight:blod;
+        }
+        .g_on_off {
+            position: absolute !important;
+            left: 600px;
+            top: 67px;
+        }
+        .i_agree {
+            margin-left: 100px;
+            margin-top: 30px;
+            font-size: 15px;
+            color: grey;
+        }
+        .i_agree>label {
+            margin-left: 10px;
+        }
+        .g_wxd {
+            margin-bottom: 30px;
+        }
+        .pop-content-left p{
+            margin-top:20px;
+        }
+        .g_tips{
+            border-radius:10px;
+        }
+        .main-article-tips{
+            border-radius:10px;
+        }
+        /* .g_titel_2>span{
+        color:grey;
+
+        }
+        .g_in>label{
+        color:#333;
+        } */
+    </style>
+    <script type="text/javascript" src="__STATIC__/js/new_js/jquery-ui-1.9.2.custom.js" language="javascript"></script>
+    <script type="text/javascript" src="__STATIC__/js/new_js/share.js"></script>
+    <link rel="stylesheet" href="__STATIC__/font_awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="__STATIC__/js/new_js/share.js"></script>
+
+    <script type="text/javascript">
+        var loadIndex;
+        $(document).ajaxStart(function(){
+            loadIndex=layer.load(1)
+        }).ajaxStop(function(){
+            layer.close(loadIndex);
+        });
+    </script>
+    <script>
+        $(function () {
+            var n = 1;
+            $(".ggy").bind("click", function () {
+                var $html = $("<li class='g_li'><span class='g_name'></span><input class='g_sbjs' type='text'><input class='g_gjjjs' type='text'><button style='margin-left:20px;vertical-align:top;float:left;' class='btn btn-md btn-success g_zuidi' onmouseover='add()'>最低基数</button><a href='#'><span style='width:14px;height:16px;margin-left:20px;' class='glyphicon glyphicon-remove g_delete'></span></a></li>");
+                $("#g_put").append($html);
+                n++;
+            });
+            $("#g_put").on("click", ".g_delete", function () {
+                $(this).parents("li").remove();
+            });
+        });
+    </script>
+
+
+    <style type="text/css">
+        .ab_left
+        {
+            /*border: 1px solid #ddd;border-radius:4px;*/
+        }
+    </style>
+</head>
+<script src="__STATIC__/js/new_js/bootstrap.min.js"></script>
+<script>
+
+</script>
+
+
+<body>
+
+

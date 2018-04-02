@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>{$tpshop_config['GLOBAL_TITLE']}</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <p class="nav_li nav_li1"><img src="__STATIC__/images/back.png" class="nav_img2"> </p>
+    <p class="nav_li nav_title  nav_li2">五道口店-{$tpshop_config['GLOBAL_TITLE']}</p>
+    <p class="nav_li nav_li1"><img src="__STATIC__/images/navs2.png" class="nav_img1" id="cut"></p>
+</nav>
+<div class="main">
+    <div class="soll_title">
+        <div class="s_t_l">
+            <p class=" glyphicon glyphicon-volume-up"></p>
+        </div>
+        <div class="s_t_r">
+            <div id="out">
+                <div id="scroll_text1">
+                    <span>满50减3元，满100减7元，满200减15元</span>
+                </div>
+                <div id="scroll_text2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--风格1的主体 start-->
+        <!----------------包含风格1----------------->
+    <!--风格1的主体 start-->
+
+    <!--风格2主体-->
+    <div class="mains" id="main_2" style="display:block;">
+    <!--风格2 content--><img src="/Public/images/loading.gif" style="margin-top: 50px;"/>
+
+    </div>
+</div>
+
+<div class="foot navbar-default navbar-fixed-bottom" role="navigation">
+    <!--购物车无菜品时-->
+    <div class="footer">
+        <div class="foot_left">
+            <img src="__STATIC__/images/gouwuche.png">
+            <p>购物车什么都没有</p>
+        </div>
+        <div class="foot_right">
+            <button>选好了</button>
+        </div>
+    </div>
+    <!--购物车有菜品时-->
+    <div class="footer2" style="display: none;">
+        <div class="foot_left">
+            <img src="__STATIC__/images/gouwuche2.png">
+            <p>总计：<span id="zongjia">0</span></p>
+            <p class="p_shuzi">0</p>
+        </div>
+        <div class="foot_right">
+            <button id="dish-done">选好了</button>
+        </div>
+    </div>
+</div>
+<!--购物车弹出-->
+<!--遮罩层--><div class="z_div" style="display:none;"></div>
+<div class="gouwuche_t" style="display:none;">
+    <div class="g_div1">
+        <h3>购物车</h3>
+        <!--<button id="qingkong">清空购物车</button>-->
+    </div>
+    <style type="text/css">
+        .table-responsive table {display:none;}
+    </style>
+    <div class="g_div2">
+        <div class="gw1 table-responsive">
+            <volist name="sort_list" id="s_l">
+                <table class="names_g cate_id_{$s_l.sort_id} table" style="display:none;">
+                    <tbody>
+                    <tr class="dish-tr">
+                        <td colspan="3" class="gwc_td" cate_id="{$s_l.sort_id}" id="gwc_cate_id_{$s_l.sort_id}">{$s_l.name}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </volist>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script language="javascript" type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<script src="__STATIC__/js/bootstrap.min.js"></script>
+<script language="javascript" type="text/javascript">
+    $(document).ready(function(){
+                $.ajax({
+                    type:"GET",
+                    url:"/index.php/Dish/Index/getStyleTwo/store_id/{$store_id}",
+                    success:function(data){
+                        $('#main_2').html('').html(data).css({display: 'block'});
+                        var dish_num =0; //当前菜品数量
+                        var total_price = 0;
+                        ////点餐+号 进行事件绑定
+                        $(".glyphicon-plus").bind("click",function(){
+                            $(".footer").hide();
+                            shopping_cart = parseInt($(".footer2").find(".p_shuzi").html())+1;
+                            //console.log(shopping_cart);
+                            $(".footer2").css("display","block").find(".p_shuzi").html(shopping_cart);
+                            dish_id = $(this).attr("data-dish-id");//菜品id
+                            sort_id = $(this).attr("data-sort-id"); //分类Id
+                            dish_standard = $(this).attr("data-standard"); //大小份
+                            dish_standard_name = (dish_standard==1) ?"标准":"大";
+                            dish_name = $(this).attr("data-dish-name"); //菜品名
+                            dish_price = parseFloat($("#data-price-"+dish_standard+"-"+dish_id).html()); //菜价
+                            dish_restaurant_id=$(this).attr("data-restaurant-id");   //餐厅id
+                            //console.log(dish_id+'--'+sort_id);return;
+                            td_one = '<td class="gwc_td1"><h3 goods_id="8" id="">['+dish_standard_name+']'+dish_name+'</h3></td>';
+                            td_two = '<td class="gwc_td2">¥<span>'+dish_price+'</span></td>';
+                            td_three_first = '<td class="gws_td3">'+
+                                            '<div class="shuliang shuliang2" zhekous="null" id="shuliang_div_guige1_8">'+
+                                                '<p class="food_p2 line3" id="g_tr3">'+
+                                                    '<span class="glyphicon glyphicon-plus" onclick="cartPlusClick('+dish_standard+','+dish_id+','+sort_id+','+dish_price+')"></span>'+
+                                                '</p>'+
+                                                '<p class="food_p2 food_p3 dish_num_'+dish_standard+'_'+dish_id+'" data-dish-num="x" data-standard-cart="'+dish_standard+'" data-standard-cart-cur="'+dish_standard+'" id="'+dish_standard+'_'+dish_id+'_number">';
+                            td_three_second = '</p><p class="food_p2 line4" id="g_trs3">'+
+                                                    '<span class=" glyphicon glyphicon-minus" data-dish-id="'+dish_id+'" data-sort-id="'+sort_id+'" data-standard="'+dish_standard+'" data-sort-id="'+sort_id+'" onclick="cartMinusClick('+dish_standard+','+dish_id+','+sort_id+','+dish_price+')"></span>'+
+                                                '</p>'+
+                                            '</div>'+
+                                        '</td>';
+
+                            //向购物车写入数据
+                            if($(".cate_id_"+sort_id).css("display") == "none"){
+                                dish_num = 1;
+                                str_tr = '<tr data-restaurant-id="'+dish_restaurant_id+'" data-dish-num="'+dish_num+'" data-dish-id="'+dish_id+'" data-dish-standard="'+dish_standard+'" class="qingkong_g gwc_td_tr" id="tr_cart_'+dish_id+'_'+dish_standard+'">'+td_one+td_two+td_three_first+dish_num+td_three_second+'</tr>';
+                                $("#gwc_cate_id_"+sort_id).append(str_tr);
+                                $(".cate_id_"+sort_id).css("display","block");
+                                $(".dish_num_"+dish_standard+'_'+dish_id).html('').html(1);
+                                //写入总价
+                                total_price = parseFloat($("#zongjia").html())+dish_price;
+                                $("#zongjia").html(total_price);
+                            }else{
+                                //alert($(".dish_num_"+dish_standard+'_'+dish_id).html());
+                                if($(".dish_num_"+dish_standard+'_'+dish_id).html() == 0 ){
+                                    //alert(dish_standard);alert($(".dish_num_"+dish_standard+'_'+dish_id).attr("data-standard-cart"));
+                                    dish_num = 1;
+                                    str_tr = '<tr data-restaurant-id="'+dish_restaurant_id+'" data-dish-num="'+dish_num+'" data-dish-id="'+dish_id+'" data-dish-standard="'+dish_standard+'" class="qingkong_g gwc_td_tr" id="tr_cart_'+dish_id+'_'+dish_standard+'">'+td_one+td_two+td_three_first+dish_num+td_three_second+'</tr>';
+                                    //alert(str);
+                                    $("#gwc_cate_id_"+sort_id).append(str_tr);
+                                    //$(".cate_id_"+sort_id).css("display","block");
+                                    $(".dish_num_"+dish_standard+'_'+dish_id).html('').html(1);
+                                    //写入总价
+                                    total_price = parseFloat($("#zongjia").html())+dish_price;
+                                    $("#zongjia").html(total_price);
+                                }else{
+                                    dish_num = parseInt($(".dish_num_"+dish_standard+'_'+dish_id).html());
+                                    //console.log(dish_num);return;
+                                    $(".dish_num_"+dish_standard+'_'+dish_id).html(dish_num+1);
+                                    //写入总价
+                                    total_price = parseFloat($("#zongjia").html())+dish_price;
+                                    $("#zongjia").html(total_price);
+                                }
+
+                            }
+
+
+                        });
+
+                        ////点餐-号 进行事件绑定
+                        $(".glyphicon-minus").bind("click",function(){
+                            dish_standard = $(this).attr("data-standard");
+                            dish_id = $(this).attr("data-dish-id");
+                            sort_id = $(this).attr("data-sort-id");
+                            dish_price = parseFloat($("#data-price-"+dish_standard+"-"+dish_id).html()); //菜价
+                            dish_num = parseInt($(".dish_num_"+dish_standard+'_'+dish_id).html());
+                            if(dish_num !=0){
+                                if(dish_num==1){
+                                    $("#tr_cart_"+dish_id+'_'+dish_standard).remove();
+                                    if(($(".cate_id_"+sort_id).find("tr").length)==1){
+                                        $(".cate_id_"+sort_id).css('display','none');
+                                    }
+                                }
+                                d_num = parseInt($(".dish_num_"+dish_standard+'_'+dish_id).html());
+                                $(".dish_num_"+dish_standard+'_'+dish_id).html(d_num-1);
+                                shopping_cart = parseInt($(".footer2").find(".p_shuzi").html())-1;
+                                $(".footer2").find(".p_shuzi").html(shopping_cart);
+                                total_price = parseFloat($("#zongjia").html())-dish_price;
+                                $("#zongjia").html(total_price);
+                            }
+
+                            if(dish_num ==0){
+                                //alert(1111111);
+                                $("#tr_cart_"+dish_id+'_'+dish_standard).remove();
+                                if(($(".cate_id_"+sort_id).find("tr").length)==1){
+                                    $(".cate_id_"+sort_id).css('display','none');
+                                }
+
+                                    //alert(parseFloat($("#zongjia").html()));
+                                    /*if(total_price != 0){
+                                        total_price = parseFloat($("#zongjia").html())-dish_price;
+                                        $("#zongjia").html(total_price);
+                                    }*/
+
+
+
+                            }
+                        });
+                    },
+                    error:function(e){
+
+                    }
+                });
+
+    //点菜完毕
+        $("#dish-done").click(function(){
+            var cart_table_obj = $(".g_div2 .gw1 .table .dish-tr .gwc_td .gwc_td_tr");
+            var data_post = new Array();
+            for(i=0;i<cart_table_obj.length;i++){
+                obj = cart_table_obj[i];
+                d_s = obj.getAttribute("data-dish-standard");   //规格
+                d_id = obj.getAttribute("data-dish-id");    //菜品id
+                d_res_id = obj.getAttribute("data-restaurant-id");    //餐厅id
+                d_number = parseInt($("#"+d_s+"_"+d_id+"_number").html());  //数目
+                d_total_fee_post = parseFloat($("#zongjia").html());
+                data_post[i] = d_id+'-'+d_s+'-'+d_number+'-'+d_res_id;
+
+            }
+            //console.log(data_post);
+            $.ajax({
+                url:'{:U("Dish/Index/confirmList",array("store_id"=>$store_id))}',
+                type:'post',
+                data:{dish:data_post,total_fee:d_total_fee_post},
+                success:function(data){
+                    console.log(data);
+                },
+                error:function(e){
+
+                },complete:function(){
+                    location.href = '{:U("Dish/Index/confirmList",array("store_id"=>$store_id))}';
+                }
+            });
+
+        });
+
+
+
+    });
+
+    function cartPlusClick(a,b,c,price){
+        //alert($(".dish_num_"+a+'_'+b).html());
+        d_num = parseInt($(".dish_num_"+a+'_'+b).html());
+        $(".dish_num_"+a+'_'+b).html(d_num+1);
+        shopping_cart = parseInt($(".footer2").find(".p_shuzi").html())+1;
+        $(".footer2").find(".p_shuzi").html(shopping_cart);
+        total_price = parseFloat($("#zongjia").html())+price;
+        $("#zongjia").html(total_price);
+    }
+
+    function cartMinusClick(a,b,c,price){
+        d_num = parseInt($(".dish_num_"+a+'_'+b).html());
+        if(d_num ==0 || d_num==1){
+            $("#tr_cart_"+b+'_'+a).remove();
+            if(($(".cate_id_"+c).find("tr").length)==1){
+                $(".cate_id_"+c).css('display','none');
+            }
+        }
+        $(".dish_num_"+a+'_'+b).html(d_num-1);
+        shopping_cart = parseInt($(".footer2").find(".p_shuzi").html())-1;
+        $(".footer2").find(".p_shuzi").html(shopping_cart);
+        total_price = parseFloat($("#zongjia").html())-price;
+        $("#zongjia").html(total_price);
+    }
+</script>
+</body>
+</html>

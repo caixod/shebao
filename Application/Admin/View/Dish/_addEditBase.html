@@ -1,0 +1,240 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+           		<!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 基础菜品详情</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">详情</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <!--<form method="post" id="addEditBusinessUserForm" onsubmit="return checkName();">-->
+                    <form method="post" id="addEditDishForm">
+                        <!--通用信息-->
+                    <div class="tab-content">                 	  
+                        <div class="tab-pane active" id="tab_tongyong">
+                           
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>菜名:</td>
+                                    <td>
+                                        <input type="text" value="{$list.dish_name}" name="dish_name" class="form-control" style="width:250px;"/>
+                                        <span id="err_dish_name" style="color:#F00; display:none;">菜名不能为空</span>
+                                    </td>
+                                </tr>                                
+                                <tr>
+                                    <td>分类:</td>
+                                    <td>
+                                        <select name="sort_id"  class="form-control" style="width:250px;">
+                                            <volist name="sort_name" id="sn">
+                                                <option <if condition="$list['sort_id'] eq $sn['id']">selected</if>  value="{$sn.id}">{$sn.name}</option>
+                                            </volist>
+                                        </select>
+                                        <span id="sort_id" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>计量单位:</td>
+                                    <td>
+                                        <select id="unit" name="unit" class="form-control" style="width:250px;">
+                                            <option value="0">请选择</option>
+                                            <volist name="dish_unit" id="sn">
+                                                <option <if condition="$dish_attribute['unit'] eq $sn['id']">selected</if>  value="{$sn.id}">{$sn.name}</option>
+                                            </volist>
+                                        </select>
+                                        <span id="err_unit" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>规格可选:</td>
+                                    <td>
+                                        <input type="radio" name="standard_on_off" value="1" class="standard_radio_button" <if condition="($dish_attribute['standard_on_off'] eq 1)">checked="checked"</if>>是
+                                        <input type="radio" name="standard_on_off" value="0" class="standard_radio_button" <if condition="($dish_attribute['standard_on_off'] eq 0)">checked="checked"</if>>否
+                                        <span id="err_standard_on_off" style="color:#F00; display:none;"></span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span id="standard_price" style="">
+
+                                        </span>
+                                        <script language="javascript" type="text/javascript">
+                                            $(document).ready(function(){
+                                                var sps = $("input[name='standard_on_off']:checked");
+                                                set_price_standard(sps);
+                                                $(".standard_radio_button").click(function(){
+                                                    set_price_standard($(this));
+                                                });
+                                            });
+                                            function set_price_standard(obj){
+                                                if(obj.val() == 1){
+                                                    str = "";
+                                                    /*******/
+                                                    <volist name="standard_price" id="sp">
+                                                            str += '价格-{$sp.name}:<input type="text" name="standard_price_{$sp.id}" value="<php>echo getNormalPrice($sp['price']);</php>"  style="width:100px;"/>';
+                                                    </volist>
+                                                     /*****/
+
+                                                    $("#standard_price").html("").html(str);
+                                                }else{
+                                                    $("#standard_price").html("");
+                                                }
+                                            }
+                                        </script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>辣度可选:</td>
+                                    <td>
+                                        <input type="radio" name="pungency_on_off" value="1"  <if condition="($dish_attribute['pungency_on_off'] eq 1)">checked="checked"</if>>是
+                                        <input type="radio" name="pungency_on_off" value="0" <if condition="($dish_attribute['pungency_on_off'] eq 0)">checked="checked"</if>>否
+                                        <span id="err_pungency_on_off" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>最低价:</td>
+                                    <td>
+                                        <input type="text" value="<php>echo getNormalPrice($list['price_base']);</php>" name="price_base" class="form-control" style="width:250px;"/>
+                                        <span  style="color:#99999a; ">元</span>
+                                        <span id="err_price_base" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <td>推荐价:</td>
+                                <td>
+                                    <input type="text" value="<php>echo getNormalPrice($list['price_recommend']);</php>" name="price_recommend" class="form-control" style="width:250px;"/>
+                                    <span  style="color:#99999a; ">元</span>
+                                    <span id="err_price_recommend" style="color:#F00; display:none;"></span>
+                                </td>
+                                </tr>
+                                <td>最高价:</td>
+                                <td>
+                                    <input type="text" value="<php>echo getNormalPrice($list['price_top']);</php>" name="price_top" class="form-control" style="width:250px;"/>
+                                    <span  style="color:#99999a; ">元</span>
+                                    <span id="err_price_top" style="color:#F00; display:none;"></span>
+                                </td>
+                                </tr>
+
+                                <!--<tr>
+                                    <td>品牌logo:</td>
+                                    <td>  
+                                    	<div class="col-sm-3">                                                                              
+                                        	<input type="text" value="{$store.logo}" name="logo" id="logo" class="form-control" style="width:350px;margin-left:-15px;"/>
+                                        </div>
+                                        <div class="col-sm-3">
+                                        	<input onclick="GetUploadify(1,'logo','brand');" type="button" class="btn btn-default" value="上传logo"/>
+                                        </div>
+                                    </td>
+                                </tr>-->
+                                <tr>
+                                    <td>图片:</td>
+                                    <td>
+                                    	<div class="col-sm-7">
+                                        	<input type="text" value="{$list.image}" name="image" id="image" class="form-control" style="width:500px;margin-left:-15px;"/>
+                                        </div>
+                                        <div class="col-sm-5">
+                                        	<input onclick="GetUploadify(1,'image','image');" type="button" class="btn btn-default" value="上传"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>描述:</td>
+                                    <td>
+                                        <textarea rows="4" cols="60" name="description">{$list.description}</textarea>
+                                        <span id="err_description" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>状态:</td>
+                                    <td>
+                                        <input type="text" value="{$list.status}" name="status" class="form-control" style="width:250px;"/>
+                                        <span id="more_status" style="color:#99999A; display:block;">1为可用;0为禁用，默认为1</span>
+                                        <span id="err_status" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>排序:</td>
+                                    <td>
+                                        <input type="text" value="{$list.sort}" name="sort" class="form-control" style="width:250px;" placeholder="50"/>
+                                    </td>
+                                </tr>                                                                 
+
+                                </tbody>                                
+                                </table>
+                        </div>                           
+                    </div>              
+                    <div class="pull-right">
+                        <input type="hidden" name="id" value="{$list.id}">
+                        <input type="hidden" name="p" value="{$_GET[p]}">
+                        <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="保存">保存</button>
+                    </div>
+			    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+// 判断输入框是否为空
+function checkName(){
+	var name = $("#addEditBrandForm").find("input[name='name']").val();
+    if($.trim(name) == '')
+	{
+		$("#err_name").show();
+		return false;
+	}
+	return true;
+}
+
+/*window.onload = function(){
+	if({$store.cat_id} > 0 ){
+		get_category($("#parent_id_1").val(),'parent_id_2',{$store.cat_id});	 
+	}		
+}*/
+</script>
+
+<script src="__PUBLIC__/js/global.js"></script>
+<script src="__PUBLIC__/js/pc_common.js"></script>
+<script>
+    function checkForm(){
+        var consignee = $('input[name="consignee"]').val();
+        var province = $('select[name="province"]').find('option:selected').val();
+        var city = $('select[name="city"]').find('option:selected').val();
+        var district = $('select[name="district"]').find('option:selected').val();
+        var address = $('textarea[name="address"]').val();
+        var mobile = $('input[name="mobile"]').val();
+        var error = '';
+        if(consignee == ''){
+            error += '收货人不能为空 <br/>';
+        }
+        if(province==0){
+            error += '请选择省份 <br/>';
+        }
+        if(city==0){
+            error += '请选择城市 <br/>';
+        }
+        if(district==0){
+            error += '请选择区域 <br/>';
+        }
+        if(address == ''){
+            error += '请填写地址 <br/>';
+        }
+        if(!checkMobile(mobile))
+            error += '手机号码格式有误 <br/>';
+        if(error){
+            //alert(error);
+            layer.alert(error, {icon: 2});
+            //	layer.msg('只想弱弱提示');
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

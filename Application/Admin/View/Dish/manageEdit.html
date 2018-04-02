@@ -1,0 +1,169 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+           		<!--<a href="javascript:;" class="btn btn-default" data-url="http://www.tp-shop.cn/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 修改菜品</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">菜品修改</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <form method="post" id="addEditBrandForm" action="">
+                        <!--通用信息-->
+                    <div class="tab-content">                 	  
+                        <div class="tab-pane active" id="tab_tongyong">
+                           
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>菜品名称:</td>
+                                    <td>
+                                        {$dish_info.dish_name}
+                                        <input type="hidden" value="{$dish_info.dish_name}" name="dish_name" class="form-control" style="width:200px;"/>
+                                    </td>
+                                </tr>                                
+                                <tr>
+                                    <td>价格:</td>
+                                    <td>
+                                        最高价格：&nbsp;&nbsp;{$dish_info.high_price}&nbsp;&nbsp;
+                                        ——最低价格：&nbsp;&nbsp;
+                                        {$dish_info.low_price} &nbsp;&nbsp;—— &nbsp;&nbsp;建议价格:&nbsp;&nbsp;{$dish_info.price}
+                                        <input type="hidden" value="{$dish_info.high_price}" name="high_price" class="form-control" style="width:200px;"/>
+                                        <input type="hidden" value="{$dish_info.low_price}" name="low_price" class="form-control" style="width:200px;"/>
+                                        <input type="hidden" value="{$dish_info.price}" name="price" class="form-control" style="width:200px;"/>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>本店价格:</td>
+                                    <td>
+                                        <input type="text" value="{$dish_info.my_price}" name="my_price" class="form-control" style="width:250px;"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>所属分类:</td>
+                                    <td>
+                                        <div class="col-sm-3">
+	                                        <select name="sid"class="form-control" style="width:250px;margin-left:-15px;">
+	                                            <?php foreach($sort_data as $k=>$v):
+                                                            if($v['sid']==$dish_info['sid']){
+                                                                    $aa="selected='selected'";
+                                                                 }else{
+                                                                  $aa='';
+                                                                    }
+                                                ?>
+	                                                <option value="<?=$v['id']?>" <?=$aa?>><?=$v['name']?></option>
+	                                            <?php endforeach;?>
+						                      </select>
+                                            </div>
+                                    </td>
+                                </tr>                                
+                                <tr>
+                                    <td>菜品图片:</td>
+                                    <td>  
+                                    	<div class="col-sm-3">                                                                              
+                                        	<input type="text" value="{$dish_info.image}" name="image" id="logo" class="form-control" style="width:350px;margin-left:-15px;"/>
+                                        </div>
+                                        <div class="col-sm-3">
+                                        	<input onclick="GetUploadify(1,'image','dish');" type="button" class="btn btn-default" value="上传logo"/>
+                                        </div>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>排序数字:</td>
+                                    <td>
+                                        <input type="text" value="{$dish_info.sort}" name="sort" class="form-control" style="width:200px;" placeholder="50"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>是否上架:</td>
+                                    <td>
+                                        是:<input type="radio" <if condition="$dish_info[is_open] eq 1">checked="checked"</if> value="1" name="is_open" />
+                                        否:<input type="radio" <if condition="$dish_info[is_open] eq 0">checked="checked"</if> value="0" name="is_open" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>是否支持会员折扣:</td>
+                                    <td>
+                                        是:<input type="radio" <if condition="$dish_info[isdiscount] eq 1">checked="checked"</if> value="1" name="isdiscount" />
+                                        否:<input type="radio" <if condition="$dish_info[isdiscount] eq 0">checked="checked"</if> value="0" name="isdiscount" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>是否热卖:</td>
+                                    <td>
+                                        是:<input type="radio" <if condition="$dish_info[is_hot] eq 1">checked="checked"</if> value="1" name="is_hot" />
+                                        否:<input type="radio" <if condition="$dish_info[is_hot] eq 0">checked="checked"</if> value="0" name="is_hot" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>是否支持大份售卖:</td>
+                                    <td>
+                                        是:<input type="radio" <if condition="$dish_info[is_deal] eq 1">checked="checked"</if> value="1" name="is_deal" />
+                                        否:<input type="radio" <if condition="$dish_info[is_deal] eq 0">checked="checked"</if> value="0" name="is_deal" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>大份价格:</td>
+                                    <td>
+                                        <input type="text" value="{$dish_info.b_price}" name="b_price" class="form-control" style="width:250px;"/>如果不支持大份，可以不用填写
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>售卖数量限制:</td>
+                                    <td>
+                                        <input type="text" value="{$dish_info.num_astrict}" name="num_astrict" class="form-control" style="width:250px;"/>如果不限制，为0即可
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>库存量:</td>
+                                    <td>
+                                        <input type="text" value="{$dish_info.instock}" name="instock" class="form-control" style="width:250px;"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>品牌描述:</td>
+                                    <td>
+										{$dish_info.des}
+                                        <input type="hidden" value="{$dish_info.des}" name="des" class="form-control" style="width:250px;"/>
+                                    </td>
+                                </tr>                                  
+                                </tbody>                                
+                                </table>
+                        </div>                           
+                    </div>              
+                    <div class="pull-right">
+                        <input type="hidden" name="id" value="{$dish_info.id}">
+                        <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="保存">保存</button>
+                    </div>
+			    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+// 判断输入框是否为空
+//function checkName(){
+//	var name = $("#addEditBrandForm").find("input[name='dish_name']").val();
+//    if($.trim(name) == '')
+//	{
+//		$("#err_name").show();
+//		return false;
+//	}
+//	return true;
+//}
+
+
+</script>
+</body>
+</html>

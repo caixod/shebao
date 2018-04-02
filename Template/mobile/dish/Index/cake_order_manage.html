@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>个人中心</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/order/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/order/css/User.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body class="body_user">
+    <section>
+        <div class="user_top">
+            <div class="touxiang"><img src='{$Think.session.user.head_pic}'> </div>
+            <p class="nichen">{$Think.session.user_name}</p>
+        </div>
+    </section>
+    <section>
+        <div class="user_div">
+            <!--如果有多个a标签，boder_none 类名加在最后一个p标签后面-->
+            <!--<a href="{:U('Mobile/User/points')}"> <p>积分余额<span>&gt;</span></p></a>-->
+            <a href="{:U('Dish/Index/cake_sales')}"> <p>销量统计<span>&gt;</span></p></a>
+            <a href="{:U('Dish/Index/cake_order_manage')}"> <p class="boder_none">订单管理<span>&gt;</span></p></a>
+        </div>
+    </section>
+</body>
+</html>

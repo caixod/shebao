@@ -1,0 +1,10 @@
+[ 2018-02-07T22:54:52+08:00 ] 127.0.0.1 /index.php/Mobile/Checklogin/gjj_zhuanyi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' C:\wamp\www\tzl\Application\Mobile\Conf\config.php 第 16 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Checklogin
+

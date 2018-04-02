@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>{$tpshop_config['GLOBAL_TITLE']}</title>
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+    <script src="__PUBLIC__/js/global.js"></script>
+    <script src="__PUBLIC__/js/pc_common.js"></script>
+    <!--微信js-SDK-->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--原有加载的jquery1.42.min.js-->
+    <script src="__STATIC__/js/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="__STATIC__/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/other.js"></script>
+    <script src="__PUBLIC__/js/layer/layer-min.js"></script><!-- 弹窗js 参考文档 http://layer.layui.com/-->
+
+
+    <script language="javascript" type="text/javascript">
+        var lng = 0;   //经度
+        var lat = 0;    //纬度
+        wx.config({
+            debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            appId: "{$mpInfo.appId}", // 必填，公众号的唯一标识
+            timestamp: "{$mpInfo.timestamp}", // 必填，生成签名的时间戳
+            nonceStr: "{$mpInfo.nonceStr}", // 必填，生成签名的随机串
+            signature: "{$mpInfo.signature}",// 必填，签名，见附录1
+            jsApiList: ['getLocation'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+        });
+        wx.ready(function(){
+            wx.getLocation({
+                type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
+                success: function (res) {
+                    var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+                    var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+                    var speed = res.speed; // 速度，以米/每秒计
+                    var accuracy = res.accuracy; // 位置精度
+                    lng = res.longitude;
+                    lat = res.latitude;
+                    //console.log(res);
+                    /////
+                    //自动定位获取店铺列表
+                    $.ajax({
+                        type:"GET",
+                        url:'{:U("Dish/Index/getCityCodeFromLngLat")}',
+                        data:{lng:lng,lat:lat},
+                        dataTyep:"json",
+                        success:function(data){
+//                            alert(data);return;
+                            //data = eval('( '+data+' )');
+                            console.log(data);//return;
+                            ajax_get_table(data.city_code,data.field,lng,lat);
+                        },
+                        error:function(e){
+                            console.log(e);
+                        },
+                        complete:function(){
+
+                        }
+                    });
+
+                    // 手动切换城市 ajax 获取店铺列表
+                    $("#city").change(function(){
+                        var city = $(this).val();
+//                        alert(city);return;
+                        ajax_get_table(city,'city',lng,lat);
+                    });
+                }
+            });
+        });
+
+    </script>
+
+    <script language="javascript" type="text/javascript">
+        /*$(document).ready(function(){
+
+        });*/
+
+
+        // ajax 抓取页面 form 为表单id  page 为当前第几页
+        function ajax_get_table(city,filed,lng,lat){
+            $.ajax({
+                type : "GET",
+                url:"/index.php?m=Dish&c=Index&a=getStoreListOfCurrentCity",
+                //data : $('#'+form).serialize(),// 你的formid
+                data : {city:city,field:filed,lng:lng,lat:lat},
+                success: function(data){
+                    //alert(data.msg);return;
+                    $("#store_list").html('');
+                    $("#store_list").append(data);
+                }
+            });
+        }
+    </script>
+</head>
+<body class="dingwei_body">
+
+     <div class="dingwei_main">
+         <section>
+             <div class="dingwei_xz">
+                 <h3>选择门店</h3>
+                 <div class="h_10"></div>
+                 <select class="form-control select_div" name="province" id="province" onChange="get_city(this)">
+                     <volist name="province" id="p">
+                         <option <if condition="$address['province'] eq $p['id']">selected</if>  value="{$p.id}" >{$p.name}</option>
+                     </volist>
+                 </select>
+                 <select class="form-control select_div2" name="city" id="city" onChange="get_area(this)">
+                     <option value="2">北京市</option>
+                 </select>
+
+
+             </div>
+         </section>
+         <!--store list start-->
+         <div class="store_list" id="store_list" style="height: 50px;text-align: center;">
+                     <img src="/Public/images/loading.gif" style="margin-top: 50px;"/>
+             <!--<section>
+                 <a href="">
+                     <div class="h_20"></div>
+                     <div class="mendian_div">
+                         <div class="clumg">
+                             <h3>总店-五道口</h3>
+                             <div class="h_10"></div>
+                             <p class="p1">营业时间：10:00-22:00</p>
+                             <p class="p2">北京市海淀区成府路华清嘉园7号楼底商“传厨螺蛳粉店”</p>
+                         </div>
+                         <div class="clumg2">
+                             <a href=""><p class="p3 p_jy">结束营业</p></a>
+                             <p class="p4">12.9km</p>
+                             <a href=""> <p class="p4 p5"><img src="__STATIC__/images/daohang.png"/> 导航 </p></a>
+                         </div>
+
+                     </div>
+                 </a>
+
+             </section>-->
+         </div>
+         <!--store list end-->
+     </div>
+
+
+</body>
+</html>
+

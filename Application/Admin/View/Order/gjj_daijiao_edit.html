@@ -1,0 +1,132 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+           		<!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i>公积金代缴订单处理</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">{$info.username}的公积金代缴订单处理</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <form method="post" id="addEditBrandForm" action="{:U('Admin/Order/gjj_daijiao_edit')}" onsubmit="return checkName();" enctype="multipart/form-data">
+
+                        <!--通用信息-->
+                    <div class="tab-content">                 	  
+                        <div class="tab-pane active" id="tab_tongyong">
+                           
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td style="text-align: center;">下单人姓名:</td>
+                                    <td>
+                                        <input type="text" value="{$info.username}" name="username" class="form-control" readonly style="width:200px;"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">代缴时间段:</td>
+                                    <td>
+                                        <input type="text" value="{$info.start_time}" name="start_time" class="form-control" readonly style="width:200px;"/>
+                                       -- <input type="text" value="{$info.end_time}" name="end_time" class="form-control" readonly style="width:200px;"/>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: center;">身份证:</td>
+                                    <td>
+                                       <a href="{$info.image}" target="_blank"><image style="width: 200px;height: 200px;" src="{$info.image}" /></a>
+                                        <a href="{$info.image}" target="_blank">  <image style="width: 200px;height: 200px;" src="{$info.image_t}" /></a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align: center;">补缴基数:</td>
+                                    <td>
+                                        <input type="text" value="{$info.base_money}" name="base_money" class="form-control" readonly style="width:200px;"/>元
+                                      &nbsp;&nbsp;&nbsp;  补缴金额：<input type="text" value="{$info.money}" name="money" class="form-control" readonly style="width:200px;"/>元
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">审核:</td>
+                                    <td>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio"  <if condition="$info.status eq 1">checked="checked"</if> name="status"  value="1">审核通过
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="status"  value="2"  <if condition="$info.status eq 2">checked="checked"</if> >不通过
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="status"  value="0"  <if condition="$info.status eq 0">checked="checked"</if> >待审核
+                                            </label>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">合同:</td>
+                                    <td>
+                                        <if condition="$info.ht eq '0'">
+                                            <input type="file" name="ht" id="ht" value="">      <span style="color: red;">(审核通过之后请上合同文件)</span>
+                                            <else />
+
+
+                                            &nbsp;&nbsp;&nbsp;
+
+                                            <div class="form-group form-inline">
+                                                <label for="exampleInputName2"></label>
+                                                <a  href="{$info.ht}">点击下载查看原合同</a>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail2">更换原合同</label>
+                                                <input type="file"  name="ht_t"  value="">   </div>
+                                        </if>
+
+                                    </td>
+                                </tr>
+
+
+                                </tbody>                                
+                                </table>
+                            <!--<label style="color: red">温馨提示：如：2% 只需要填写2即可，0.5% 只需要填写0.5即可</label>-->
+                        </div>                           
+                    </div>              
+                    <div class="pull-right">
+
+                        <input type="hidden" name="id" value="{$id}">
+                        <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="保存">确定</button>
+                    </div>
+			    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+
+// 判断输入框是否为空
+function checkName(){
+
+    var status = $.trim($("#status").val());
+    var shebao_maxbase = $.trim($("#shebao_maxbase").val());
+
+    if(status ==1)
+    {
+        layer.msg('审核通过请上传合同文件', {icon: 2,time: 3000});
+        return false;
+    }
+	return true;
+}
+
+
+</script>
+</body>
+</html>

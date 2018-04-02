@@ -1,0 +1,125 @@
+<include file="Public/min-header" />
+<!--<meta http-equiv="refresh" content="5">-->
+<script src="__PUBLIC__/laydate/laydate.js"></script>
+<script src="__PUBLIC__/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="__PUBLIC__/artDialog/plugins/iframeTools.js"></script>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <nav class="navbar navbar-default">
+                            <div class="collapse navbar-collapse">
+                                <form class="navbar-form form-inline" action="" method="post" >
+                                    <div class="form-group">
+                                        用户名：<input type="text" name="account_name" value="{$account_name}" class="form-control" style="width: 100px;">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">查询</button>
+                                    <div class="form-group pull-right">
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table id="list-table" class="table table-bordered table-striped dataTable">
+                                    <thead>
+                                    <tr role="row" style="text-align: center;">
+                                        <th style="text-align: center;">ID</th>
+                                        <th style="text-align: center;"> 用户名</th>
+                                        <th style="text-align: center;">联系电话</th>
+                                        <th style="text-align: center;">真实姓名</th>
+                                        <th style="text-align: center;">性别</th>
+                                        <th style="text-align: center;">注册日期</th>
+                                        <!--<th>处理状态</th>.-->
+                                        <th style="text-align: center;">操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    <foreach name="order_mess" item="vo" key="k" >
+                                        <tr role="row" style="text-align: center;">
+                                            <td>{$vo.no}</td>
+                                            <td>{$vo.account_name}</td>
+                                            <td>{$vo.mobile}</td>
+                                            <td>{$vo.username}</td>
+                                            <td>
+                                                <if condition="$vo.sex eq 1">
+                                                    男
+
+                                                    <else />
+                                                    女
+                                                </if>
+                                            </td>
+                                            <td>{$vo.add_time}</td>
+
+                                            <td  style="width: 200px;">
+                                                <!--<a href="javascript:distribute({$vo[id]},'{$vo.username}')" data-toggle="tooltip" title="" class="btn btn-info goods_list">处理订单</a>-->
+                                                <a href="{:U('Admin/User/edit_user',array('id'=>$vo['user_id']))}" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="处理订单"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a href="javascript:void(0);" onclick="del('{$vo[user_id]}')" id="button-delete6" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="删除"><i class="fa fa-trash-o"></i></a>
+                                            </td>
+                                        </tr>
+                                    </foreach>
+                                    </tbody>
+                                    <tfoot>
+
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-left">
+                                <button class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i></button>
+                            </div>
+                            <div class="col-sm-6 text-right">{$page}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+
+
+        function showIntroDetail(id){
+            art.dialog.open('{:U('Dish/orderInfo')}?id='+id,{lock:false,title:'订单详情',width:1100,height:620,yesText:'关闭',background: '#000',opacity: 0.87, close: function(){location.reload();}});
+        }
+        function del(id)
+        {
+            if(!confirm('确定要删除吗?'))
+                return false;
+            $.ajax({
+                url:"/index.php?m=Admin&c=User&a=ajax_del&table=users&id="+id,
+                dataType:'json',
+                type:'get',
+                success: function(v){
+                    layer.msg(v.msg, {icon: 2,time: 3000}); //alert(v.msg);
+                    window.location.reload();
+
+                },
+                error:function(e){
+                    layer.msg('错误……', {icon: 2,time: 3000}); //alert(v.msg);
+                    window.location.reload();
+                }
+            });
+            return false;
+        }
+
+
+
+        laydate.render({
+            elem: '#start_time'
+        });
+        laydate.render({
+            elem: '#end_time'
+        });
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<include file="Public/min-header"/>
+
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+           		<!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 门店详情</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">门店详情</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <form method="post" id="addEditBrandForm" onsubmit="return checkName();">             
+                        <!--通用信息-->
+                    <div class="tab-content">                 	  
+                        <div class="tab-pane active" id="tab_tongyong">
+                           
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>门店名称:</td>
+                                    <td>
+                                        <input type="text" value="{$store.name}" name="name" class="form-control" style="width:200px;"/>
+                                        <span id="err_name" style="color:#F00; display:none;">门店名称不能为空</span>
+                                    </td>
+                                </tr>                                
+                                <tr>
+                                    <td>门店老板:</td>
+                                    <td>
+                                        <select name="business_user_id"  class="form-control" style="width:250px;">
+                                            <volist name="business_user" id="bu">
+                                                <option <if condition="$store['business_user_id'] eq $bu['id']">selected</if>  value="{$bu.id}">{$bu.user_name}</option>
+                                            </volist>
+                                        </select>
+                                        <span id="err_business_user_id" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>手机号:</td>
+                                    <td>
+                                        <input type="text" value="{$store.cellphone}" name="cellphone" class="form-control" style="width:250px;"/>
+                                        <span id="err_cellphone" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>门店座机:</td>
+                                    <td>
+                                        <input type="text" value="{$store.tel}" name="tel" class="form-control" style="width:250px;"/>
+                                        <span id="err_tel" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>门店经纬度:</td>
+                                    <td>
+                                        <input type="text" value="{$store.longitude}" name="longitude" class="form-control" style="width:250px;"/>
+                                        <span id="err_longitude" style="color:#F00; display:none;"></span>
+                                        <input type="text" value="{$store.latitude}" name="latitude" class="form-control" style="width:250px;"/>
+                                        <!--<span id="add_latitude" style="color:#99999a;"><a href="javascript:void(0)" onclick="setlatlng($('input[name=longitude]').val(),$('input[name=latitude]').val())">点击选择座标</a></span>-->
+                                        <span id="add_latitude" style="color:#99999a;"><a href="javascript:void(0)" onclick="setlatlng()">点击选择座标</a></span>
+                                        <span id="err_latitude" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>营业时间:</td>
+                                    <td>
+                                        <input type="text" value="{$store.opening_time}" name="opening_time" class="form-control" style="width:250px;"/>--
+                                        <input type="text" value="{$store.close_time}" name="close_time" class="form-control" style="width:250px;"/>
+                                        <span id="err_opening_time" style="color: #99999a; display:block;">例如10：30请输入1030,例如 9：22请输入0922</span>
+                                        <span id="err_close_time" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>门店区域:</td>
+                                    <td>
+                                        <div class="col-sm-3">
+	                                        <select name="province" id="province" onChange="get_city(this)" class="form-control" style="width:250px;margin-left:-15px;">
+                                                    <option value="0">请选择</option>
+                                                <volist name="province" id="p">
+                                                    <option <if condition="$store['province'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+						</select>
+	                                    </div>                                    
+
+                                        <div class="col-sm-3">
+                                            <select name="city" id="city" onChange="get_area(this)"  class="form-control" style="width:250px;">
+                                                <volist name="city" id="p">
+                                                    <option <if condition="$store['city'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select name="district" id="district" onChange="get_twon(this)"  class="form-control" style="width:250px;">
+                                                <volist name="district" id="p">
+                                                    <option <if condition="$store['district'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select name="town" id="twon" <if condition="$store['town'] gt 0 ">style="display:block;"<else/>style="display:none;"</if>  class="form-control" style="width:250px;">
+                                            <volist name="town" id="p">
+                                                <option <if condition="$store['town'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+                                            </volist>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>详细地址:</td>
+                                    <td>
+                                        <input type="text" value="{$store.address}" name="address" class="form-control" style="width:300px;"/>
+                                        <span id="err_address" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                                    <td>品牌logo:</td>
+                                    <td>  
+                                    	<div class="col-sm-3">                                                                              
+                                        	<input type="text" value="{$store.logo}" name="logo" id="logo" class="form-control" style="width:350px;margin-left:-15px;"/>
+                                        </div>
+                                        <div class="col-sm-3">
+                                        	<input onclick="GetUploadify(1,'logo','brand');" type="button" class="btn btn-default" value="上传logo"/>
+                                        </div>
+                                    </td>
+                                </tr>-->
+                                <tr>
+                                    <td>状态:</td>
+                                    <td>
+                                        <input type="text" value="{$store.status}" name="status" class="form-control" style="width:250px;"/>
+                                        <span id="more_status" style="color:#99999A; display:block;">1为可用;0为禁用，默认为1</span>
+                                        <span id="err_status" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>排序:</td>
+                                    <td>
+                                        <input type="text" value="{$store.sort}" name="sort" class="form-control" style="width:200px;" placeholder="50"/>                                
+                                    </td>
+                                </tr>                                                                 
+                                <tr>
+                                    <td>门店描述:</td>
+                                    <td>
+										<textarea rows="4" cols="60" name="intro">{$store.intro}</textarea>
+                                        <span id="err_intro" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>                                  
+                                </tbody>                                
+                                </table>
+                        </div>                           
+                    </div>              
+                    <div class="pull-right">
+                        <input type="hidden" name="id" value="{$store.id}">
+                        <input type="hidden" name="p" value="{$_GET[p]}">
+                        <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="保存">保存</button>
+                    </div>
+			    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+// 判断输入框是否为空
+function checkName(){
+	var name = $("#addEditBrandForm").find("input[name='name']").val();
+    if($.trim(name) == '')
+	{
+		$("#err_name").show();
+		return false;
+	}
+	return true;
+}
+
+/*window.onload = function(){
+	if({$store.cat_id} > 0 ){
+		get_category($("#parent_id_1").val(),'parent_id_2',{$store.cat_id});	 
+	}		
+}*/
+</script>
+
+<script src="__PUBLIC__/js/global.js"></script>
+<script src="__PUBLIC__/js/pc_common.js"></script>
+
+<script language="javascript" type="text/javascript">
+    function checkForm(){
+        var consignee = $('input[name="consignee"]').val();
+        var province = $('select[name="province"]').find('option:selected').val();
+        var city = $('select[name="city"]').find('option:selected').val();
+        var district = $('select[name="district"]').find('option:selected').val();
+        var address = $('textarea[name="address"]').val();
+        var mobile = $('input[name="mobile"]').val();
+        var error = '';
+        if(consignee == ''){
+            error += '收货人不能为空 <br/>';
+        }
+        if(province==0){
+            error += '请选择省份 <br/>';
+        }
+        if(city==0){
+            error += '请选择城市 <br/>';
+        }
+        if(district==0){
+            error += '请选择区域 <br/>';
+        }
+        if(address == ''){
+            error += '请填写地址 <br/>';
+        }
+        if(!checkMobile(mobile))
+            error += '手机号码格式有误 <br/>';
+        if(error){
+            //alert(error);
+            layer.alert(error, {icon: 2});
+            //	layer.msg('只想弱弱提示');
+            return false;
+        }
+        return true;
+    }
+
+</script>
+<script src="__PUBLIC__/artDialog/jquery.artDialog.js"></script>
+<script language="javascript" type="text/javascript">
+
+    //设置经纬度
+    function setlatlng(){
+        layer.open({
+            type: 2 //Page层类型
+            ,area: ['1000px', '500px']
+            ,title: '座标选择器'
+            ,shade: 0.6 //遮罩透明度
+            ,maxmin: true //允许全屏最小化
+            ,anim: 1 //0-6的动画形式，-1不开启
+            ,content: '{:U("Admin/Store/getLongLatFromBaidu")}'
+        });
+    }
+</script>
+</body>
+</html>

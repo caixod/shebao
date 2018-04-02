@@ -1,0 +1,161 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+  <include file="Public/breadcrumb"/>
+  <section class="content">
+    <div class="container-fluid">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><i class="fa fa-list"></i>社保信息列表</h3>
+            <div class="box-header">
+                <!--<nav class="navbar navbar-default">-->
+                    <!--<div class="collapse navbar-collapse">-->
+                        <!--<div class="navbar-form row">-->
+                            <!--<div class="col-md-10">-->
+                                <!--&lt;!&ndash;<button class="btn bg-navy" type="button" onclick="tree_open(this);"><i class="fa fa-angle-double-down"></i>展开</button>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-9">-->
+                                <!--<span class="warning">温馨提示：顶级分类（一级大类）设为推荐时才会在首页楼层中显示</span>&ndash;&gt;-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;<div class="col-md-2">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<a href="{:U('Manage/area_new_add')}" class="btn btn-primary pull-right"><i class="fa fa-plus"></i>新增地区</a>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</nav>-->
+            </div>
+        </div>
+
+        <div class="panel-body">    
+
+                        
+          <div id="ajax_return"> 
+                 
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th class="sorting text-center" rowspan="2">ID</th>
+                                <th class="sorting text-center" rowspan="2">省</th>
+                                <th class="sorting text-center" rowspan="2">市</th>
+                                <th class="sorting text-center"  rowspan="2">养老保险比例<br>个人|单位</th>
+                                <th class="sorting text-center"  rowspan="2">失业保险<br>个人|单位</th>
+                                <th class="sorting text-center"  rowspan="2">生育保险<br>个人|单位</th>
+                                <th class="sorting text-center"  rowspan="2">工伤保险<br>个人|单位</th>
+                                <th class="sorting text-center"  rowspan="2">医疗保险<br>个人|单位</th>
+
+                                <th class="sorting text-center"  rowspan="2">操作</th>
+                            </tr>
+                            <tr>
+                                <!--<th class="sorting text-center">ID</th>-->
+                                <!--<th class="sorting text-center">省</th>-->
+                                <!--<th class="sorting text-center">市</th>-->
+                                <!--<th class="sorting text-center">个人|单位</th>-->
+                                <!--<th class="sorting text-center">个人|单位</th>-->
+                                <!--<th class="sorting text-center">个人|单位</th>-->
+                                <!--<th class="sorting text-center">个人|单位</th>-->
+                                <!--<th class="sorting text-center">个人|单位</th>-->
+
+                                <!--<th class="sorting text-center">操作</th>-->
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <volist name="area_list" id="list" key="k">
+                                <tr>
+                                    <td class="text-center">{$k}</td>
+                                    <td class="text-center">{$list.province}</td>
+                                    <td class="text-center">{$list.city.name}</td>
+                                    <td class="text-center">
+                                        {$list.city.xian_one}% | {$list.city.c_xian_one}%
+                                    </td>
+                                    <td class="text-center">
+                                        {$list.city.xian_two}% | {$list.city.c_xian_two}%
+                                    </td>
+
+                                      <td class="text-center">
+                                        {$list.city.xian_three}% | {$list.city.c_xian_three}%
+                                    </td>
+                                      <td class="text-center">
+                                        {$list.city.xian_four}% | {$list.city.c_xian_four}%
+                                    </td>
+                                      <td class="text-center">
+                                        {$list.city.xian_five}% | {$list.city.c_xian_five}%
+                                    </td>
+
+                                    <td class="text-center">
+                                        <a href="{:U('Admin/Manage/sb_edit',array('id'=>$list['id']))}" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="编辑"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <!--<a href="javascript:void(0);" onclick="del('{$list[id]}')" id="button-delete6" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="删除"><i class="fa fa-trash-o"></i></a>-->
+                                    </td>
+                                </tr>
+                              </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                <div class="row">
+                    <div class="col-sm-6 text-left"></div>
+                    <div class="col-sm-6 text-right">{$show}</div>
+                </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row --> 
+  </section>
+  <!-- /.content --> 
+</div>
+<!-- /.content-wrapper --> 
+ <script>
+ // 删除操作 Admin/Manage/area_add
+function del(id)
+{
+    layer.msg('如果要删掉本地区的社保信息,直接删掉该地区即可', {icon: 2,time: 3000}); //alert(v.msg);
+    location.href='{:U("Admin/Manage/area_list")}';
+//	if(!confirm('确定要删除吗?'))
+//		return false;
+//		$.ajax({
+//			url:"/index.php?m=Admin&c=Manage&a=sb_del&id="+id,
+//            dataType:'json',
+//            type:'get',
+//			success: function(v){
+//                layer.msg(v.msg, {icon: 2,time: 3000}); //alert(v.msg);
+//                location.href='{:U("Admin/Manage/sb_list")}';
+//
+//			},
+//            error:function(e){
+//                layer.msg('错误……', {icon: 2,time: 3000}); //alert(v.msg);
+//                location.href='{:U("Admin/Manage/sb_list")}';
+//            }
+//		});
+	 return false;
+}
+ 
+
+//修改指定表的指定字段值
+function changeBrandField(field,id,obj)
+{
+ 
+     var isshow = $(obj).data('isshow');
+     if(isshow == 1)
+     {
+         $(obj).data('isshow','0');    
+         var value = 0;
+         $(obj).attr('src','__PUBLIC__/images/cancel.png');
+         
+     }else{
+         $(obj).data('isshow','1');
+         var value = 1;
+         $(obj).attr('src','__PUBLIC__/images/yes.png');
+     }    
+     
+     $.ajax({
+             url:'/index.php?m=Admin&c=goods&a=changeBrandField&field='+field+'&id='+id+'&value='+value,			
+             success: function(data){					                                                                      
+                     //  
+             }
+     });		
+     
+}
+ </script>
+</body>
+</html>

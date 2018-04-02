@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>登录</title>
+	<link rel="stylesheet" href="__STATIC__/css/new_css/reset.css">
+	<script src="__STATIC__/js/new_js/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__STATIC__/css/new_css/style.css">
+	<link rel="stylesheet" href="__STATIC__/css/new_css/comeon.css">
+	<link rel="stylesheet" href="__STATIC__/css/new_css/bootstrap-switch.css">
+	<script src="__STATIC__/js/new_js/bootstrap-switch.min.js"></script>
+	<script src="__STATIC__/js/new_js/plupload.full.min.js"></script>
+	<script src="__STATIC__/js/new_js/laydate/laydate.js"></script>
+	<script src="__STATIC__/js/new_js/layer/layer.js"></script>
+	<link type="text/css" rel="stylesheet" href="__STATIC__/css/new_css/jquery-ui-1.9.2.custom.css">
+	<script src="__STATIC__/js/other.js"></script>
+	<script src="__STATIC__/js/global_no.js"></script>
+    <script src="__STATIC__/js/new_js/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/sb_css/style.css">
+    <link rel="stylesheet" href="__STATIC__/css/sb_css/comeon.css">
+	<style>
+		input,select{
+			outline: none;
+		}
+		.main-content-fun h4{
+			color:grey;
+			font-weight:blod;
+		}
+		.g_on_off {
+			position: absolute !important;
+			left: 600px;
+			top: 67px;
+		}
+		.i_agree {
+			margin-left: 100px;
+			margin-top: 30px;
+			font-size: 15px;
+			color: grey;
+		}
+		.i_agree>label {
+			margin-left: 10px;
+		}
+		.g_wxd {
+			margin-bottom: 30px;
+		}
+		.pop-content-left p{
+			margin-top:20px;
+		}
+		.g_tips{
+			border-radius:10px;
+		}
+		.main-article-tips{
+			border-radius:10px;
+		}
+		/* .g_titel_2>span{
+        color:grey;
+
+        }
+        .g_in>label{
+        color:#333;
+        } */
+		.title_cout{
+			font-size:18px;
+			color:#ae2c26;
+			border-bottom:1px solid #ccc;
+			padding-bottom:20px;
+			margin-bottom:10px;
+		}
+		.p_title{
+			color:#c2000b;
+			padding-right:10px;
+			font-size: 14px;
+		}
+		.main-content-detail{
+			margin-top:30px;
+		}
+		.sub_form{
+			margin-top:7px;
+		}
+		.money_num{
+			display: inline-block;
+			width: 200px;
+			height: 30px;
+			border: 1px solid #e2e1e1;
+			margin-right: 10px;
+			line-height: 30px;
+			text-indent: 10px;
+			font-size: 14px;
+			color:#333;
+			border-radius: 5px;
+		}
+		.money_num2{
+			margin-left:82px;
+			margin-top:10px;
+		}
+		tr td {
+			border: 1px solid #999;
+		}
+		._sub,._sub2{
+			width: 100px;
+			height: 32px;
+			background: #5cb85c;
+			border: none;
+			color: #fff;
+			font-size: 15px;
+			margin-left: 30px;
+			border-radius: 4px;
+		}
+		.main-content-fun-select span{
+			width:70px;
+			color:#ae2c26;
+			font-weight: 700;
+			font-size: 14px;
+		}
+		.dqxl{
+			height:30px;
+			line-height:30px;
+			width:166px;
+		}
+		.g_padd{
+			padding:15px 0 5px;
+		}
+		.bdbox{
+			margin-left:67px;
+		}
+	</style>
+	<script type="text/javascript" src="__STATIC__/js/new_js/jquery-ui-1.9.2.custom.js" language="javascript"></script>
+	<script type="text/javascript" src="__STATIC__/js/new_js/share.js"></script>
+	<script type="text/javascript">
+        var loadIndex;
+        $(document).ajaxStart(function(){
+            loadIndex=layer.load(1)
+        }).ajaxStop(function(){
+            layer.close(loadIndex);
+        });
+	</script>
+	<script>
+        $(function () {
+            var n = 1;
+            $(".ggy").bind("click", function () {
+                var $html = $("<li class='g_li'><span class='g_name'></span><input class='g_sbjs' type='text'><input class='g_gjjjs' type='text'><button style='margin-left:20px;vertical-align:top;float:left;' class='btn btn-md btn-success g_zuidi' onmouseover='add()'>最低基数</button><a href='#'><span style='width:14px;height:16px;margin-left:20px;' class='glyphicon glyphicon-remove g_delete'></span></a></li>");
+                $("#g_put").append($html);
+                n++;
+            });
+            $("#g_put").on("click", ".g_delete", function () {
+                $(this).parents("li").remove();
+            });
+        });
+
+
+
+	</script>
+
+</head>
+<body>
+<!--//导航栏-->
+<include file="Public/new_nav_menu" />
+<!--导航栏end-->
+<div class="content clear" style="width: 100%;">
+	<div class="_content2 clear">
+		<div class="_left2">
+			<ul class="_login">
+				<li class="_act li " id="one">个人登录</li>
+				<li class="li " id="two">企业登录</li>
+				<li class="li2">
+					<a href="{:U('Checklogin/register')}">请注册</a>
+					<a href="{:U('Checklogin/forget_login')}">找回密码</a>
+				</li>
+			</ul>
+			<form action="{:U('Home/Checklogin/do_login')}" class="p_login p_login1 change_o" method="post" id="form1" style="width: 70%;font-size: 16px;">
+				<label for="">手机号:</label>
+				<input class="input" type="text" name="account_name" id="account_name" value="" style="height: 30px;"><br>
+				<label for="">密码:</label>
+				<input class="input" name="pwd" id="password"  value=""  type="password" style="height: 30px;"><br>
+				<label for="">验证码:</label>
+				<input class="input input2" name="check_f" id="check_f" value="" type="text" style="height: 30px;">
+				<img class="po-ab to0" id="verify_code_img" width="120" height="40" src="{:U('Home/Checklogin/verify')}"  onclick="verify(this)" />
+				<input class="_sub" type="button" onclick="check_feld();" value="登录">
+				<input type="hidden" value="0" name="user_type"/>
+			</form>
+
+
+			<form action="{:U('Home/Checklogin/do_company_login')}" class="p_login  change_t" style="width: 70%;font-size: 16px;" method="post" id="form2">
+				<label for="">企业手机号:</label>
+				<input class="input" type="text" name="account_name" id="account_name_t" value="" style="height: 30px;"><br>
+				<label for="">密码:</label>
+				<input class="input" name="pwd" id="password_t"  value=""  type="password" style="height: 30px;"><br>
+				<label for="">验证码:</label>
+				<input class="input input2" name="check_f" id="check_f_t" value="" type="text" style="height: 30px;">
+				<img class="po-ab to0" id="verify_code_img_t" width="120" height="40" src="{:U('Home/Checklogin/verify')}"  onclick="verify_t(this)" />
+				<input class="_sub" type="button" onclick="check_feld_t();" value="登录">
+				<input type="hidden" value="1" name="user_type"/>
+			</form>
+		</div>
+	<div class="right">
+		<div class="main-article">
+			<!-- <div class="g_tips">
+                <p>当前已开通服务城市</p>
+                <ul class="g_city">
+                    <li>
+                        <p>XX省</p>
+                        <span> xx 市</span>
+                        <span> xx 市</span>
+                        <span> xx 市</span>
+                    </li>
+                </ul>
+            </div> -->
+			<div class="main-article-tips">
+				<div class="default">
+					<h4>社保小贴士</h4>
+					<p>请选择您的参保城市</p>
+					<p>根据您选择的参保城市，提供以下信息：</p>
+					<p>1、下单截止日期</p>
+					<p>2、参保规则说明</p>
+					<p>3、需要提供的参保资料</p>
+					<p>4、服务费收取规则</p>
+				</div>
+				<div class="social_tips">
+					<p>特别提示:</p>
+					<div>
+						1、 因客户自身原因（未了解清楚规则、无故撤单）退费的，服务费不予退还！<br>
+						2、不承接现已怀孕、重病等特殊人员的社保代缴业务。如客户隐瞒孕情、病情下单，我司无法为其办理相应的社保待遇。如有生育计划，请在孕前3个月，即生育前13个月提前购买社保。<br>
+						3、关于生育待遇的申领，我司仅承接异地分娩，生育备案，医疗报销等业务。涉及生育津贴、产假工资的申领我司概不接受。<br>
+						4、首次支付时系统会提示上传身份证正反面材料，填写好个人信息支付订单后，我司会有人跟进，如后续需要其它材料补充，我司会再联系您。
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<include file="Public/new_footer" />
+</body>
+
+<script src="__STATIC__/js/new_js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/new_js/diqu.js"></script>
+<script type="text/javascript" src="__STATIC__/js/new_js/not3.js"></script>
+<script>
+
+    $("#one").click(function(){
+       $("#one").addClass("_act");
+       $("#two").removeClass("_act");
+       $(".change_o").addClass("p_login1");
+       $(".change_t").removeClass("p_login1");
+    });
+    $("#two").click(function(){
+        $("#two").addClass("_act");
+        $("#one").removeClass("_act");
+        $(".change_t").addClass("p_login1");
+        $(".change_o").removeClass("p_login1");
+    });
+
+
+    function verify(){
+        $('#verify_code_img').attr('src','/index.php?m=Home&c=Checklogin&a=verify&r='+Math.random());
+    }
+    function verify_t(){
+        $('#verify_code_img_t').attr('src','/index.php?m=Home&c=Checklogin&a=verify&r='+Math.random());
+    }
+
+    function check_feld(){
+        var account_name=  $.trim($("#account_name").val());
+        var password=  $.trim($("#password").val());
+        var check_f=  $.trim($("#check_f").val());
+
+        var reg = /^(\w){6,18}$/;
+
+        var pattern = /^1[34578]\d{9}$/;
+        if(account_name=='' || !pattern.test(account_name)){
+            layer.alert('请输入正确的手机号', {icon: 2});
+            return false;
+        }
+        if(password=='' || !reg.test(password)){
+            layer.alert('密码为6-18位数字字母下划线', {icon: 2});
+            return false;
+        }
+
+        if(check_f==''){
+            layer.alert('请输入验证码', {icon: 2});
+            return false;
+        }
+
+        $("#form1").submit();
+
+    }
+
+
+
+    function check_feld_t(){
+        var account_name=  $.trim($("#account_name_t").val());
+        var password=  $.trim($("#password_t").val());
+        var check_f=  $.trim($("#check_f_t").val());
+
+        var reg = /^(\w){6,18}$/;
+
+        var pattern = /^1[34578]\d{9}$/;
+        if(account_name=='' || !pattern.test(account_name)){
+            layer.alert('请输入正确的手机号', {icon: 2});
+            return false;
+        }
+        if(password=='' || !reg.test(password)){
+            layer.alert('密码为6-18位数字字母下划线', {icon: 2});
+            return false;
+        }
+
+        if(check_f==''){
+            layer.alert('请输入验证码', {icon: 2});
+            return false;
+        }
+
+        $("#form2").submit();
+
+    }
+    $(function(){
+
+        $("#btn2").click(function(){
+
+            $("#show2").modal("show");
+        });
+        $(".g_quxiao").click(function(){
+            $("#show2").modal("hide");
+        })
+        $(".g_close").click(function() {
+            $("#show2").modal("hide");
+        });
+    })
+
+</script>
+
+<script>
+
+</script>
+</html>
+
+

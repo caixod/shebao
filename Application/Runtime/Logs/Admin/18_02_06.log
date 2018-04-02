@@ -1,0 +1,2370 @@
+[ 2018-02-06T16:13:33+08:00 ] 221.216.49.154 /index.php/Admin/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Common/function.php 第 279 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=user_push&amp;domain=pc.zhongguoshebaodaili.cn&amp;last_domain=pc.zhongguoshebaodaili.cn&amp;key_num=v1.3.2&amp;install_time=1480844624&amp;cpu=0001&amp;mac=0002&amp;serial_number=20161204054344hMRIXH): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Common/function.php 第 279 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000087s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2018-02-06T16:13:33+08:00 ] 221.216.49.154 /index.php/Admin/Admin/vertify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2018-02-06T16:14:15+08:00 ] 221.216.49.154 /index.php?m=Admin&c=Admin&a=login&t=0.7298594643361866
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-02-06T16:14:15+08:00 ] 221.216.49.154 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Logic/UpgradeLogic.class.php 第 52 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=checkVersion&amp;v=v1.3.2): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Logic/UpgradeLogic.class.php 第 52 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000061s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2018-02-06T16:14:15+08:00 ] 221.216.49.154 /index.php/Admin/System/login_task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/SystemController.class.php 第 255 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2018-02-06T16:14:16+08:00 ] 221.216.49.154 /index.php/Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined index: version /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/IndexController.class.php 第 91 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000044s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: count /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/69fa43b310489e974c292babf8eca7e7.php 第 173 行.
+NOTIC: [8] Undefined variable: count /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/69fa43b310489e974c292babf8eca7e7.php 第 201 行.
+NOTIC: [8] Undefined variable: count /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/69fa43b310489e974c292babf8eca7e7.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2018-02-06T16:14:33+08:00 ] 58.247.212.98 /index.php/Admin/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Common/function.php 第 279 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=user_push&amp;domain=pc.zhongguoshebaodaili.cn&amp;last_domain=pc.zhongguoshebaodaili.cn&amp;key_num=v1.3.2&amp;install_time=1480844624&amp;cpu=0001&amp;mac=0002&amp;serial_number=20161204054344hMRIXH): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Common/function.php 第 279 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000061s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2018-02-06T16:15:15+08:00 ] 120.204.17.67 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000058s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+
+[ 2018-02-06T16:19:55+08:00 ] 221.216.49.154 /index.php/Admin/Wechat/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000065s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2018-02-06T16:20:06+08:00 ] 221.216.49.154 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 416 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 417 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000062s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-02-06T16:20:16+08:00 ] 221.216.49.154 /index.php/Admin/Order/sb_daijiao_edit/id/121
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined offset: 2 /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Common/Common/common.php 第 231 行.
+NOTIC: [8] Undefined offset: 2 /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Common/Common/common.php 第 231 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000076s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2018-02-06T16:24:04+08:00 ] 221.216.49.154 /index.php/Admin/Order/sb_company_order_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 264 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 265 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000067s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2018-02-06T16:24:08+08:00 ] 221.216.49.154 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 416 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 417 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000058s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2018-02-06T16:25:54+08:00 ] 221.216.49.154 /index.php/Admin/Report/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 88 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 89 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000064s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: today /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 167 行.
+NOTIC: [8] Undefined variable: today /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 170 行.
+NOTIC: [8] Undefined variable: today /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 173 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2018-02-06T16:25:57+08:00 ] 221.216.49.154 /index.php/Admin/Report/finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 251 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 252 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000060s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2018-02-06T16:26:34+08:00 ] 221.216.49.154 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000059s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2018-02-06T16:26:45+08:00 ] 221.216.49.154 /index.php/Admin/Wechat/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000059s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2018-02-06T16:26:46+08:00 ] 221.216.49.154 /index.php/Admin/Wechat/text
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000073s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2018-02-06T16:26:47+08:00 ] 221.216.49.154 /index.php/Admin/Wechat/img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000042s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2018-02-06T16:26:47+08:00 ] 221.216.49.154 /index.php/Admin/Wechat/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000047s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2018-02-06T16:27:05+08:00 ] 221.216.49.154 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 416 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 417 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000065s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2018-02-06T16:27:13+08:00 ] 221.216.49.154 /index.php/Admin/Order/sb_daijiao_edit/id/121
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined offset: 2 /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Common/Common/common.php 第 231 行.
+NOTIC: [8] Undefined offset: 2 /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Common/Common/common.php 第 231 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000105s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2018-02-06T16:29:53+08:00 ] 221.216.49.154 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 416 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 417 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000058s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2018-02-06T16:34:15+08:00 ] 221.216.49.154 /index.php/Admin/manage/pay_config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000066s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2018-02-06T16:34:30+08:00 ] 221.216.49.154 /index.php/Admin/manage/pay_config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000069s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2018-02-06T16:35:52+08:00 ] 221.216.49.154 /index.php/Admin/manage/sb_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000099s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000169s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2018-02-06T16:35:54+08:00 ] 221.216.49.154 /index.php/Admin/Manage/sb_edit/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000062s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2018-02-06T16:39:01+08:00 ] 221.216.49.154 /index.php/Admin/Manage/sb_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000066s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+
+[ 2018-02-06T16:39:02+08:00 ] 221.216.49.154 /index.php/Admin/Manage/sb_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000072s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2018-02-06T16:39:23+08:00 ] 221.216.49.154 /index.php/Admin/manage/area_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000094s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2018-02-06T16:39:26+08:00 ] 221.216.49.154 /index.php/Admin/Manage/area_new_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000071s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 186 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 193 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 194 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 195 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 196 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 203 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 204 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 205 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 206 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 243 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 250 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 256 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 262 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 268 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 274 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 280 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 286 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 292 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 298 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 304 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 310 行.
+NOTIC: [8] Undefined variable: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2018-02-06T16:39:39+08:00 ] 221.216.49.154 /index.php/Admin/Manage/area_new_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+ERR: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: '' for column 'sb_bujiao' at row 1
+
+[ 2018-02-06T16:39:43+08:00 ] 221.216.49.154 /index.php/Admin/manage/area_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000131s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2018-02-06T16:39:45+08:00 ] 221.216.49.154 /index.php/Admin/Manage/area_new_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000071s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 186 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 193 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 194 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 195 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 196 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 203 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 204 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 205 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 206 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 243 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 250 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 256 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 262 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 268 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 274 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 280 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 286 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 292 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 298 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 304 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 310 行.
+NOTIC: [8] Undefined variable: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2018-02-06T16:41:17+08:00 ] 221.216.49.154 /index.php/Admin/Manage/area_new_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+ERR: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: '' for column 'gjj_bujiao' at row 1
+
+[ 2018-02-06T16:41:25+08:00 ] 1.203.67.111 /index.php/Admin/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Common/function.php 第 279 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=user_push&amp;domain=pc.zhongguoshebaodaili.cn&amp;last_domain=pc.zhongguoshebaodaili.cn&amp;key_num=v1.3.2&amp;install_time=1480844624&amp;cpu=0001&amp;mac=0002&amp;serial_number=20161204054344hMRIXH): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Common/function.php 第 279 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000068s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-02-06T16:41:25+08:00 ] 1.203.67.111 /index.php/Admin/Admin/vertify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2018-02-06T16:41:28+08:00 ] 221.216.49.154 /index.php/Admin/manage/area_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000130s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2018-02-06T16:41:35+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=login&t=0.7078017398286429
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+
+[ 2018-02-06T16:41:43+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=vertify&r=50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2018-02-06T16:41:45+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=vertify&r=53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2018-02-06T16:41:51+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=login&t=0.913975256971127
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+
+[ 2018-02-06T16:41:57+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=login&t=0.14054777966562004
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+
+[ 2018-02-06T16:41:59+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=vertify&r=86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2018-02-06T16:42:00+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=vertify&r=41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2018-02-06T16:42:01+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=vertify&r=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2018-02-06T16:42:01+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=vertify&r=34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2018-02-06T16:42:07+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=login&t=0.3506405884382724
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+
+[ 2018-02-06T16:42:08+08:00 ] 1.203.67.111 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Logic/UpgradeLogic.class.php 第 52 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=checkVersion&amp;v=v1.3.2): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Logic/UpgradeLogic.class.php 第 52 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000073s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-02-06T16:42:08+08:00 ] 1.203.67.111 /index.php/Admin/System/login_task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/SystemController.class.php 第 255 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2018-02-06T16:42:08+08:00 ] 1.203.67.111 /index.php/Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+NOTIC: [8] Undefined index: version /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/IndexController.class.php 第 91 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000046s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: count /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/69fa43b310489e974c292babf8eca7e7.php 第 173 行.
+NOTIC: [8] Undefined variable: count /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/69fa43b310489e974c292babf8eca7e7.php 第 201 行.
+NOTIC: [8] Undefined variable: count /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/69fa43b310489e974c292babf8eca7e7.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2018-02-06T16:42:14+08:00 ] 1.203.67.111 /index.php/Admin/manage/pay_config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000058s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2018-02-06T16:43:22+08:00 ] 221.216.49.154 /index.php/Admin/Manage/area_new_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000087s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 186 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 193 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 194 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 195 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 196 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 203 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 204 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 205 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 206 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 243 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 250 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 256 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 262 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 268 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 274 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 280 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 286 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 292 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 298 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 304 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 310 行.
+NOTIC: [8] Undefined variable: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2018-02-06T16:43:58+08:00 ] 1.203.67.111 /index.php/Admin/manage/pay_config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000069s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+
+[ 2018-02-06T16:43:59+08:00 ] 1.203.67.111 /index.php/Admin/Manage/pay_config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000045s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-02-06T16:44:14+08:00 ] 221.216.49.154 /index.php/Admin/Manage/area_new_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000062s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+
+[ 2018-02-06T16:44:15+08:00 ] 221.216.49.154 /index.php/Admin/Manage/area_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000085s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2018-02-06T16:44:21+08:00 ] 221.216.49.154 /index.php/Admin/Manage/area_add/id/339
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000044s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Use of undefined constant wuxian - assumed 'wuxian' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 179 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 179 行.
+NOTIC: [8] Use of undefined constant wuxian - assumed 'wuxian' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 180 行.
+NOTIC: [8] Use of undefined constant season - assumed 'season' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 180 行.
+NOTIC: [8] Use of undefined constant wuxian - assumed 'wuxian' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 181 行.
+NOTIC: [8] Use of undefined constant half_year - assumed 'half_year' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 181 行.
+NOTIC: [8] Use of undefined constant wuxian - assumed 'wuxian' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 182 行.
+NOTIC: [8] Use of undefined constant year - assumed 'year' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 182 行.
+NOTIC: [8] Use of undefined constant wuxian_and_gjj - assumed 'wuxian_and_gjj' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 189 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 189 行.
+NOTIC: [8] Use of undefined constant wuxian_and_gjj - assumed 'wuxian_and_gjj' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 190 行.
+NOTIC: [8] Use of undefined constant season - assumed 'season' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 190 行.
+NOTIC: [8] Use of undefined constant wuxian_and_gjj - assumed 'wuxian_and_gjj' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 191 行.
+NOTIC: [8] Use of undefined constant half_year - assumed 'half_year' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 191 行.
+NOTIC: [8] Use of undefined constant wuxian_and_gjj - assumed 'wuxian_and_gjj' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 192 行.
+NOTIC: [8] Use of undefined constant year - assumed 'year' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 192 行.
+NOTIC: [8] Use of undefined constant guakao - assumed 'guakao' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 199 行.
+NOTIC: [8] Use of undefined constant wuxian - assumed 'wuxian' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 199 行.
+NOTIC: [8] Use of undefined constant ten - assumed 'ten' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 199 行.
+NOTIC: [8] Use of undefined constant guakao - assumed 'guakao' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 200 行.
+NOTIC: [8] Use of undefined constant wuxian - assumed 'wuxian' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 200 行.
+NOTIC: [8] Use of undefined constant gt_ten - assumed 'gt_ten' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 200 行.
+NOTIC: [8] Use of undefined constant guakao - assumed 'guakao' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 207 行.
+NOTIC: [8] Use of undefined constant wuxian_and_gjj - assumed 'wuxian_and_gjj' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 207 行.
+NOTIC: [8] Use of undefined constant ten - assumed 'ten' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 207 行.
+NOTIC: [8] Use of undefined constant guakao - assumed 'guakao' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 208 行.
+NOTIC: [8] Use of undefined constant wuxian_and_gjj - assumed 'wuxian_and_gjj' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 208 行.
+NOTIC: [8] Use of undefined constant gt_ten - assumed 'gt_ten' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 208 行.
+NOTIC: [8] Use of undefined constant daili - assumed 'daili' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 214 行.
+NOTIC: [8] Use of undefined constant wuxian - assumed 'wuxian' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 214 行.
+NOTIC: [8] Use of undefined constant ten - assumed 'ten' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 214 行.
+NOTIC: [8] Use of undefined constant daili - assumed 'daili' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 215 行.
+NOTIC: [8] Use of undefined constant wuxian - assumed 'wuxian' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 215 行.
+NOTIC: [8] Use of undefined constant gt_ten - assumed 'gt_ten' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 215 行.
+NOTIC: [8] Use of undefined constant daili - assumed 'daili' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 222 行.
+NOTIC: [8] Use of undefined constant wuxian_and_gjj - assumed 'wuxian_and_gjj' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 222 行.
+NOTIC: [8] Use of undefined constant ten - assumed 'ten' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 222 行.
+NOTIC: [8] Use of undefined constant daili - assumed 'daili' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 223 行.
+NOTIC: [8] Use of undefined constant wuxian_and_gjj - assumed 'wuxian_and_gjj' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 223 行.
+NOTIC: [8] Use of undefined constant gt_ten - assumed 'gt_ten' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/c50d4d23578e1f025a7c7116c8966b4f.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2018-02-06T16:44:28+08:00 ] 221.216.49.154 /index.php/Admin/manage/sb_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000113s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2018-02-06T16:44:31+08:00 ] 221.216.49.154 /index.php/Admin/Manage/sb_edit/id/339
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000060s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2018-02-06T16:44:43+08:00 ] 221.216.49.154 /index.php/Admin/manage/area_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000117s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000177s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 185 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e3af9fc1d4e6c34ccfcc7d0002bd8fa0.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2018-02-06T16:44:45+08:00 ] 221.216.49.154 /index.php/Admin/Manage/area_new_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000067s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 186 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 193 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 194 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 195 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 196 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 203 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 204 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 205 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 206 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 243 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 250 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 256 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 262 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 268 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 274 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 280 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 286 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 292 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 298 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 304 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 310 行.
+NOTIC: [8] Undefined variable: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/81d3129b313306eea9fa16574efe11c7.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2018-02-06T16:51:03+08:00 ] 221.216.49.154 /index.php/Admin/manage/sb_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000143s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2018-02-06T16:51:07+08:00 ] 221.216.49.154 /index.php/Admin/Manage/sb_edit/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000058s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2018-02-06T16:56:05+08:00 ] 221.216.49.154 /index.php/Admin/Manage/sb_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000070s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+
+[ 2018-02-06T16:56:07+08:00 ] 221.216.49.154 /index.php/Admin/Manage/sb_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000087s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 218 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/339567d0f878508687e85bc45c850bcb.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-02-06T16:57:59+08:00 ] 221.216.49.154 /index.php/Admin/Manage/sb_edit/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000053s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2018-02-06T16:58:04+08:00 ] 221.216.49.154 /index.php/Admin/manage/gjj_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000115s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000173s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/43ad8a5549e3e261009713fd65631745.php 第 205 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/43ad8a5549e3e261009713fd65631745.php 第 205 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/43ad8a5549e3e261009713fd65631745.php 第 205 行.
+NOTIC: [8] Undefined variable: show /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/43ad8a5549e3e261009713fd65631745.php 第 214 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2018-02-06T16:58:06+08:00 ] 221.216.49.154 /index.php/Admin/Manage/gjj_edit/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000043s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
+
+[ 2018-02-06T21:19:40+08:00 ] 1.203.67.111 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000081s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+
+[ 2018-02-06T21:19:42+08:00 ] 1.203.67.111 /index.php/Admin/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Common/function.php 第 279 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=user_push&amp;domain=pc.zhongguoshebaodaili.cn&amp;last_domain=pc.zhongguoshebaodaili.cn&amp;key_num=v1.3.2&amp;install_time=1480844624&amp;cpu=0001&amp;mac=0002&amp;serial_number=20161204054344hMRIXH): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Common/function.php 第 279 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000045s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000076s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2018-02-06T21:19:42+08:00 ] 1.203.67.111 /index.php/Admin/Admin/vertify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2018-02-06T21:19:47+08:00 ] 1.203.67.111 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000090s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+
+[ 2018-02-06T21:19:48+08:00 ] 1.203.67.111 /index.php/Admin/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000039s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2018-02-06T21:19:48+08:00 ] 1.203.67.111 /index.php/Admin/Admin/vertify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2018-02-06T21:19:57+08:00 ] 1.203.67.111 /index.php?m=Admin&c=Admin&a=login&t=0.6161681292230472
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+
+[ 2018-02-06T21:19:57+08:00 ] 1.203.67.111 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Logic/UpgradeLogic.class.php 第 52 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=checkVersion&amp;v=v1.3.2): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Logic/UpgradeLogic.class.php 第 52 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000067s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2018-02-06T21:19:57+08:00 ] 1.203.67.111 /index.php/Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined index: version /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/IndexController.class.php 第 91 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000045s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: count /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/69fa43b310489e974c292babf8eca7e7.php 第 173 行.
+NOTIC: [8] Undefined variable: count /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/69fa43b310489e974c292babf8eca7e7.php 第 201 行.
+NOTIC: [8] Undefined variable: count /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/69fa43b310489e974c292babf8eca7e7.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2018-02-06T21:19:57+08:00 ] 1.203.67.111 /index.php/Admin/System/login_task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/SystemController.class.php 第 255 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2018-02-06T21:20:00+08:00 ] 1.203.67.111 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 416 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 417 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000058s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2018-02-06T21:20:10+08:00 ] 1.203.67.111 /index.php/Admin/Order/sb_daijiao_edit/id/128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined offset: 2 /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Common/Common/common.php 第 231 行.
+NOTIC: [8] Undefined offset: 2 /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Common/Common/common.php 第 231 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000063s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2018-02-06T21:21:09+08:00 ] 1.203.67.111 /index.php/Admin/Order/sb_daijiao_edit/id/128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined offset: 2 /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Common/Common/common.php 第 231 行.
+NOTIC: [8] Undefined offset: 2 /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Common/Common/common.php 第 231 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000073s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2018-02-06T21:21:54+08:00 ] 1.203.67.111 /index.php/Admin/Order/sb_company_order_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 264 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 265 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000059s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2018-02-06T21:21:55+08:00 ] 1.203.67.111 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 416 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 417 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000045s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2018-02-06T21:21:55+08:00 ] 1.203.67.111 /index.php/Admin/Order/sb_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 572 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 573 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000067s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/0cf2c9972a0249b6dd8338c7dd7f7465.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/0cf2c9972a0249b6dd8338c7dd7f7465.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/0cf2c9972a0249b6dd8338c7dd7f7465.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/0cf2c9972a0249b6dd8338c7dd7f7465.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/0cf2c9972a0249b6dd8338c7dd7f7465.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/0cf2c9972a0249b6dd8338c7dd7f7465.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/0cf2c9972a0249b6dd8338c7dd7f7465.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2018-02-06T21:21:56+08:00 ] 1.203.67.111 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 416 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/OrderController.class.php 第 417 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000052s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/e63d812592c6b23f1fdb1bbe313e6f55.php 第 226 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2018-02-06T21:29:13+08:00 ] 1.203.67.111 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000102s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 195 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2018-02-06T21:29:15+08:00 ] 1.203.67.111 /index.php/Admin/User/edit_user/id/2627
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000050s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2018-02-06T21:29:22+08:00 ] 1.203.67.111 /index.php/Admin/Report/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined index: sb_company_order /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: gjj_bujiao /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: sb_zhuanyi /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: gjj_zhuanyi /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: gjj_tiqu /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: yl_sgz /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: sy_shenqing /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: yd_bajy /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: sb_editinfo /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: own_money /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: tx_yanglao /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: school_info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: rc_yingjin /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 88 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 89 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000056s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: today /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 167 行.
+NOTIC: [8] Undefined variable: today /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 170 行.
+NOTIC: [8] Undefined variable: today /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 173 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-02-06T21:29:23+08:00 ] 1.203.67.111 /index.php/Admin/Report/finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 251 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 252 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000042s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
+
+[ 2018-02-06T21:29:25+08:00 ] 1.203.67.111 /index.php/Admin/Report/finance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 251 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 252 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000091s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2018-02-06T21:29:26+08:00 ] 1.203.67.111 /index.php/Admin/Report/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Undefined index: sb_company_order /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: gjj_bujiao /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: sb_zhuanyi /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: gjj_zhuanyi /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: gjj_tiqu /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: yl_sgz /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: sy_shenqing /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: yd_bajy /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: sb_editinfo /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: own_money /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: tx_yanglao /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: school_info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [8] Undefined index: rc_yingjin /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 56 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 88 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Admin/Controller/ReportController.class.php 第 89 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000041s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: today /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 167 行.
+NOTIC: [8] Undefined variable: today /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 170 行.
+NOTIC: [8] Undefined variable: today /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 173 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
+
+[ 2018-02-06T21:29:30+08:00 ] 1.203.67.111 /index.php/Admin/manage/sms_send_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000059s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2018-02-06T21:29:32+08:00 ] 1.203.67.111 /index.php/Admin/Manage/add_sms_send
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.000046s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.000080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/a4550e81b6cfb886ad836000459b0261.php 第 165 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/a4550e81b6cfb886ad836000459b0261.php 第 172 行.
+NOTIC: [8] Undefined variable: info /data/www/pc.zhongguoshebaodaili.cn/wwwroot/Application/Runtime/Cache/Admin/a4550e81b6cfb886ad836000459b0261.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+

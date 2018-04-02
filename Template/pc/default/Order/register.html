@@ -1,0 +1,366 @@
+<include file="Public/new_header" />
+
+<div class="box1" style="width: 100%">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="denglu">
+                    <h3>用户注册</h3>
+                    <div class="denglu_div">
+                        <form role="form" action="{:U('Home/Checklogin/register')}" method="post" onsubmit="return check_feld();">
+                            <div class="form-group">
+                                <label for="name">用户名</label>
+                                <input type="text" class="form-control" name="username" value=""  id="name" placeholder="请输入用户名">
+                                <span class="error" style="display: none;color: red;">请填写此字段</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">密码</label>
+                                <input type="password" class="form-control" id="password"  name="pwd" value="" placeholder="请输入密码">
+                                <span class="error" style="display: none;color: red;">请填写此字段</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password2">请再输入一次密码</label>
+                                <input type="password" class="form-control" id="r_pwd"  name="r_pwd" value=""  placeholder="请再输入一次密码">
+                                <span class="error" style="display: none;color: red;">两次密码不一致</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">请输入手机号码</label>
+                                <input type="text" class="form-control" id="phone"  name="phone" value=""  placeholder="请输入手机号码">
+                                <span class="error" style="display: none;color: red;">请输入正确的手机号</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password2">请输入验证码</label><br>
+                                <input type="text" class="form-control" id="check_f" placeholder="请输入验证码" name="check_f" value="" style="width: 40%;display: inline-block;">
+                                <span class="error" style="display: none;color: red;">请填写此字段</span>
+                                <img class="po-ab to0" id="verify_code_img" width="120" height="40" src="{:U('Home/Checklogin/verify')}"  onclick="verify(this)" />
+                                <!--<a><img class="ma-le-142 po-ab to18" src="__STATIC__/images/chg_image.png" id="verify_code_img2"  onclick="verify(this)" /></a>-->
+                            </div>
+
+                            <button type="submit" class="btn btn-default">提交</button>
+                        </form>
+                        <br>
+                        <p class="text-right">已有账号?<a href="{:U('Home/Checklogin/login')}" style="font-size:17px;font-weight: 100; "> 直接登录</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="denglu">
+                    <h3>业务城市</h3>
+                    <div class="denglu_div denglu_div2">
+                        <div class="chengshi">
+                            <h5>北京市</h5>
+                            <div class="qu">
+                                <ul>
+                                    <li><a href="#">海淀</a></li>
+                                    <li><a href="#">通州</a></li>
+                                    <li><a href="#">朝阳</a></li>
+                                    <li><a href="#">丰台</a></li>
+                                    <li><a href="#">西城</a></li>
+                                    <li><a href="#">东城</a></li>
+                                    <li><a href="#">昌平</a></li>
+                                    <li> <a href="#">石景山</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chengshi">
+                            <h5>上海市</h5>
+                            <div class="qu">
+                                <ul>
+                                    <li><a href="#">海淀</a></li>
+                                    <li><a href="#">通州</a></li>
+                                    <li><a href="#">朝阳</a></li>
+                                    <li><a href="#">丰台</a></li>
+                                    <li><a href="#">西城</a></li>
+                                    <li><a href="#">东城</a></li>
+                                    <li><a href="#">昌平</a></li>
+                                    <li> <a href="#">石景山</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chengshi">
+                            <h5>其他城市-介入400-086-4500</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="con">
+    <div class="id_sq_tt">
+        <img src="__STATIC__/images/new/chengnuo.png"><br>
+        <!--<p>北京首家城八区均可直接代缴社保的单位，有实力、服务好，还便宜！</p>-->
+        <div class="id_sq_tt2">Company commitment</div>
+    </div>
+
+</div>
+
+
+<div class="box2">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="denglu">
+                    <div class="id_cn_li" style="margin-left:0px;">
+                        <div class="id_cnli_img"><img src="__STATIC__/images/new/55e6b6b1c9fa9.png" height="138"></div>
+                        <div class="id_cnli_tt">服务承诺</div>
+                        <div class="id_cnli_cc">答应的必须做到，言必行行必果</div>
+                        <div class="id_cnli_more"><a href=""><img src="__STATIC__/images/new/more_16.jpg" width="16" height="16"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="denglu">
+                    <div class="id_cn_li">
+                        <div class="id_cnli_img"><img src="__STATIC__/images/new/55e6b71514e4b.png" height="138"></div>
+                        <div class="id_cnli_tt">信誉承诺</div>
+                        <div class="id_cnli_cc">做事先做人，我们把公司建立在人格至上，只做诚信事。</div>
+                        <div class="id_cnli_more"><a href=""><img src="__STATIC__/images/new/more_16.jpg" width="16" height="16"></a></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+                <div class="denglu">
+                    <div class="id_cn_li">
+                        <div class="id_cnli_img"><img src="__STATIC__/images/new/55e6b75c03e02.png" height="138"></div>
+                        <div class="id_cnli_tt">安全承诺</div>
+                        <div class="id_cnli_cc">客户信息绝对保密，我始终把您的信息一级保密</div>
+                        <div class="id_cnli_more"><a href=""><img src="__STATIC__/images/new/more_16.jpg" width="16" height="16"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="denglu">
+                    <div class="id_cn_li">
+                        <div class="id_cnli_img"><img src="__STATIC__/images/new/55e6b79578cf1.jpg" height="138"></div>
+                        <div class="id_cnli_tt">赔偿承诺</div>
+                        <div class="id_cnli_cc">服务无形，绝不是没有标准</div>
+                        <div class="id_cnli_more"><a href=""><img src="__STATIC__/images/new/more_16.jpg" width="16" height="16"></a></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="box1 box_m">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="id_js_left">
+                    <div class="id_jsl_tt">
+                        社保代理企业可信任标准
+                        <a href="">MORE&nbsp;&gt;&gt;</a>
+                    </div>
+                    <div class="id_jsl_li">
+                        <span style="color:#c30d23; font-weight:bold;">有形性</span>
+                        ：有现代化的服务设施、服务设施具有吸引力、员工有整洁的外表和着装
+                    </div>
+                    <div class="id_jsl_li">
+                        <span style="color:#c30d23; font-weight:bold;">可靠性</span>
+                        ：公司对顾客所承诺的事情都能够准时准确的完成、公司提供的服务是
+                    </div>
+                    <div class="id_jsl_li">
+                        <span style="color:#c30d23; font-weight:bold;">响应性</span>
+                        ：公司能告诉顾客提供服务的准确的时间、员工能及时的提供服务，并及
+                    </div>
+                    <div class="id_jsl_li">
+                        <span style="color:#c30d23; font-weight:bold;">人情性</span>
+                        ：公司针对不同的顾客提供个别服务、14、员工能够给予顾客个别关怀并</div>
+                    <div class="id_jsl_li">
+                        <span style="color:#c30d23; font-weight:bold;">无私性</span>
+                        ：公司会为所有需要的人提供力所能及的免费咨询、公司会无区别的对待
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="id_js_mid"><img src="__STATIC__/images/new/jieshao.png" width="40" height="217"></div>
+            </div>
+            <div class="col-sm-5">
+                <div class="id_js_right">
+                    <div class="id_jsr_tt">慧智博思以及控股公司竞争力<a href="">MORE&nbsp;&gt;&gt;</a></div>
+                    <div class="id_jsr_li">
+                        <span style="color:#c30d23; font-weight:bold;">公司实力</span>：选择有实力的公司是客户对自己负责。
+                    </div>
+                    <div class="id_jsr_li"><span style="color:#c30d23; font-weight:bold;">收费合理</span>：价格太高与价值不符，价格太低风险又大选择是一门学问。
+                    </div>
+                    <div class="id_jsr_li">
+                    <span style="color:#c30d23; font-weight:bold;">服务承诺</span>：我们公司有严格的服务办事流程。
+                    </div>
+                    <div class="id_jsr_li"><span style="color:#c30d23; font-weight:bold;">服务承诺</span>：服务虽然无型，但效果有型，服务有差错现金赔偿。
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="con box_m">
+    <a href="#"><img class="guanggao" src="__STATIC__/images/new/561604808820b.jpg" ></a>
+
+</div>
+
+<div class="box1">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="denglu left">
+                    <h3 class="h32">行业资讯</h3>
+                    <div class="id_hy_li">
+                        <div class="id_hy_ltime">15-09-23</div>
+                        <div class="id_hy_ltt"><a href="">关于北京市2013年调整工伤人员护理费的通知</a></div>
+                        <div class="id_hy_lmore"><a href="">[全文]</a></div>
+                    </div>
+                    <div class="id_hy_li">
+                        <div class="id_hy_ltime">15-09-23</div>
+                        <div class="id_hy_ltt"><a href="">北京市历年社会保障相关标准</a></div>
+                        <div class="id_hy_lmore"><a href="">[全文]</a></div>
+                    </div>
+                    <div class="id_hy_li">
+                        <div class="id_hy_ltime">15-09-23</div>
+                        <div class="id_hy_ltt"><a href="">致长期居住外埠的领取北京市社会保险（障）待遇人员的一封信</a></div>
+                        <div class="id_hy_lmore"><a href="">[全文]</a></div>
+                    </div>
+                    <div class="id_hy_li">
+                        <div class="id_hy_ltime">15-09-02</div>
+                        <div class="id_hy_ltt"><a href="">北京缴纳社保的好处</a></div>
+                        <div class="id_hy_lmore"><a href="">[全文]</a></div>
+                    </div>
+                    <div class="id_hy_li">
+                    <div class="id_hy_li">
+                        <div class="id_hy_ltime">15-09-02</div>
+                        <div class="id_hy_ltt"><a href="">外埠人员在京退休问题</a></div>
+                        <div class="id_hy_lmore"><a href="">[全文]</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="denglu left">
+                    <h3 class="h32">问题咨询</h3>
+                    <div class="id_wt_li">
+                        <div class="id_wt_ltt"><a href="">社保比例调整</a></div>
+                        <div class="id_wt_lcc"><a href="">...</a></div>
+                    </div>
+                    <div class="id_wt_li">
+                        <div class="id_wt_ltt"><a href="">关于北京市2013年调整工伤人员护理费的通知</a></div>
+                        <div class="id_wt_lcc"><a href="">　为保障完全丧失劳动能力的工伤人员的基本生活，根据《工伤保险条例》（2010年国务院令第586号）的规定，经市政府批准，决定对因工致残1——...</a></div>
+                    </div>
+                    <div class="id_wt_li">
+                        <div class="id_wt_ltt"><a href="">致长期居住外埠的领取北京市社会保险（障）待遇人员的一封信</a></div>
+                        <div class="id_wt_lcc"><a href="">按照国家和本市有关规定，2013年度长期居住外埠的人员领取北京市社会保险（障）待遇资格认证工作自9月1日起再次启动。长期居住外埠的人员所需的...</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="con">
+    <div class="id_sq_tt">
+        <p>企业文化</p>
+        <div class="id_sq_tt2">Corporate Culture</div>
+    </div>
+
+</div>
+
+
+<div class="box2 box_m2 foot">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="li_div">
+                    <a href="">
+                        <div class="hmc2Icon"><img src="__STATIC__/images/new/hmc2_icon1.png" width="80" height="80"></div>
+                        <strong> 渠道正规   慧重事理</strong>
+                        <p>严格遵循人社局相关流程，确保社保办理，社保补缴，档案转移等手续的合法性与公正性，及时性。</p>
+                        <span class="hmc2More"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="li_div">
+                    <a href="">
+                        <div class="hmc2Icon"><img src="__STATIC__/images/new/hmc2_icon2.png" width="80" height="80"></div>
+                        <strong>高效办事   智明事相</strong>
+                        <p>秉承多年私人订制服务经验，最大限度简化您的办理流程，节省您的办理时间，确保您的办理收益。</p>
+                        <span class="hmc2More"></span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+                <div class="li_div">
+                    <a href="">
+                        <div class="hmc2Icon"><img src="__STATIC__/images/new/hmc2_icon3.png" width="80" height="80"></div>
+                        <strong> 业务精通   博通广达</strong>
+                        <p>专注社保代理15年，事务所涵盖北京各大区，业务涉及社保代理、人事代理、劳动关系服务、拓展培训等专业人事服务。</p>
+                        <span class="hmc2More"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="li_div">
+                    <a href="">
+                        <div class="hmc2Icon"><img src="__STATIC__/images/new/hmc2_icon4.png" width="80" height="80"></div>
+                        <strong>客户至上   思于事下</strong>
+                        <p>旗下庞大的顾问团队，为您提供完备而全面的保障方案，全程高速通道办理。使命必达，不负所托。</p>
+                        <span class="hmc2More"></span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    function verify(){
+        $('#verify_code_img').attr('src','/index.php?m=Home&c=Checklogin&a=verify&r='+Math.random());
+    }
+
+    function check_feld(){
+      var name=  $.trim($("#name").val());
+      var password=  $.trim($("#password").val());
+      var check_f=  $.trim($("#check_f").val());
+      var r_pwd=  $.trim($("#r_pwd").val());
+      var phone=  $.trim($("#phone").val());
+        if(r_pwd != password){
+            $("#r_pwd").next().show();
+            return false;
+        }
+        if(name==''){
+         $("#name").next().show();
+            return false;
+        }
+        if(password==''){
+         $("#password").next().show();
+            return false;
+        }
+        if(check_f==''){
+         $("#check_f").next().show();
+            return false;
+        }
+
+            var pattern = /^1[34578]\d{9}$/;
+        if(phone=='' || !pattern.test(phone)){
+         $("#phone").next().show();
+            return false;
+        }
+        return true;
+
+    }
+
+    </script>
+<include file="Public/footer2"/>

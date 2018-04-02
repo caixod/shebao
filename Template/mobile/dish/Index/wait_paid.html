@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>订单支付页-{$tpshop_config['GLOBAL_TITLE']}</title>
+    <script language="javascript" type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+            <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body class="zhifu_body">
+<div style="margin: 50px 20px;width: 100%;height:100px;">
+    <p class="text-center">请等待支付结果，支付成功会有弹出成功的消息</p>
+    <p class="text-center">请勿离开此页面，等待支付结果</p>
+    <br><br>
+    <div style="width: 50%;margin: 5px auto; ">
+        <button type="button" id="to_pay" class="btn btn-success text-center"> 放弃本单去点餐 </button>
+    </div>
+
+</div>
+</body>
+<script>
+    $("#to_pay").click(function(){
+        $.ajax({
+            url:"{:U('Dish/Index/del_thisOrder',array('store_id'=>$store_id,'system_order_id'=>$system_order_id))}",
+            type:'get',
+            success:function(data){
+                if(data==1){
+                    location.href="{:U('Dish/Index/dishList_new',array('store_id'=>$store_id))}";
+                }else{
+                    alert("已支付的订单不能删除");
+                }
+            }
+        });
+    });
+    function ajax_get(){
+        $.ajax({
+            url:"{:U('Dish/Index/ajax_get_paid',array('store_id'=>$store_id,'system_order_id'=>$system_order_id))}",
+            type:'get',
+            success:function(data){
+                if(data==1){
+                    location.href="{:U('Dish/Index/dishList_new',array('store_id'=>$store_id))}";
+                }
+            },
+            error:function(e){
+
+            },
+            complete:function(e){
+
+            }
+
+        });
+    }
+    setInterval("ajax_get()",1000);
+</script>
+
+</html>

@@ -1,0 +1,60 @@
+/* User css */
+
+/*@media (min-width: 992px){ body{ width: 900px; margin: 0 auto;}}*/
+.body_user { background: #f2f2f2;}
+ul li { list-style-type: none;}
+section { width: 100%; height: auto;}
+.user_top { width: 100%; background: #f45e5f; padding: 2rem; text-align: center;}
+.user_top .touxiang { width: 100%;}
+.user_top .touxiang img { width: 7rem; height:7rem;border-radius: 50%;}
+.user_top p.nichen { text-align: center; color: #fff; font-size: 1.8rem; padding-top: 1rem; margin: 0px;}
+.user_div { width: 100%; height: auto; margin-top: 2rem;}
+.user_div span { float: right; color: #aaa;}
+.user_div p { margin:0px;width: 100%; padding: 1.2rem 2rem; font-size: 1.6rem; background: #fff; border-bottom: 1px solid #ddd;}
+.user_div p.boder_none { border: 0px;}
+.user_div a { color: #333;}
+.user_div a:hover,a:visited { color: #333; text-decoration: none;}
+
+/* User_dingdanxuanze css */
+.xuanze_div { width: 90%; float: left; padding: 3rem 0px; margin-left:5%;border: 1px solid #e60000; border-radius: 10px; margin-top: 1rem;}
+.xuanze_div .xuanze_left { float: left; width: 70%;}
+.xuanze_div .xuanze_right { float: left; width: 30%;}
+.xuanze_div .xuanze_left h3 { font-size: 2rem; text-align: center; margin: 0px; color: #e60000;}
+.xuanze_div .xuanze_left p { font-size: 1.5rem; text-align: center; margin: 0px; color: #aaa; padding-top: 1rem;}
+.xuanze_div .xuanze_right img { height: 6rem; width: 6rem;}
+
+/* User_dingdan css */
+.dingdan_top { width: 100%; background: #fff; height: 4rem;/*box-shadow: 0px 3px 1px #666;*/}
+.dingdan_top ul { padding: 0px; margin: 0px;}
+.dingdan_top li {  position:relative;float: left; width: 25%; text-align: center; font-size: 1.5rem; line-height: 4rem; border-bottom: 2px solid #e60000;}
+.sp1,.sp2 {  display:block;  height:0px;  width:0px;  position:absolute;  font-size:0;  line-height:0;  }
+.sp1 {  bottom:0px;  left:45%;  border-top:0px;  border-bottom:4px solid #e60000;  border-right:4px solid white;  border-left:4px solid white;  }
+.sp2 {  top:3px;  left:-3px;  border-top:0px;  border-bottom:3px solid white;  border-right:3px solid #e60000;  border-left:3px solid #e60000;  }
+.dingdan_div { background:#fff;width: 100%; margin-top: 2rem; padding: 10px 0px; border-bottom: 1px solid #aaa; border-top: 1px solid #aaa;}
+.dingdan_top li .shuzi { position: absolute; width: 15px; height: 15px; border-radius: 50%; background: #e60000; margin: 0px; top: 3px; left: 71%; color: #fff; line-height: 15px; font-size: 1.2rem;}
+.xian { width: 100%; height: 3px; background: #e60000;}
+.mxs_div { width: 95%; margin: 0 auto;}
+.boder_ddd {border-bottom: 1px solid #ddd;}
+.mxs_div .mxs { padding: 0.6rem; font-size: 1.4rem;display: flex;}
+.mxs_div .mxs p {flex: 1 1 0; text-align: right; margin: 0px;}
+.mxs_div .mxs .mxs_span {flex: 0 0 50%; text-align: left;white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;}
+.mxs_div .mxs .mxs_span {flex: 0 0 50%; text-align: left;white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;}
+.mxs2 p { color: #888;}
+.buttons { width: 10rem; text-align: center; color: #fff; background: #e60000; border: 0px; border-radius: 3px; padding: 5px;}
+.zongjis { color: #e60000; font-size: 1.8rem; line-height: 3rem;}
+.dingdan { display: none;}
+.dingdan_block { display: block;}
+.buttons2 { width: 10rem; text-align: center; color: #fff; background: #aaa; border: 0px; border-radius: 3px; padding: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

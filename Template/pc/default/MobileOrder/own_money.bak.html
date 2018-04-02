@@ -1,0 +1,125 @@
+<include file="Public/new_header" />
+<include file="Public/new_nav_menu" />
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/order_nav_menu" />
+        <div class="ab_right" style="border-radius: 10px;border: 3px solid #ddd;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">{$service_name}订单查看</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">个人中心</a><a style="color:#ae2c26;">订单查看</a></span>
+            </div>
+            <div class="ab_r_cc">
+                <a href="javascript:history.back();" style="padding-left:90%;font-size: 18px;"> <i class="fa fa-angle-double-left"></i>返回</a>
+                <div class="row">
+                    <style type="text/css">
+                        .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th { font-size:1.3rem;text-align: center;vertical-align:middle;}
+                        .tex_div3 { width: 100%;}
+                        .table .td_h1 { width: 10%;}
+                        .table .td_h2 { width: 15%;}
+                        .table .td_h3 { width: 20%;}
+                        .table .td_h5 { text-align: left; font-size: 1.5rem; font-weight: bold; padding-left:15px;}
+                        .table-responsive td {
+                            padding: 15px 15px;
+                            border-width: 1px;
+                            background-color: #fff;
+                        }
+                    </style>
+
+                    <div class="hhh"></div>
+                    <div class="col-sm-12" style="padding: 5px;">
+                        <div class="tex_div tex_div2 tex_div3">
+                            <!--<p class="p_sh">订单详情</p>-->
+
+                            <div class="tab_main2" style="width: 100%;">
+                                <div class="tab1 tab_chang" style="display: block;">
+                                    <div class="table-responsive" style="text-align: center;">
+                                        <table class="table table-striped table-bordered">
+                     <volist name="mess" id="info" key="k">
+                                            <tr>
+                                                <th colspan="9">{$service_name}</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="td_h1">办理人</th>
+                                                <th class="td_h3" colspan="2">{$info.username}</th>
+                                                <th class="td_h1">性别</th>
+                                                <th class="td_h3" colspan="2">
+                                                    <switch name="info.sex">
+                                                        <case value="1">男</case>
+                                                        <case value="2">女</case>
+                                                        <default />保密
+                                                    </switch> </th>
+                                                <th class="td_h2" >身份证号</th>
+                                                <th class="td_h3" colspan="2">{$info.idcard}</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="td_h1">办理城市</th>
+                                                <th class="td_h3" colspan="2">{$info.pname}—{$info.cname}</th>
+                                                <th class="td_h1">联系电话</th>
+                                                <th class="td_h3" colspan="2">
+                                                    {$info.mobile}
+                                                </th>
+                                                <th class="td_h1" >下单日期</th>
+                                                <th class="td_h3" colspan="2">{$info.add_time|date='Y-m-d',###}</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="td_h1">状态</th>
+                                                <th class="td_h2" colspan="2">                                                                  <switch name="info.status">
+                                                    <case value="0">未审核</case>
+                                                    <case value="1">已审核</case>
+                                                    <case value="2">审核通过</case>
+                                                    <case value="3">办理中</case>
+                                                    <case value="4">已完成</case>
+                                                    <default />无
+                                                </switch> </th>
+                                                <th class="td_h2">办理证明</th>
+                                                <th class="td_h3" colspan="2">
+                                                    <if condition="empty($info['certify']) eq true">
+                                                        暂未上传 <else /><a href="{$info.certify}">点击下载</a></if>
+                                                </th>
+                                                <th class="td_h2" >合同</th>
+                                                <th class="td_h3" colspan="2">
+                                                    <if condition="empty($info['ht']) eq true">
+                                                        暂未上传
+                                                        <else />
+                                                        <a href="{$info.ht}">点击下载</a></if>
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td class="td_h1 td_h5" colspan="8">服务费</td>
+
+                                                <td class="td_h3">{$info.service_fee}</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td class="td_h1 td_h5" colspan="8">总计</td>
+                                                <td class="td_h3">{$info.money}</td>
+                                            </tr>
+                     </volist>
+                                        </table>
+                                        <if condition="$pay_data.is_pay eq 0">
+                                            <a href="{:U('Home/order/get_parameter',array('table'=>own_money,'order_sn'=>$order_sn))}" style="width: 50%;margin:10px auto;" class="btn btn-success  btn-block">去支付</a>
+                                        </if>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hhh"></div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+</script>
+<include file="Public/footer2" />

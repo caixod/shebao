@@ -1,0 +1,98 @@
+<include file="Public/min-header" />
+<!--<meta http-equiv="refresh" content="5">-->
+<script src="__PUBLIC__/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="__PUBLIC__/artDialog/plugins/iframeTools.js"></script>
+<div class="wrapper">
+	<include file="Public/breadcrumb"/>
+	<section class="content">
+       <div class="row">
+       		<div class="col-xs-12">
+	       		<div class="box">
+	             <div class="box-header">
+	               	<nav class="navbar navbar-default">	     
+				        <div class="collapse navbar-collapse">
+				          <form class="navbar-form form-inline" action="" method="post">
+							  <div class="form-group">
+								  <select name="store_id" class="form-control">
+									  <foreach name="all_store" item="i" key="k">
+										  <option value="{$k}" <if condition="$k eq $store_id"> selected="selected" </if> >{$i}</option>
+									  </foreach>
+								  </select>
+							  </div>
+				            <div class="form-group">
+								开始时间:<input type="text" value="{$starttime|date='Y-m-d H:i:s',###}" onClick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" name="starttime" class="form-control" style="width:200px;"/>
+								结束时间:<input type="text" value="{$endtime|date='Y-m-d H:i:s',###}" onClick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" name="endtime" class="form-control" style="width:200px;"/>
+								<select name="status" class="form-control">
+										  <option value="0" <php>if ($status == 0) {echo "selected";}</php>>全部状态</option>
+										  <option value="1" <php>if ($status == 1) {echo "selected";}</php>>未付款</option>
+										  <option value="2" <php>if ($status == 2) {echo "selected";}</php>>已付款 </option>
+								</select>
+				            </div>
+				            <button type="submit" class="btn btn-primary">查询</button>
+				            <div class="form-group pull-right">
+				            </div>		          
+				          </form>
+				      	</div>
+	    			</nav>
+
+	             </div>
+	             <div class="box-body">
+	           	 <div class="row">
+	            	<div class="col-sm-12">
+		              <table id="list-table" class="table table-bordered table-striped dataTable">
+		                 <thead>
+		                   <tr role="row">
+							   <th>微信昵称</th>
+							   <th>取餐号</th>
+			                   <th>数量</th>
+			                   <th>总价</th>
+			                   <th>状态</th>
+			                   <th>订餐时间</th>
+		                  	   <th>操作</th>
+		                   </tr>
+		                 </thead>
+						<tbody>
+
+                          <foreach name="order_mess" item="vo" key="k" >
+                             <tr role="row">    
+                                 <td>{$vo.name}</td>
+                                <td>{$vo.system_order_id}</td>
+                                <td>{$vo.dish_total_num}</td>
+                                <td><php>echo ($vo['order_total_fee']/100)</php></td>
+                                <td>
+									<if condition="$vo.paid eq 1"><span style="color:green">已付款</span><else/><span style="color:red">未付款</span></if>
+									<if condition="$vo.refund_type eq 2"> / <span style="color:red">已退款</span></if>
+								</td>
+		                     <td>{$vo.order_time|date="Y-m-d H:i:s",###}</td>
+		                     <td>
+		                      <a class="btn btn-danger" onclick="delfunc(this)" data-url="{:U('Dish/delOrder')}" data-id="{$vo.id}"><i class="fa fa-trash-o"></i></a>
+								 <a href="###" onclick="showIntroDetail({$vo.id})" class="btn btn-info goods_list">详细</a>
+				                 </td>
+		                   </tr>
+		                  </foreach>
+		                   </tbody>
+		                 <tfoot>
+		                 
+		                 </tfoot>
+		               </table>
+	               </div>
+	          </div>
+              <div class="row">
+              	    <div class="col-sm-6 text-left">
+              	    	<button class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i></button>
+              	    </div>
+                    <div class="col-sm-6 text-right">{$page}</div>		
+              </div>
+	          </div>
+	        </div>
+       	</div>
+       </div>
+   </section>
+<script>
+	function showIntroDetail(id){
+		art.dialog.open('{:U('Dish/orderInfo')}?id='+id,{lock:false,title:'订单详情',width:1100,height:620,yesText:'关闭',background: '#000',opacity: 0.87, close: function(){location.reload();}});
+	}
+</script>
+</div>
+</body>
+</html>   

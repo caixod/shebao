@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>{$store_name}</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/apps.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body class="bodys">
+<form class="text-left"  id="form1" method="post" action="{:U('Dish/Index/confirmOrder',array('store_id'=>$store_id))}">
+
+     <section class="liebiaos">
+         <div class="liebiao_div">
+             <div class="divs">
+                 <img src="__STATIC__/images/01.jpg">
+                 <span>用户名：{$user_name}</span>
+                 <span class="houtai"><a href="{:U('Dish/Index/cake_my',array('store_id'=>$store_id))}">进入后台</a> </span>
+             </div>
+         </div>
+         <div class="liebiao_div">
+             <div class="divs">
+                 <img src="__STATIC__/images/02.jpg">
+                 <span>顾客选购的蛋糕：</span>
+                 <select id="select_cake" name="id" >
+                     <?php foreach($dish_mess as $k=>$v):?>
+                     <option  class="op<?=$v['id']?>" value="<?=$v['id']?>"><?=$v['dish_name']?></option>
+                     <?php endforeach;?>
+                 </select>
+             </div>
+         </div>
+         <div class="liebiao_div">
+             <div class="divs">
+                 <img src="__STATIC__/images/03.jpg">
+                 <span>蛋糕信息：</span>
+             </div>
+             <p>单价：<span id="price"><?=($dish_mess[0]['price']/100)?></span>元/斤; 优惠价：<span id="cake_low_price"><?=($dish_mess[0]['cake_low_price']/100)?></span>元/斤</p>
+             <p>赠送金额：<span id="cake_give_price">满<?=($dish_mess[0]['cake_full_price']/100)?>送<?=($dish_mess[0]['cake_give_price'])/100?></span></p>
+         </div>
+         <div class="liebiao_div2">
+             <div class="divs">
+                 <img src="__STATIC__/images/04.jpg">
+                 <span>总金额：</span>
+                 <div class="div_money">
+                     <input type="number" id="customer" value="" name="customer" class="money_input">元</div>
+                 <input type="button" name="money" id="btn" class="jisuan_input" value="计算">
+             </div>
+         </div>
+         <div class="liebiao_div3 ">
+             <div class="divs">
+                 <img src="__STATIC__/images/05.jpg">
+                 <span class="span1">重量：</span>
+                 <div class="div_money2">
+                     <input type="text" id="weight" readonly="true" name="weight" value="" class="money_input2">克</div>
+             </div>
+         </div>
+         <div class="liebiao_div3 ">
+             <div class="divs">
+                 <img src="__STATIC__/images/06.jpg">
+                 <span class="span2">赠送重量：</span>
+                 <div class="div_money2">
+                     <input type="text" id="give_weight" readonly="true" value="" name="give_weight" class="money_input2">克</div>
+             </div>
+         </div>
+         <div class="liebiao_div3 ">
+             <div class="divs">
+                 <img src="__STATIC__/images/07.jpg">
+                 <span class="span">总重量：</span>
+                 <div class="div_money2">
+                     <input type="text" id="total_weight" readonly="true" value="" name="total_weight" class="money_input2">克</div>
+             </div>
+         </div>
+
+
+     </section>
+
+     <div class="foot navbar-default navbar-fixed-bottom" role="navigation">
+         <div class="footer">
+             <button id="to_pay">提交订单</button>
+         </div>
+     </div>
+
+</form>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script language="javascript" type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="__STATIC__/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__STATIC__/js/other.js"></script>
+<script type="text/javascript">
+
+    $("#to_pay").click(function(){
+//		window.location.href="{:U('Dish/Index/confirmOrder',array('store_id'=>$store_id))}";
+        var total_weight=$("#total_weight").val();
+        var customer=$("#customer").val();
+        var re = /^[0-9]*(\.\d*)?$|^(\.\d*)?$/;
+        if (!re.test(customer))
+        {
+            alert("请输入数字");
+            return false;
+        }
+        if($.trim(total_weight) != '' && $.trim(customer) != '' ){
+            $("#form1").submit();
+        }else{
+            alert('请生成对应的重量之后再支付');
+        }
+
+    })
+    //点击顾客金额
+    $('#btn').click(function(){
+        var price=$("#customer").val();
+        var cake_id=$("#select_cake").val();
+        var re = /^[0-9]*(\.\d*)?$|^(\.\d*)?$/;
+        if (!re.test(price))
+        {
+            alert("请输入数字");
+            return false;
+        }
+        if (cake_id=='')
+        {
+            alert("请选择顾客点的蛋糕");
+            return false;
+        }
+        $.ajax({
+            type: "POST",
+            url: "{:U('Dish/Index/ajax_weight',array('store_id'=>$store_id),0)}",
+            data: {"price":price,'cake_id':cake_id},
+            async:true,
+            success: function(res){
+                if(res) //成功
+                {
+                    $('#weight').val(res.weight);
+                    $('#give_weight').val(res.give_weight);
+                    $('#total_weight').val(res.total_weight);
+                }
+            },
+            dataType: "json"
+        });
+    });
+    //点xuan 蛋糕品类 取出该蛋糕的对应信息
+    $('#select_cake').change(function(){
+        var cake_id=$("#select_cake").val();
+        $('.op'+cake_id).selected=true;
+        $.ajax({
+            type: "POST",
+            url: "{:U('Dish/Index/ajax_get_mess',array('store_id'=>$store_id),0)}",
+            data: {"cake_id":cake_id,},
+            async:true,
+            success: function(res){
+                if(res) //成功
+                {
+                    $('#price').html(res.price/100);
+                    $('#cake_low_price').html(res.cake_low_price/100);
+                    $('#cake_give_price').html('满'+(res.cake_full_price/100)+'元送'+(res.cake_give_price/100)+'元');
+                    $('#weight').val('');
+                    $('#give_weight').val('');
+                    $('#total_weight').val('');
+                }
+            },
+            dataType: "json"
+        });
+
+    })
+
+</script>
+</html>

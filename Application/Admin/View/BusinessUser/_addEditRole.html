@@ -1,0 +1,70 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <!--<div class="container-fluid">-->
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading row">
+                    <div class="pull-right">
+                        <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">信息</h3>
+                </div>
+                <div class="panel-body">
+                    <form action="" method="post">
+                        <input type="hidden" value="{$role.id}" name="id">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <div class="row">
+                                    <td class="text-right col-sm-2">角色名：</td>
+                                    <td colspan="3">
+                                        <input type="text" name="name" value="{$role.name}">
+                                    </td>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="row">
+                                    <td class="text-right col-sm-2">所属微信分组：</td>
+                                    <td colspan="3">
+                                        <select name="tag_id">
+                                            <foreach name="tags" item="t">
+                                            <option value="{$t.tag_id}" <if condition="$t['tag_id'] eq $role['tag_id']">selected</if> >{$t.tag_name}</option>
+                                            </foreach>
+                                        </select>
+                                    </td>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="row">
+                                    <td class="text-right col-sm-2"></td>
+                                    <td colspan="3">
+                                        <div class="form-group">
+                                            <button class="btn btn-default" type="submit" id="cancel">保存</button>
+                                        </div>
+                                    </td>
+                                </div>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>    <!-- /.content -->
+    </section>
+</div>
+
+</body>
+</html>

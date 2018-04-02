@@ -1,0 +1,135 @@
+<include file="Public/new_header" />
+<div class="con3">
+    <div class="container m_p_none">
+        <!--左边按钮 nb_left-->
+        <include file="Public/nav_menu" />
+        <!--右边按钮-->
+        <div class="ab_right" style="border-radius:10px;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">住房公积金提取</span>
+                <span style="float: right" class="nav_xiao"><img src="__STATIC__/images/new/homeimg_03.jpg">当前位置：<a href="/">服务办理</a>&gt;<a style="color:#ae2c26;">住房公积金提取</a></span>
+            </div>
+            <div class="ab_r_cc"  >
+                <div class="row">
+                    <div class="hhh"></div>
+                    <div class="col-sm-8">
+                        <div class="tex_div">
+                            <div class="tab_li">
+                                <ul>
+                                    <li class="tab_li_cur" id="tab_li1" onclick="tabs()">租房公积金提取材料</li>
+                                    <li id="tab_li2" onclick="tabs2()">买房住房公积金提取</li>
+                                </ul>
+                            </div>
+                            <div class="tab_main">
+                                <div class="tab1" id="tab1" style="display: block;">
+                                    <h5>租房公积金提取材料</h5>
+                                    <p>1.联名卡原件复印件</p>
+                                    <p>2.身份证原件复印件  </p>
+                                    <p>3.租房承诺书 </p>
+                                </div>
+                                <div class="tab2" id="tab2">
+                                    <h5>买房住房公积金提取</h5>
+                                    <p>1.联名卡原件      （复印件）</p>
+                                    <p>2.身份证原件      （复印件）</p>
+                                    <p>3.完税证明原件    （复印件）</p>
+                                    <p>4.购房发票原件    （复印件） </p>
+                                    <p>5.房本原件        （复印件） </p>
+                                    <p>6.贷款合同原件    （复印件）</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hhh"></div>
+                    <div class="col-sm-8">
+                        <div class="denglu">
+                                <form role="form" action="" method="post" onsubmit="return checkForm();">
+
+                                    <div class="form-group">
+                                        <label for="name">办理人</label>
+                                        <select class="form-control" style="width: 50%;" name="username">
+                                            <volist name="friend" id="data">
+                                                <option value="{$data.user_id}">{$data.username}</option>
+                                            </volist>
+                                        </select>
+                                    </div>
+                                    <label for="to_province">请选择城市</label>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_province" id="to_province" onChange="get_city_t(this);">
+                                                <option  value="0">请选择</option>
+                                                <volist name="province" id="p">
+                                                    <option  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_city" id="to_city" onChange="get_area_t(this)" >
+                                                <option  value="0">请选择</option>
+                                                <volist name="city" id="p">
+                                                    <option   value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" name="to_district" id="to_district"  >
+                                                <option  value="0">请选择</option>
+                                                <volist name="to_district" id="p">
+                                                    <option   value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                    </div><br>
+                                    <label for="to_province">请选择提取类型</label>
+
+                                    <div class="form-group" style="text-align: center;">
+                                        <div class="">
+                                            <label class="radio-inline">
+                                            <input type="radio"  id="inlineRadio1" name="tq_type" checked="checked" value="1"> 租房公积金提取
+                                        </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tq_type"  id="inlineRadio2" value="2">买房公积金提取
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tq_type" id="inlineRadio3" value="3">以上两种都提取
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class=""><button type="submit" class="btn btn-default" style="background-color: #5cb85c;border: none;">提交服务申请</button></div>
+                                    </div>
+
+                                    <div style="clear: both;"></div>
+
+                                </form>
+                        </div>
+                    </div>
+                    <div class="hhh" style="height: 3px;"></div>
+                    <div class="col-sm-12">
+                        <p class="p_sh">提交申请之后请等待，审核通过之后,请将以上资料邮寄至我公司</p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+<script>
+    function checkForm() {
+
+        var to_province = $('#to_province').val();
+        var to_city = $('#to_city').val();
+        if (to_province == 0 || to_city==0) {
+            layer.alert('请选择城市', {icon: 2});
+            return false;
+        }
+
+        return true;
+    }
+</script>
+<include file="Public/footer2" />
+

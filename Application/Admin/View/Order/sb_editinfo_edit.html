@@ -1,0 +1,358 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+                <!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 订单处理</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">详情</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <!--<form method="post" id="addEditBusinessUserForm" onsubmit="return checkName();">-->
+                    <form method="post" id="addEditDishForm" enctype="multipart/form-data">
+                        <!--通用信息-->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab_tongyong">
+
+                                <table class="table table-bordered table-striped" >
+                                    <tbody>
+                                    <tr>
+                                        <td>下单账号:</td>
+                                        <td>
+                                            <input type="text" value="{$info.account_name}" name="account_name" class="form-control" style="width:250px;"/>
+                                        </td>
+                                        <td>下单人姓名:</td>
+                                        <td>
+                                            <input type="text" value="{$info.uname}" name="uname" id="uname"  class="form-control" style="width:250px;"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>办理人姓名:</td>
+                                        <td>
+                                            <input type="text" value="{$info.username}" name="username" class="form-control" style="width:250px;"/>
+                                        </td>
+                                        <td>办理人手机号:</td>
+                                        <td>
+                                            <input type="text" value="{$info.mobile}" name="mobile" id="mobile"  class="form-control" style="width:250px;"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>身份证号:</td>
+                                        <td>
+                                            <input type="text" value="{$info.idcard}" name="idcard" class="form-control" style="width:250px;"/>
+                                        </td>
+                                        <td>卡所属的开户行:</td>
+                                        <td>
+                                            <input type="text" value="{$info.belong_bank}" name="belong_bank" class="form-control" style="width:250px;"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>开户行:</td>
+                                        <td>
+                                            <input type="text" value="{$info.bank_name}" name="bank_name" class="form-control" style="width:250px;"/>
+                                        </td>
+                                        <td>卡号:</td>
+                                        <td>
+                                            <input type="text" value="{$info.bank_num}" name="bank_num" class="form-control" style="width:250px;"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>户口性质:</td>
+                                        <td>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="nature" value="1" <if condition="$info.nature eq 1">checked="checked"</if>>农村户口
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio"  name="nature"  value="2" <if condition="$info.nature eq 2">checked="checked"</if>>城镇户口
+                                            </label>
+                                        </td>
+                                        </td>
+                                        <td>付款状态:</td>
+                                        <td style="color: red;">
+                                            <switch name="info.is_pay">
+                                                <case value="0">未付款</case>
+                                                <case value="1">已付款</case>
+                                                <default />default
+                                            </switch>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>订单总金额:</td>
+                                        <td>
+                                            <input type="text" value="{$info.money}" name="money"  class="form-control" style="width:250px;"/>&nbsp;元
+                                        </td>
+                                        <td>服务费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.service_fee}" name="service_fee"  class="form-control" style="width:250px;"/>&nbsp;元
+                                        </td>
+
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td>办理状态</td>
+                                        <td >
+                                            <label class="radio-inline">
+                                                <input type="radio" name="status" value="0" <if condition="$info.status eq 0">checked="checked"</if>>未审核
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio"  name="status"  value="1" <if condition="$info.status eq 1">checked="checked"</if>>已审核
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio"  name="status"  value="2" <if condition="$info.status eq 2">checked="checked"</if>>审核通过
+                                            </label>   <label class="radio-inline">
+                                            <input type="radio"  name="status"  value="3" <if condition="$info.status eq 3">checked="checked"</if>>办理中
+                                        </label>
+                                            <label class="radio-inline">
+                                                <input type="radio"  name="status"  value="4" <if condition="$info.status eq 4">checked="checked"</if>>已完成
+                                            </label>
+                                        </td>
+
+                                        <td>办理地区:</td>
+                                        <td>
+                                            {$info.top_name}—{$info.toc_name}
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>档案存放时间:</td>
+                                        <td>
+                                            <input type="text" value="{$info.record_book}" name="record_book" id="record_book" class="form-control" style="width:250px;"/>
+
+                                        </td>
+                                        <td>档案存放费:</td>
+                                        <td>
+                                            <input type="text" value="{$info.record_book_fee}" name="record_book_fee" class="form-control" style="width:250px;" onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}" />元
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>存折领取:</td>
+                                        <td>
+                                            <select name="bankbook" class="form-control" style="width: 200px;">
+                                                <option value="0" <if condition="$info.bankbook eq 0">selected="selected"</if>>未领取</option>
+                                                <option value="1" <if condition="$info.bankbook eq 1">selected="selected"</if>>已领取</option>
+                                            </select>
+
+                                        </td>
+                                        <td>存折领取时间:</td>
+                                        <td>
+                                            <input type="text" value="{$info.bankbook_time}" name="bankbook_time" id="bankbook_time" class="form-control" style="width:250px;" />
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>合同签订日期:</td>
+                                        <td>
+                                            <input type="text" value="{$info.ht_time}" name="ht_time" id="ht_time" class="form-control" style="width:250px;" />
+
+                                        </td>
+                                        <td>合同到期日期:</td>
+                                        <td>
+                                            <input type="text" value="{$info.ht_end_time}" name="ht_end_time" id="ht_end_time" class="form-control" style="width:250px;" />
+
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>是否缴纳个税:</td>
+                                        <td>
+                                            <select name="is_ownmoney" class="form-control" style="width: 200px;">
+                                                <option value="0" <if condition="$info.is_ownmoney eq 0">selected="selected"</if>>不缴纳</option>
+                                                <option value="1" <if condition="$info.is_ownmoney eq 1">selected="selected"</if>>缴纳</option>
+                                            </select>
+
+                                        </td>
+                                        <td>合作状态:</td>
+                                        <td>
+                                            <select name="business_status" class="form-control" style="width: 200px;">
+                                                <option value="0" <if condition="$info.business_status eq 0">selected="selected"</if>>合作中</option>
+                                                <option value="1" <if condition="$info.business_status eq 1">selected="selected"</if>>已终止</option>
+                                            </select>
+
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>负责人:</td>
+                                        <td>
+                                            <input type="text" value="{$info.deal_people}" name="deal_people" class="form-control" style="width:250px;"/>
+
+                                        </td>
+                                        <td>承办人1:</td>
+                                        <td>
+                                            <input type="text" value="{$info.deal_people_o}" name="deal_people_o" class="form-control" style="width:250px;"/>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>承办人2:</td>
+                                        <td>
+                                            <input type="text" value="{$info.deal_people_t}" name="deal_people_t" class="form-control" style="width:250px;"/>
+
+                                        </td>
+                                        <td>代金券使用金额:</td>
+                                        <td >
+                                            <input type="text" value="{$info.coupon_fee}" name="coupon_fee" class="form-control" style="width:250px;" onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}" />
+                                    </tr>
+                                    <tr>
+                                        <td >身份证:</td>
+                                        <td colspan="3">
+                                            <a href="{$info.image}" target="_blank"><image style="width: 200px;height: 200px;" src="{$info.image}" /></a>
+                                            <a href="{$info.image}" target="_blank">  <image style="width: 200px;height: 200px;" src="{$info.image_t}" /></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>办理要求:</td>
+                                        <td colspan="3">
+                                            <textarea name="mark" cols="100" rows="3">{$info.mark}</textarea>
+                                        </td>
+
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>订单处理备注:</td>
+                                        <td colspan="3">
+                                            <textarea name="deal_mark" cols="100" rows="3">{$info.deal_mark}</textarea>
+                                        </td>
+
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>合同:</td>
+                                        <td>
+                                            <if condition="$info.ht eq '0'">
+                                                <input type="file" name="ht" id="ht" value="">      <span style="color: red;">(审核通过之后请上合同文件)</span>
+                                                <else />
+                                                &nbsp;&nbsp;&nbsp;
+
+                                                <div class="form-group form-inline">
+                                                    <label for="exampleInputName2"></label>
+                                                    <a  href="{$info.ht}">点击下载查看原合同</a>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail2">更换原合同</label>
+                                                    <input type="file"  name="ht"  value="">   </div>
+                                            </if>
+                                        <td style="text-align: center;">办理凭证:</td>
+                                        <td>
+                                            <if condition="$info.certify eq '0'">
+                                                <input type="file" name="certify" id="certify" value="">      <span style="color: red;">(办理完成请上传凭证)</span>
+                                                <else />
+                                                &nbsp;&nbsp;&nbsp;
+
+                                                <div class="form-group form-inline">
+                                                    <label for="exampleInputName2"></label>
+                                                    <a  href="{$info.certify}">点击下载查看原凭证</a>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail2">更换原凭证</label>
+                                                    <input type="file"  name="certify"  value="">   </div>
+                                            </if>
+
+                                        </td>
+                                    </tr>
+
+                                    <!--<tr>-->
+                                        <!--<td style="text-align: center;">发送缴费通知短信:</td>-->
+                                        <!--<td colspan="3">-->
+                                            <!--<div class="row">-->
+                                                <!--<div class="col-lg-6">-->
+                                                    <!--<div class="input-group">-->
+                                                        <!--<input type="text" id="content" class="form-control" style="width: 700px;">-->
+                                                        <!--<span class="input-group-btn">-->
+						<!--<button class="btn btn-default" onclick="send_mess({$info.id});" type="button">-->
+							<!--点击发送此内容-->
+						<!--</button>-->
+					<!--</span>-->
+                                                    <!--</div>&lt;!&ndash; /input-group &ndash;&gt;-->
+                                                <!--</div>&lt;!&ndash; /.col-lg-6 &ndash;&gt;-->
+                                            <!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
+                                        <!--</td>-->
+
+                                    <!--</tr>-->
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <input type="hidden" name="id" id="id" value="{$info.id}">
+                            <button class="btn btn-primary" data-toggle="tooltip" type="submit"  data-original-title="确定">确定</button>
+                        </div>
+                    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+
+
+<script src="__PUBLIC__/js/global.js"></script>
+<script src="__PUBLIC__/js/pc_common.js"></script>
+<script>
+    //发送短信通知
+    function send_mess(id){
+
+        var mobile=$.trim($("#mobile").val());
+        var content=$.trim($("#content").val());
+        if(mobile==''){
+            layer.msg('请输入该用户的手机号码', {icon: 2,time: 3000});
+            return false;
+        }
+        if(content==''){
+            layer.msg('请输入发送的内容', {icon: 2,time: 3000}); //alert(v.msg);
+            return false;
+        }
+
+        var url = "/index.php?m=Admin&c=Order&a=ajax_send_mess&table_name=sb_editinfo&mobile="+mobile+'&content='+content+"&id="+id;
+        $.ajax({
+            url:url,
+            type:'get',
+            dataType:'json',
+            success:function(e){
+                if(e.code==1){
+                    layer.msg('已发送', {icon: 1,time: 3000}); //alert(v.msg);
+                }else{
+                    layer.msg('发送失败，请重试', {icon: 2,time: 3000}); //alert(v.msg);
+                }
+                window.location.reload();
+
+            },
+            error:function(a){
+                layer.msg('错误……', {icon: 2,time: 3000}); //alert(v.msg);
+                window.location.reload();
+            }
+
+
+        })
+    }
+    laydate.render({
+        elem: '#record_book'
+    });
+    laydate.render({
+        elem: '#bankbook_time'
+    });
+    laydate.render({
+        elem: '#ht_time'
+    });
+    laydate.render({
+        elem: '#ht_end_time'
+    });
+</script>
+</body>
+</html>

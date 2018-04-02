@@ -1,0 +1,355 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+           		<!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 商业用户详情</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">商业用户详情</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <!--<form method="post" id="addEditBusinessUserForm" onsubmit="return checkName();">-->
+                    <form method="post" id="addEditBusinessUserForm">
+                        <!--通用信息-->
+                    <div class="tab-content">                 	  
+                        <div class="tab-pane active" id="tab_tongyong">
+                           
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>姓名:</td>
+                                    <td>
+                                        <input type="text" value="{$list.user_name}" name="user_name" class="form-control" style="width:250px;"/>
+                                        <span id="err_user_name" style="color:#F00; display:none;">名称不能为空</span>
+                                    </td>
+                                </tr>                                
+                                <tr>
+                                    <td>角色:</td>
+                                    <td>
+                                        <!--<span class="form-control" style="width:200px;"/><span class="label label-primary"><i class="fa fa-tag"></i>主要标签</span>&nbsp;<span class="label label-primary"><i class="fa fa-tag"></i>主要标签</span></span>&nbsp;&nbsp;--><a class="btn btn-sm" id="tag-operate"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;点击查看</a>
+                                        <span id="err_role" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>手机号:</td>
+                                    <td>
+                                        <input type="text" value="{$list.cellphone}" name="cellphone" class="form-control" style="width:250px;"/>
+                                        <span id="err_cellphone" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>紧急手机:</td>
+                                    <td>
+                                        <input type="text" value="{$list.cellphone_urgency}" name="cellphone_urgency" class="form-control" style="width:250px;"/>
+                                        <span id="err_cellphone_urgency" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>
+                                        <input type="text" value="{$list.email}" name="email" class="form-control" style="width:250px;"/>
+                                        <span id="err_longitude" style="color:#F00; display:none;"></span>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>绑定微信:</td>
+                                    <td>
+                                        <!--<a class="btn <if condition="$list['openid'] neq ''">disabled btn-primary<else/>btn-default</if>" style="width:250px;"><if condition="$list['openid'] neq ''">已绑定<else />绑定微信</if></a>-->
+
+                                        <span id="" style=" display:block;">
+                                            <if condition="$list['openid'] eq ''">
+                                                <img src="http://www.runoob.com/wp-content/uploads/2014/06/download.png" class="img-rounded" style="width: 140px;height: 140px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;未绑定
+                                                <else />
+                                                <img src="{:getUserInfoThoughOpenid($list['openid'])['head_pic']}" class="img-rounded" style="width: 140px;height: 140px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{:getUserInfoThoughOpenid($list['openid'])['nickname']}
+                                            </if>
+
+                                        </span>
+                                        <span id="err_close_time" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>门店区域:</td>
+                                    <td>
+                                        <div class="col-sm-3">
+	                                        <select name="province" id="province" onChange="get_city(this)" class="form-control" style="width:250px;margin-left:-15px;">
+                                                    <option value="0">请选择</option>
+                                                <volist name="province" id="p">
+                                                    <option <if condition="$list['province'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+						</select>
+	                                    </div>                                    
+
+                                        <div class="col-sm-3">
+                                            <select name="city" id="city" onChange="get_area(this)"  class="form-control" style="width:250px;">
+                                                <volist name="city" id="p">
+                                                    <option <if condition="$list['city'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select name="district" id="district" onChange="get_twon(this)"  class="form-control" style="width:250px;">
+                                                <volist name="district" id="p">
+                                                    <option <if condition="$list['district'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <select name="town" id="twon" <if condition="$list['town'] gt 0 ">style="display:block;"<else/>style="display:none;"</if>  class="form-control" style="width:250px;">
+                                            <volist name="town" id="p">
+                                                <option <if condition="$list['town'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+                                            </volist>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>详细地址:</td>
+                                    <td>
+                                        <input type="text" value="{$list.address}" name="address" class="form-control" style="width:300px;"/>
+                                        <span id="err_address" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                                    <td>品牌logo:</td>
+                                    <td>  
+                                    	<div class="col-sm-3">                                                                              
+                                        	<input type="text" value="{$store.logo}" name="logo" id="logo" class="form-control" style="width:350px;margin-left:-15px;"/>
+                                        </div>
+                                        <div class="col-sm-3">
+                                        	<input onclick="GetUploadify(1,'logo','brand');" type="button" class="btn btn-default" value="上传logo"/>
+                                        </div>
+                                    </td>
+                                </tr>-->
+                                <tr>
+                                    <td>身份证正面:</td>
+                                    <td>
+                                    	<div class="col-sm-4">
+                                        	<input type="text" value="{$list.identity_card_front}" name="identity_card_front" id="identity_card_front" class="form-control" style="width:450px;margin-left:-15px;"/>
+                                        </div>
+                                        <div class="col-sm-4">
+                                        	<input onclick="GetUploadify(1,'identity_card_front','businessuser');" type="button" class="btn btn-default" value="上传"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>身份证背面:</td>
+                                    <td>
+                                        <div class="col-sm-4">
+                                            <input type="text" value="{$list.identity_card_reverse}" name="identity_card_reverse" id="identity_card_reverse" class="form-control" style="width:450px;margin-left:-15px;"/>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input onclick="GetUploadify(1,'identity_card_reverse','businessuser');" type="button" class="btn btn-default" value="上传"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>开户行名称:</td>
+                                    <td>
+                                        <input type="text" value="{$list.bank_name}" name="bank_name" class="form-control" style="width:250px;"/>
+                                        <span id="err_bank_name" style="color:#F00; display:none;"></span>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>银行卡号:</td>
+                                    <td>
+                                        <input type="text" value="{$list.bank_card_number}" name="bank_card_number" class="form-control" style="width:250px;"/>
+                                        <span id="err_bank_card_number" style="color:#F00; display:none;"></span>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>状态:</td>
+                                    <td>
+                                        <input type="text" value="{$list.status}" name="status" class="form-control" style="width:250px;"/>
+                                        <span id="more_status" style="color:#99999A; display:block;">1为可用;0为禁用，默认为1</span>
+                                        <span id="err_status" style="color:#F00; display:none;"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>排序:</td>
+                                    <td>
+                                        <input type="text" value="{$list.sort}" name="sort" class="form-control" style="width:250px;" placeholder="50"/>
+                                    </td>
+                                </tr>                                                                 
+
+                                </tbody>                                
+                                </table>
+                        </div>                           
+                    </div>              
+                    <div class="pull-right">
+                        <input type="hidden" name="id" value="{$list.id}">
+                        <input type="hidden" name="p" value="{$_GET[p]}">
+                        <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="保存">保存</button>
+                    </div>
+			    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+// 判断输入框是否为空
+function checkName(){
+	var name = $("#addEditBrandForm").find("input[name='name']").val();
+    if($.trim(name) == '')
+	{
+		$("#err_name").show();
+		return false;
+	}
+	return true;
+}
+
+/*window.onload = function(){
+	if({$store.cat_id} > 0 ){
+		get_category($("#parent_id_1").val(),'parent_id_2',{$store.cat_id});	 
+	}		
+}*/
+</script>
+
+<script src="__PUBLIC__/js/global.js"></script>
+<script src="__PUBLIC__/js/pc_common.js"></script>
+<script>
+    function checkForm(){
+        var consignee = $('input[name="consignee"]').val();
+        var province = $('select[name="province"]').find('option:selected').val();
+        var city = $('select[name="city"]').find('option:selected').val();
+        var district = $('select[name="district"]').find('option:selected').val();
+        var address = $('textarea[name="address"]').val();
+        var mobile = $('input[name="mobile"]').val();
+        var error = '';
+        if(consignee == ''){
+            error += '收货人不能为空 <br/>';
+        }
+        if(province==0){
+            error += '请选择省份 <br/>';
+        }
+        if(city==0){
+            error += '请选择城市 <br/>';
+        }
+        if(district==0){
+            error += '请选择区域 <br/>';
+        }
+        if(address == ''){
+            error += '请填写地址 <br/>';
+        }
+        if(!checkMobile(mobile))
+            error += '手机号码格式有误 <br/>';
+        if(error){
+            //alert(error);
+            layer.alert(error, {icon: 2});
+            //	layer.msg('只想弱弱提示');
+            return false;
+        }
+        return true;
+    }
+
+    var index_loading;
+    $(document).ajaxStart(function(){
+        //loading层
+            index_loading = layer.load(1, {
+            shade: [0.5,'#fff'] //0.1透明度的白色背景
+        });
+    }).ajaxStop(function(){
+        layer.close(index_loading);
+    });
+    $(document).ready(function(){
+
+        $("#tag-operate").bind("click",function(){
+            var tags = '';
+            $.ajax({
+                url:'{:U("Admin/BusinessUser/ajaxGetTags")}',
+                type:'GET',
+                data:{b_u_id:"{$list.id}"},
+                success:function(data){
+                    if(data.status == "1"){
+                        data_obj = eval('('+data.data+')');
+                        //alert(data_obj[0]['business_user_id']);
+                        content = '';
+                        for(i=0;i<data_obj.length;i++){
+                            if(data_obj[i]['business_user_id']){
+                                content+='<label class="checkbox-inline"><input type="checkbox" class="tag-arr" id="tag_'+data_obj[i]['id']+'" value="'+data_obj[i]['id']+'" checked="checked">'+data_obj[i]['name']+'</label>';
+                            }else{
+                                content+='<label class="checkbox-inline"><input type="checkbox" class="tag-arr" id="tag_'+data_obj[i]['id']+'" value="'+data_obj[i]['id']+'" />'+data_obj[i]['name']+'</label>';
+                            }
+                        }
+                        index_open = layer.open({
+                            title: '角色信息(微信公众账号同步)',
+                            type: 1,
+                            skin: 'layui-layer-rim', //加上边框
+                            area: ['420px', '240px'], //宽高
+                            content: '<div style="width: 400px;height: 220px;text-align: center;padding:20px;">'+content+'<br /><br /><p><button class="layui-btn layui-btn-radius layui-btn-primary" id="btn">确认</button></p></div>'
+                        });
+                    }else{
+                        layer.msg(data.msg, {icon: 5});
+                    }
+
+                    $("#btn").bind('click',function(){
+                        tag_arr = new Array();
+                        $("input[class='tag-arr']:checked").each(function(i,v){
+                            tag_arr[i] = $(this).val();
+                        });
+                        post_obj = {
+                            b_u_id: "{$list.id}",
+                            tags: tag_arr
+                        };
+                        //alert(JSON.stringify(post_obj));return ;
+                        url = '/index.php/Admin/BusinessUser/ajaxChangeTags';
+                        ajaxFun(url,post_obj,index_open);
+                    });
+                },
+                error:function(){
+                    //TODO
+                },
+                complete:function(){
+                    //TODO
+                }
+            });
+
+        });
+    });
+
+    // 修改商业用户标签
+    /*string@url 访问url
+    * object@post_obj 传递的对象
+    * object@close_handle弹层句柄
+    * */
+    function ajaxFun(url,post_obj,close_handle){
+        $.ajax({
+            url:url,
+            type:'POST',
+            dataType:'josn',
+            data:post_obj,
+            success:function(d){
+                d = eval('('+d+')');
+            },
+            error:function(){
+                //TODO
+            },
+            complete:function(a){
+                //TODO
+                re = JSON.parse(a.responseText);
+                if(re.status == 1){
+                    layer.close(close_handle);
+                    layer.msg(re.msg,{icon:1});
+                }else{
+                    layer.msg(re.msg,{icon:2});
+                }
+
+            }
+        });
+
+    }
+</script>
+</body>
+</html>

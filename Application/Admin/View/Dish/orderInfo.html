@@ -1,0 +1,152 @@
+<include file="Public/min-header" />
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <nav class="navbar navbar-default">
+                            <div class="collapse navbar-collapse">
+                                <div style="line-height:200%;padding:10px 20px;">
+                                    订餐人：{$order_mess['name']}<br>
+                                    取餐号：{$order_mess['system_order_id']}<br>
+                                    订单时间：{$order_mess['order_time']|date="Y-m-d H:i",###}<br>
+                                    点菜数量：{$order_mess['dish_total_num']}<br>
+                                    订单金额：<span style="color:#f30;font-size:16px;font-weight:bold"><php>echo ($vo['order_total_fee']/100)</php></span>元<br/>
+                                    支付方式：{$order_mess['pay_type_name']}<br>
+                                    支付状态：<if condition="$order_mess['paid'] eq 1">已付款<else/>未付款</if><br>
+                                    <!--订单备注:{pigcms:$thisOrder.des|htmlspecialchars_decode=ENT_QUOTES}<br/>-->
+                                    订单备注：{$order_mess.remarks}<br/>
+                                    订单状态：<if condition="$order_mess['refund_fee'] gt 0">已退款<else/>未退款</if><br>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="collapse navbar-collapse">
+                                <form class="navbar-form form-inline" action="" method="post">
+                                    <input type="hidden" name="id" value="{$order_mess.id}">
+                                    <div class="form-group">
+                                        <table  class="table table-bordered table-striped dataTable">
+                                        <tr>
+                                            <th><span style="color: red">*</span>订单状态：</th>
+                                            <td><select name="paid">
+                                                <option value="0" <if condition="$order_mess.paid eq 0">selected</if>>未付款</option>
+                                                <option value="1" <if condition="$order_mess.paid eq 1">selected</if>>已付款</option>
+                                            </select></td>
+                                        </tr>
+
+                                       </table>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary">保存</button>
+                                </form>
+                            </div>
+                            <hr>
+                        </nav>
+
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table id="list-table" class="table table-bordered table-striped dataTable">
+                                    <thead>
+                                    <tr role="row">
+                                        <th>菜品名称</th>
+                                        <th>数量</th>
+                                        <th>总价</th>
+                                        <th>单价</th>
+                                        <th>退款金额</th>
+                                        <th>退款原因</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <foreach name="order_info" item="vo" key="k" >
+                                        <tr role="row" style="height: 60px;">
+                                            <td>{$vo.dish_name}</td>
+                                            <td id="tnum">{$vo.dish_num}</td>
+                                            <td><php>echo ($vo['total_fee_current']/100)</php></td>
+                                            <td align="center"><php>echo ($vo['price_cerrent']/100)</php></td>
+                                            <td align="center">
+                                                <input type="text" id="refundfee{$vo['id']}" value="<php>echo ($vo['refund_fee']/100)</php>">
+                                            </td>
+                                            <td align="center"><textarea placeholder="退款原因不少于六个字符" style="border: 1px;border-color: #0a0a0a;border-style: solid;" rows="3" cols="20" id="refundReason{$vo['id']}"  <if condition="$vo['is_refund'] eq 1">disabled="disabled"</if>  >{$vo['refund_reason']}</textarea></td>
+                                            <td>
+                                                <button type="button" <if condition="($vo['is_refund'] eq 1)"> disabled="disabled"</if>  data-toggle="tooltip"  class="btn btn-info goods_list" onclick="refund({$vo['total_fee_current']},this,{$vo['id']},{$vo['order_id']})">退款</button>
+                                            </td>
+                                        </tr>
+                                    </foreach>
+
+                                    </tbody>
+                                    <tfoot>
+
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-left">
+                                <button class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i></button>
+                            </div>
+                            <div class="col-sm-6 text-right">{$page}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        //异步退款
+//        refund(0,0,'allrefundreason','',this,1)退单
+        /**
+         * 都为分来计算，
+         * **/
+        function refund(price,thisobj,id,order_id){
+
+                 var reason=$.trim($('#refundReason'+id).val());
+                 var refundfee=$.trim($('#refundfee'+id).val());
+                         refundfee=refundfee*100;
+                    var re = /^[0-9]*(\.\d*)?$|^(\.\d*)?$/;
+                    if (!re.test(refundfee) || refundfee>price)
+                    {
+                        alert("退款金额为数字且不能高于顾客支付的金额");
+                        return false;
+                    }
+                    if (!refundfee)
+                    {
+                        alert("请填写退款金额");
+                        return false;
+                    }
+                if(reason.length<6){
+                    alert("退款原因不少于六个字符");
+                    return false;
+                }
+
+            var url_refund = "{:U('Dish/reFund')}";   //这没问题
+            if(confirm("退款金额为:"+(refundfee/100)+'元')){
+                $.get(url_refund,
+                        {
+                            order_id:order_id,
+                            order_info_id:id,
+                            refundmoney:refundfee,
+                            refund_reason:reason
+                        },
+                        function(data){
+                            //alert(data);
+                            if(data == 'SUCCESS'){
+                                //$(this).attr('disabled','disabled');
+                                this.disabled = true;
+                                $('#refundReason'+id).attr('disabled','disabled');
+                                $(thisobj).attr('disabled','disabled');
+                                alert('退款成功');
+                            }else{
+                                alert('退款失败，请刷新后重试');
+                            }
+                        });
+            }
+
+        }
+    </script>
+</div>
+</body>
+</html>

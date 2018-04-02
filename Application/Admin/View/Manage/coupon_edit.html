@@ -1,0 +1,102 @@
+<include file="Public/min-header"/>
+<script src="__PUBLIC__/laydate/laydate.js"></script>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+           		<!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 代金券修改</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">修改信息</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <form method="post" id="addEditBrandForm" action="" onsubmit="return checkName();">
+
+                        <!--通用信息-->
+                    <div class="tab-content">                 	  
+                        <div class="tab-pane active" id="tab_tongyong">
+                           
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>发放对象:</td>
+                                        <td>
+                                            <input type="text" value="{$info.username}" name="username" id="username" readonly class="form-control" style="width:250px;" />&nbsp;&nbsp;
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>有效期:</td>
+                                    <td>
+                                        <input type="text" value="{$info.start_time}" name="start_time" id="start_time" class="form-control" style="width:250px;" />——
+                                        <input type="text" value="{$info.end_time}" name="end_time" id="end_time" class="form-control" style="width:250px;" />&nbsp;&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>代金券设置:</td>
+                                    <td>
+                                        满 &nbsp;<input type="text" value="{$info.max_fee}" name="max_fee" id="max_fee" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}" />&nbsp;元 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;减&nbsp;&nbsp;
+                                        <input type="text" value="{$info.money}" name="money" id="money" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}" />&nbsp;元
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                                </table>
+                        </div>                           
+                    </div>              
+                    <div class="pull-left" style="margin-left:200px;">
+                        <input type="hidden" name="id" value="{$info.id}">
+                        <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="保存">保存</button>
+                    </div>
+			    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+
+// 判断输入框是否为空
+function checkName(){
+
+     var start_time=$("#start_time").val();
+     var end_time=$("#end_time").val();
+     var money=$("#money").val();
+     var max_fee=$("#max_fee").val();
+
+    if($.trim(start_time) >= $.trim(end_time))
+	{
+        layer.msg("请选择正确的时间", {icon: 2,time: 3000});
+		return false;
+	}
+	if($.trim(max_fee)=="")
+	{
+        layer.msg("请输入满减额", {icon: 2,time: 3000});
+		return false;
+	}
+	if($.trim(money)=="")
+	{
+        layer.msg("请输入面额", {icon: 2,time: 3000});
+		return false;
+	}
+	return true;
+}
+
+laydate.render({
+    elem: '#start_time'
+});
+laydate.render({
+    elem: '#end_time'
+});
+</script>
+</body>
+</html>

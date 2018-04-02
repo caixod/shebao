@@ -1,0 +1,96 @@
+<include file="Public/min-header"/>
+<div class="wrapper">
+    <include file="Public/breadcrumb"/>
+    <section class="content">
+        <!-- Main content -->
+        <div class="container-fluid">
+            <div class="pull-right">
+                <a href="javascript:history.go(-1)" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="返回"><i class="fa fa-reply"></i></a>
+           		<!--<a href="javascript:;" class="btn btn-default" data-url="http://www.shop.yiqidongfang.com/Doc/Index/article/id/1010/developer/user.html" onclick="get_help(this)"><i class="fa fa-question-circle"></i> 帮助</a>-->
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-list"></i> 修改公积金信息</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_tongyong" data-toggle="tab">修改{$info.name}公积金信息</a></li>
+                    </ul>
+                    <!--表单数据-->
+                    <form method="post" id="addEditBrandForm" action="{:U('Admin/Manage/gjj_edit')}" onsubmit="return checkName();">
+
+                        <!--通用信息-->
+                    <div class="tab-content">                 	  
+                        <div class="tab-pane active" id="tab_tongyong">
+                           
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>地区:</td>
+                                    <td>
+                                        <input type="text" value="{$info.name}" name="name" class="form-control" readonly style="width:200px;"/>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>公积金缴纳比例（个人）:</td>
+                                    <td>
+                                        <input type="text" value="{$info.gjj_bilie}" name="gjj_bilie" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>公积金缴纳比例（单位）:</td>
+                                    <td>
+                                        <input type="text" value="{$info.c_gjj_bilie}" name="c_gjj_bilie" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>公积金最小基数:</td>
+                                    <td>
+                                        <input type="text" value="{$info.gjj_minbase}" name="gjj_minbase" id="gjj_minbase" class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                        &nbsp;&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;公积金最大基数:</td>
+                                    <td>
+                                        <input type="text" value="{$info.gjj_maxbase}" name="gjj_maxbase" id="gjj_maxbase"  class="form-control" style="width:250px;"  onkeyup= "if(!/^[0-9]+(.[0-9]{0,2})?$/.test(this.value)){ layer.msg('只能是数字或者小数', {icon: 2,time: 3000});this.value='';}"/>&nbsp;&nbsp;元
+                                    </td>
+                                </tr>
+
+                                </tbody>                                
+                                </table>
+                            <label style="color: red">温馨提示：如：2% 只需要填写2即可，0.5% 只需要填写0.5即可</label>
+                        </div>                           
+                    </div>              
+                    <div class="pull-right">
+
+                        <input type="hidden" name="id" value="{$id}">
+                        <button class="btn btn-primary" data-toggle="tooltip" type="submit" data-original-title="保存">保存</button>
+                    </div>
+			    </form><!--表单数据-->
+                </div>
+            </div>
+        </div>    <!-- /.content -->
+    </section>
+</div>
+<script>
+
+// 判断输入框是否为空
+function checkName(){
+    var gjj_maxbase = $.trim($("#gjj_maxbase").val());
+    var gjj_minbase = $.trim($("#gjj_minbase").val());
+
+
+    if(gjj_maxbase ==0 || gjj_minbase==0)
+    {
+        layer.msg('请填写公积金的基数范围', {icon: 2,time: 3000});
+        return false;
+    }
+	return true;
+}
+
+
+</script>
+</body>
+</html>

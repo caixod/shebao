@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>订单确认页-{$tpshop_config['GBLOBAL_TITLE']}</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>-->
+    <!--<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]-->
+</head>
+<body class="quereng_body">
+<form method="post" action="{:U('Dish/Index/confirmOrder',array('store_id'=>$store_id))}" onsubmit="return confirmSubmit(this);">
+    <section>
+        <div class="mx_div">
+            <div class="xian"></div>
+            <div class="mxs_div">
+                <h3 class="boder_ddd">订单明细</h3>
+                <foreach name="confirm_list" item="cl" >
+                <div class="mxs">
+                    <p class="mxs_span">[{:getStandardName($cl['dish_standard'])}]&nbsp;&nbsp;{$cl.dish_name}</p>
+                    <p class="mxs_span2">&times;{$cl.dish_num}</p>
+                    <!--<p class="mxs_span3">&yen;{$cl.total_fee}</p>-->
+                    <p class="mxs_span3">&yen;<php>echo $cl['total_fee']/100</php></p>
+                </div>
+                </foreach>
+
+                <!--<div class="mxs">
+                    <p class="mxs_span">[大份]三鲜菌菇汤粉</p>
+                    <p class="mxs_span2">&times;1</p>
+                    <p class="mxs_span3">&yen;26.00</p>
+                </div>-->
+            </div>
+        </div>
+        <div class="k_qr"></div>
+        <!--<div class="mx_div">
+            <div class="mxs_div">
+                <h3 class="boder_ddd">优惠券</h3>
+                <div class="select_mx">
+                    <select class="form-control select_div">
+                        <option>请选择优惠券</option>
+                        <option>优惠券1</option>
+                        <option>优惠券2</option>
+                    </select>
+                </div>
+            </div>
+        </div>-->
+        <div class="k_qr"></div>
+        <div class="mx_div">
+            <div class="mxs_div">
+                <h3 class="boder_ddd">备注</h3>
+                <div class="select_mx">
+                    <textarea class="form-control" rows="3" name="remarks" placeholder="请输入您的要求或者建议"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="foot navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="footer2">
+            <div class="foot_left">
+                <p>总计：<span id="zhongjia"> &yen;{$total_fee}</span>
+                    <!--<span class="yh">(已优惠 6元)</span>-->
+                </p>
+            </div>
+            <div class="foot_right">
+                <button type="submit">去支付</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script language="javascript" type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="__STATIC__/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="js/app.js"></script>-->
+</body>
+</html>
+<script language="javascript" type="text/javascript">
+    function confirmSubmit(thisobj){
+        return true;
+    }
+</script>

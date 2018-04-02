@@ -1,0 +1,58 @@
+<include file="Public/min-header" />
+<!--<meta http-equiv="refresh" content="7">-->
+<script src="__PUBLIC__/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="__PUBLIC__/artDialog/plugins/iframeTools.js"></script>
+<script src="__PUBLIC__/echats/echarts.min.js"></script>
+<div class="wrapper">
+	<include file="Public/breadcrumb"/>
+	<section class="content">
+       <div class="row">
+       		<div class="col-xs-12">
+	       		<div class="box">
+	             <div class="box-header">
+	               	<nav class="navbar navbar-default">	     
+				        <div class="collapse navbar-collapse">
+				          <form class="navbar-form form-inline" action="" method="post">
+				            <div class="form-group">
+								开始时间:<input type="text" value="{$starttime|date='Y-m-d H:i:s',###}" onClick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" name="starttime" class="form-control" style="width:200px;"/>
+								结束时间:<input type="text" value="{$endtime|date='Y-m-d H:i:s',###}" onClick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" name="endtime" class="form-control" style="width:200px;"/>
+								<select name="status" class="form-control">
+										  <option value="0" <php>if ($status == 0) {echo "selected";}</php>>全部状态</option>
+										  <option value="1" <php>if ($status == 1) {echo "selected";}</php>>未付款 / 未取餐</option>
+										  <option value="2" <php>if ($status == 2) {echo "selected";}</php>>未付款 / 已取餐</option>
+										  <option value="3" <php>if ($status == 3) {echo "selected";}</php>>已付款 / 未取餐</option>
+										  <option value="4" <php>if ($status == 4) {echo "selected";}</php>>已付款 / 已取餐</option>
+										  <option value="5" <php>if ($status == 5) {echo "selected";}</php>>已付款 / 部分退款</option>
+										  <option value="6" <php>if ($status == 6) {echo "selected";}</php>>已付款 / 全部退款</option>                                      </volist>
+                                 </select>   
+				            </div>
+				            <button type="submit" class="btn btn-primary">查询</button>
+				            <div class="form-group pull-right">
+				            </div>		          
+				          </form>
+				      	</div>
+	    			</nav>
+
+	             </div>
+	             <div class="box-body">
+
+				 </div>
+              <div class="row">
+              	    <div class="col-sm-6 text-left">
+              	    	<button class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i></button>
+              	    </div>
+                    <div class="col-sm-6 text-right">{$page}</div>		
+              </div>
+	          </div>
+	        </div>
+       	</div>
+       </div>
+   </section>
+<script>
+	function showIntroDetail(id){
+		art.dialog.open('{:U('Dish/orderInfo')}?id='+id,{lock:false,title:'订单详情',width:1100,height:620,yesText:'关闭',background: '#000',opacity: 0.87, close: function(){location.reload();}});
+	}
+</script>
+</div>
+</body>
+</html>   

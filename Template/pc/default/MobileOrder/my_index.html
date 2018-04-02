@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人订单</title>
+
+    <!-- Bootstrap -->
+    <link href="__STATIC__/css/mobile_center_css/bootstrap.min.css" rel="stylesheet">
+    <link href="__STATIC__/css/mobile_center_css/zhangmu.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <!--<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--[endif]-->
+    <script src="__STATIC__/js/mobile_js/jquery.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="__STATIC__/js/mobile_center_js/jquery2.14.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="__STATIC__/js/mobile_center_js/jquery2.14.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="__STATIC__/js/mobile_center_js/bootstrap.min.js"></script>
+    <script src="__STATIC__/js/mobile_center_js/Other.js"></script>
+    <link rel="stylesheet" href="__STATIC__/font_awesome/css/font-awesome.min.css">
+    <script src="__PUBLIC__/js/layer/layer.js"></script>
+</head>
+<body>
+
+<!--导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #ffffff;">
+    <p class="nav_li nav_li1">
+        <a href="{:U('MobileOrder/index')}">
+            <i class="fa fa-angle-double-left fa-lg"></i> 返回</a>
+    </p>
+    <p class="nav_li nav_title  nav_li2">个人订单</p>
+    <!--<p class="nav_li nav_li3"><a href="{:U('Home/MobileOrder/company_staff_add')}">添加员工</a></p>-->
+</nav>
+
+<section class="topheight">
+    <div style="margin: 60px auto;background-color: #ffffff;">
+
+        <table class="table table-bordered table-striped text-center">
+            <tr class="text-center">
+                <th class="text-center">项目<br>名称</th>
+                <th class="text-center">订单<br>总金额</th>
+                <th class="text-center">抵扣<br>金额</th>
+                <th class="text-center">应付<br>金额</th>
+                <th class="text-center">实付<br>金额</th>
+                <th class="text-center">状态</th>
+                <!--<th class="text-center">申办时间</th>-->
+                <th class="text-center">查看<br>明细</th>
+            </tr>
+
+            <volist name="shebao_bujiao" id="vo">
+                <tr>
+                    <td>社保补缴</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <!--<td><button type="button" class="btn btn-link" onclick="get_info('sb_bujiao',{$vo.id});">查看>></button></td>-->
+                    <td><a href="{:U('MobileOrder/sb_bujiao',array('order_sn'=>$vo['order_sn'],'table_name'=>'sb_bujiao'))}" class="btn btn-link">查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="sb_daijiao" id="vo">
+                <tr>
+                    <td>社保代缴</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a href="{:U('MobileOrder/sb_daijiao',array('order_sn'=>$vo['order_sn'],'table_name'=>'sb_daijiao'))}"  class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+
+            <volist name="shebao_zhuanyi" id="vo">
+                <tr>
+                    <td>社保转移</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a href="{:U('MobileOrder/sb_zhuanyi',array('order_sn'=>$vo['order_sn'],'table_name'=>'sb_zhuanyi'))}" class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="gjj_zhuanyi" id="vo">
+                <tr>
+                    <td>公积金转移</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a href="{:U('MobileOrder/gjj_zhuanyi',array('order_sn'=>$vo['order_sn'],'table_name'=>'gjj_zhuanyi'))}" class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="gjj_tiqu" id="vo">
+                <tr>
+                    <td>公积金提取</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a href="{:U('MobileOrder/gjj_tiqu',array('order_sn'=>$vo['order_sn'],'table_name'=>'gjj_tiqu'))}" class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="yl_sgz" id="vo">
+                <tr>
+                    <td>医疗手工报销</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a href="{:U('MobileOrder/yl_sgz',array('order_sn'=>$vo['order_sn'],'table_name'=>'yl_sgz'))}" class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="sy_shenqing" id="vo">
+                <tr>
+                    <td>生育待遇申领</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a href="{:U('MobileOrder/sy_shenqing',array('order_sn'=>$vo['order_sn'],'table_name'=>'sy_shenqing'))}" class="btn btn-link"  >查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="yd_bajy" id="vo">
+                <tr>
+                    <td>异地就医备案</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a  href="{:U('MobileOrder/yd_bajy',array('order_sn'=>$vo['order_sn'],'table_name'=>'yd_bajy'))}" class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="sb_editinfo" id="vo">
+                <tr>
+                    <td>社保信息修改</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a  href="{:U('MobileOrder/sb_editinfo',array('order_sn'=>$vo['order_sn'],'table_name'=>'sb_editinfo'))}" class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="own_money" id="vo">
+                <tr>
+                    <td>个人所得税申报</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a href="{:U('MobileOrder/own_money',array('order_sn'=>$vo['order_sn'],'table_name'=>'own_money'))}" class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="tx_yanglao" id="vo">
+                <tr>
+                    <td>退休养老办理</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a  href="{:U('MobileOrder/tx_yanglao',array('order_sn'=>$vo['order_sn'],'table_name'=>'tx_yanglao'))}" class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="school_info" id="vo">
+                <tr>
+                    <td>孩子上学材料</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a  href="{:U('MobileOrder/school_info',array('order_sn'=>$vo['order_sn'],'table_name'=>'school_info'))}" class="btn btn-link">查看>></a></td>
+                </tr>
+            </volist>
+            <volist name="rc_yingjin" id="vo">
+                <tr>
+                    <td>天津人才引进</td>
+                    <td>{$vo.front_total}</td>
+                    <td>{$vo.coupon_fee}</td>
+                    <td>{$vo.total}</td>
+                    <td>{$vo.pay_money}</td>
+                    <td>
+                        <switch name="vo.is_pay">
+                            <case value="0">未支付</case>
+                            <case value="1">已支付</case>
+
+                        </switch>
+                    </td>
+                    <!--<td>{$vo.add_time|date='Y-m-d',###}</td>-->
+                    <td><a  href="{:U('MobileOrder/rc_yingjin',array('order_sn'=>$vo['order_sn'],'table_name'=>'rc_yingjin'))}"  class="btn btn-link" >查看>></a></td>
+                </tr>
+            </volist>
+
+        </table>
+    </div>
+</section>
+
+<script>
+    function del(obj,user_id){
+        $.ajax({
+            url:'{:U("Home/Order/ajax_del")}',
+            type:'post',
+            data:{'user_id':user_id},
+            dataType:'json',
+            success:function(e){
+                if(e.code==1){
+                    $(obj).parent().parent().remove();
+                }else{
+                    layer.alert(e.mess, {icon: 5});
+                }
+                // window.location.reload();
+            }
+        })
+    }
+</script>
+</body>
+</html>

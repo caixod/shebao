@@ -1,0 +1,133 @@
+<include file="Public/new_header" />
+<div class="con3">
+    <div class="container m_p_none">
+        <include file="Public/to_order_nav_menu" />
+        <div class="ab_right" style="border-radius:10px;">
+            <div class="ab_r_tt">
+                <span style="display:block; float:left; margin-left:23px; font-size:18px; color:#ae2c26;">订单详情</span>
+            </div>
+            <div class="ab_r_cc">
+                <div class="row">
+                    <!--<div class="hhh"></div>-->
+                    <!--<div class="col-sm-8">-->
+                    <!--<div class="tex_div tex_div2">-->
+                    <!--<p class="p_sh">客户信息</p>-->
+                    <!--<p class="dizhi">姓名：张三</p>-->
+                    <!--<p class="dizhi">400电话:400-086-4500</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="hhh"></div>
+                    <div class="hhh"></div>
+                    <form action="{:U('Checklogin/to_pay_order')}" method="post">
+
+                    <div class="col-sm-12">
+                        <div class="jieguo2">
+
+                            <table class="table table-bordered table-hover" style="padding-left: 20px;font-size: 15px;font-family: "Microsoft yahei", "微软雅黑", "Tahoma", "Verdana", "Arial", "sans-serif";">
+                            <caption>订单费用明细</caption>
+
+                            <tbody>
+                            <tr>
+                                <td>办理人</td>
+                                <td>{$order_data.username}</td>
+                                <td>联系电话</td>
+                                <td>{$order_data.mobile}</td>
+                            </tr>
+                            <tr>
+                                <td>身份证号</td>
+                                <td>{$order_data.idcard}</td>
+                                <td>户口性质</td>
+                                <td>
+                                    <if condition="$order_data.nature eq 1">农业户口
+                                        <else /> 城镇户口
+                                    </if>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>性别</td>
+                                <td>
+                                    <if condition="$order_data.sex eq 1">男
+                                        <else />女
+                                    </if>
+                                </td>
+                                <td>服务费</td>
+                                <td>{$order_data.service_fee}&nbsp;元</td>
+                            </tr>
+
+                            <tr>
+                                <td>转出地区</td>
+                                <td>
+                                    {$order_data.province}— {$order_data.city}—
+                                    {$order_data.district}
+                                </td>
+                                <td>转入地区</td>
+                                <td>   {$order_data.pname}— {$order_data.cname}—
+                                    {$order_data.dname}</td>
+                            </tr>
+                            <tr>
+                                <td>可用代金券</td>
+                                <td colspan="3">
+                                    <volist name="coupon" id="vo" empty="暂时没有可用的券">
+                                        <input type="radio" name="coupon" value="{$vo.id}"  onclick="get_fee(this,{$vo.id});">满{$vo.max_fee}减{$vo.money}元&nbsp;&nbsp;
+                                    </volist>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>合计总付款金额</td>
+                                <td colspan="3" style="color: red;"><span id="end_fee">{$order_data.money}</span>&nbsp;元</td>
+                            </tr>
+                            </tbody>
+
+                            </table>
+                        </div>
+                        <p class="tishi">提示：付款后可在个人中心查看进度</p>
+                        <div class="btn_div2"><button type="submit" class="btn btn-default btn2" >支付费用</button></div>
+                    </div>
+                        </form>
+                    <div class="hhh"></div>
+                    <div class="col-sm-12">
+                        <p class="p_sh">单位地址</p>
+                        <p class="dizhi">朝阳区大望路SOHO现代城4号楼603</p>
+                        <p class="tishi">提示：寄材料到单位 </p>
+                    </div>
+                    <div class="hhh"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    function get_fee(obj,id) {
+        $.ajax({
+            url:"{:U('Checklogin/check_coupon')}",
+            type:"post",
+            data:{'id':id},
+            dataType:'json',
+            success:function(e){
+                if(e.code==1){
+                    $("#end_fee").text(e.end_fee);
+                }else{
+                    layer.alert('错误,请重新下单', {icon: 2});
+                    setTimeout(function(){
+                        window.location.href="{:U('Checklogin/index')}";
+                    },2000);
+
+                }
+            },
+            error:function(a){
+                layer.alert('错误,请重新下单', {icon: 2});
+                setTimeout(function(){
+                    window.location.href="{:U('Checklogin/index')}";
+                },2000);
+            }
+
+        })
+    }
+    function pay_btn(){
+
+    }
+</script>
+<include file="Public/footer2" />
