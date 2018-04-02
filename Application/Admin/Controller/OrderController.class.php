@@ -180,7 +180,7 @@ $id=I("get.id");
      *企业社保订单
      */
     public function sb_company_order_list(){
-        var_dump($_GET);
+
         $status=I('status',0);
         $is_pay=I('is_pay',0);
         $deal_status = I('deal_status',0);
@@ -219,16 +219,21 @@ $id=I("get.id");
             $where['a.username']=['like',"%$handle_name%"];
         }
 
-        // if($company_name){
-        //     $where['c.company_name']=['like',"%$company_name%"];
-        // }
+        if($company_name){
+            $where['c.company_name']=['like',"%$company_name%"];
+        }
 
 //        $where=['store_id'=>$cid[0],'is_del'=>0,'order_time'=>['between',[$starttime,$endtime]]];
 //        dump($where);
         $model=D("sb_company_order");
 
         $count = $model->alias('a')->field("a.*,u.account_name")
-               ->join("tp_users as u ON u.user_id=a.user_id",'inner')->where($where)->count();// 查询满足要求的总记录数
+                ->join("tp_users as u ON u.user_id=a.user_id",'inner')
+                ->join("tp_company as c ON c.user_id=a.user_id",'left')
+                ->join("tp_region as g ON g.id=a.to_province",'left')
+                ->join("tp_region as i ON i.id=a.to_city",'left')
+                ->where($where)
+                ->where($where)->count();// 查询满足要求的总记录数
         $Page       = new \Think\Page($count,30);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $Page->parameter['status']   =  urlencode($status);
         $Page->parameter['is_pay']   =  urlencode($is_pay);
