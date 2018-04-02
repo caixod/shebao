@@ -149,6 +149,8 @@
                                     <div class="form-group">
                                         下单账户：<input type="text" name="account_name" value="<?php echo ($account_name); ?>" class="form-control" style="width: 100px;">
                                         下单人姓名：<input type="text" name="user_name" value="<?php echo ($user_name); ?>" class="form-control" style="width: 100px;">
+                                        单位名称：<input type="text" name="company_name" value="<?php echo ($company_name); ?>" class="form-control" style="width: 100px;">
+                                        办理人姓名：<input type="text" name="handle_name" value="<?php echo ($handle_name); ?>" class="form-control" style="width: 100px;">
                                     </div>
                                     下单日期：<div class="form-group">
                                         <input type="text" class="form-control" value="<?php echo ($start_time); ?>" name="start_time" id="start_time"/>

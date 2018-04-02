@@ -180,7 +180,7 @@ $id=I("get.id");
      *企业社保订单
      */
     public function sb_company_order_list(){
-        var_dump('expression');
+        var_dump($_GET);
         $status=I('status',0);
         $is_pay=I('is_pay',0);
         $deal_status = I('deal_status',0);
@@ -189,6 +189,8 @@ $id=I("get.id");
         $user_name=I('user_name','');
         $starttime=I('start_time',0);
         $endtime=I('end_time',0);
+        $company_name = I('company_name');
+        $handle_name = I('handle_name');
         $start_time=$starttime > 0 ? strtotime($starttime) : '';
         $end_time=$endtime > 0 ? strtotime($endtime) : '';
 
@@ -210,14 +212,23 @@ $id=I("get.id");
             $where['u.account_name']=['like',"%$account_name%"];
         }
         if($user_name){
-            $where['a.username']=['like',"%$user_name%"];
+            $where['u.username']=['like',"%$user_name%"];
         }
+
+        if($handle_name){
+            $where['a.username']=['like',"%$handle_name%"];
+        }
+
+        // if($company_name){
+        //     $where['c.company_name']=['like',"%$company_name%"];
+        // }
+
 //        $where=['store_id'=>$cid[0],'is_del'=>0,'order_time'=>['between',[$starttime,$endtime]]];
 //        dump($where);
         $model=D("sb_company_order");
 
-        $count      = $model->alias('a')->field("a.*,u.account_name")
-                 ->join("tp_users as u ON u.user_id=a.user_id",'inner')                   ->where($where)->count();// 查询满足要求的总记录数
+        $count = $model->alias('a')->field("a.*,u.account_name")
+               ->join("tp_users as u ON u.user_id=a.user_id",'inner')->where($where)->count();// 查询满足要求的总记录数
         $Page       = new \Think\Page($count,30);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $Page->parameter['status']   =  urlencode($status);
         $Page->parameter['is_pay']   =  urlencode($is_pay);
@@ -243,6 +254,7 @@ $id=I("get.id");
             ->where($where)
             ->order('a.status asc,a.add_time desc')
             ->limit($Page->firstRow.','.$Page->listRows)->select();
+
         $no=$Page->firstRow;
 //        dump($order_mess);
         foreach($order_mess as $k=>$v){
