@@ -1,0 +1,778 @@
+[ 2018-04-03T10:29:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000294s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019908s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032500s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.031005s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.035447s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001732s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.539490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.541506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017135s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.022585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.042639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015188s ]
+
+[ 2018-04-03T10:29:25+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000501s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004765s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014514s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003801s ]
+
+[ 2018-04-03T10:36:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000466s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004088s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012215s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002658s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004944s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.327039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.328671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003148s ]
+
+[ 2018-04-03T10:36:16+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000580s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004754s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007694s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003956s ]
+
+[ 2018-04-03T10:36:26+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000296s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004492s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004026s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002537s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.400894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.402941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003212s ]
+
+[ 2018-04-03T10:36:28+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004345s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011166s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003688s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009291s ]
+
+[ 2018-04-03T10:37:45+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000282s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002497s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004462s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002850s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004576s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001604s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.284995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.286803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003837s ]
+
+[ 2018-04-03T10:37:46+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000522s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004452s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003609s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005132s ]
+
+[ 2018-04-03T10:38:57+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001961s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006007s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003666s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003006s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004698s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001959s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003626s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.310099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.311895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003566s ]
+
+[ 2018-04-03T10:38:58+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000741s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006187s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008409s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004700s ]
+
+[ 2018-04-03T10:39:03+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000310s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002632s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003773s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002454s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001593s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.300239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.301820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003073s ]
+
+[ 2018-04-03T10:39:05+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000593s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004563s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003582s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003909s ]
+
+[ 2018-04-03T10:39:14+08:00 ] 127.0.0.1 /index.php?m=Home&c=Checklogin&a=verify&r=0.5613381686230692
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000283s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002538s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003981s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002935s ]
+
+[ 2018-04-03T10:39:44+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/do_login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000265s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002507s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003575s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002581s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004560s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000986s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002665s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001787s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007400s ]
+
+[ 2018-04-03T10:39:48+08:00 ] 127.0.0.1 /index.php/Home/Order/edit_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001751s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010858s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011335s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002238s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.005260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.909658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.911385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003105s ]
+
+[ 2018-04-03T11:05:16+08:00 ] 127.0.0.1 /index.php/Home/Order/edit_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000263s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002430s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006291s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002731s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004584s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002690s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.721829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.723504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003270s ]
+
+[ 2018-04-03T11:05:28+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000287s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002453s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004231s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002583s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004714s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005578s ]
+
+[ 2018-04-03T11:05:31+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000517s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005112s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014069s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003177s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004926s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001538s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.503948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.505563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001487s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003059s ]
+
+[ 2018-04-03T11:05:33+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000293s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002673s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007955s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003635s ]
+
+[ 2018-04-03T11:05:38+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000290s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003293s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004032s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002179s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003780s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003767s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.316793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.318491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001795s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.006380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003267s ]
+
+[ 2018-04-03T11:05:40+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000810s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006694s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005919s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006408s ]
+
+[ 2018-04-03T11:21:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000594s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005498s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007567s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002497s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004494s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.351234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.353352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001567s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003740s ]
+
+[ 2018-04-03T11:21:23+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000565s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005024s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008272s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004200s ]
+
+[ 2018-04-03T11:21:45+08:00 ] 127.0.0.1 /index.php/Home/Checklogin/do_login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000299s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002370s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003597s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+NOTIC: [8] Undefined index: account_name F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 39 行.
+NOTIC: [8] Undefined index: user_type F:\phpstudy\WWW\wwwroot\Application\Home\Controller\CheckloginController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002605s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000970s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002646s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006705s ]
+
+[ 2018-04-03T11:21:48+08:00 ] 127.0.0.1 /index.php/Home/Order/edit_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007373s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 18 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 22 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 23 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 24 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Conf\config.php 第 26 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006456s ]
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 39 行.
+NOTIC: [8] Undefined variable: arr F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2333 行.
+NOTIC: [8] Undefined variable: tree F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 2339 行.
+NOTIC: [8] Use of undefined constant TPSHOP_CACHE_TIME - assumed 'TPSHOP_CACHE_TIME' F:\phpstudy\WWW\wwwroot\Application\Home\Controller\BaseController.class.php 第 50 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003116s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004907s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003971s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.663128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.664781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001922s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003966s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003094s ]
+

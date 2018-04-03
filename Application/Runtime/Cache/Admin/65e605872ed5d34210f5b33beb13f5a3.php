@@ -191,7 +191,9 @@
 
                                             <td  style="width: 200px;">
                                                 <!--<a href="javascript:distribute(<?php echo ($vo[id]); ?>,'<?php echo ($vo["username"]); ?>')" data-toggle="tooltip" title="" class="btn btn-info goods_list">处理订单</a>-->
-                                                <a href="<?php echo U('Admin/User/edit_user',array('id'=>$vo['user_id']));?>" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="处理订单"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                <a href="<?php echo U('Admin/User/reset',array('id'=>$vo['user_id']));?>"  id="button-delete6" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="重置密码">重置密码</a>&nbsp;&nbsp;
+                                                <a href="<?php echo U('Admin/User/edit_user',array('id'=>$vo['user_id']));?>" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="处理订单"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;
                                                 <a href="javascript:void(0);" onclick="del('<?php echo ($vo[user_id]); ?>')" id="button-delete6" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="删除"><i class="fa fa-trash-o"></i></a>
                                             </td>
                                         </tr><?php endforeach; endif; ?>

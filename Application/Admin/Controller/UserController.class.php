@@ -21,6 +21,36 @@ use Admin\Logic\UsersLogic;
 class UserController extends BaseController {
 
     /*
+     *重置密码
+     */
+    public function reset()
+    {
+        if ($_POST) {
+            $data = I('post.');
+            if ($data['password']!=$data['password2']) {
+                $this->error('两次密码输入不正确');
+            }
+
+            $password['password'] = md5(C("AUTH_CODE").$data['password']);
+            $where['user_id'] = $data['userid'];
+            $res = M('users')->where($where)->save($password);
+            if ($res===false) {
+                $this->error('重置密码失败');
+            }else{
+                $this->success('重置密码成功');
+            }
+
+            exit;
+        }
+        $this->assign('userid',$_GET['id']);
+        $this->display();
+
+
+
+    }
+
+
+    /*
      *企业社保订单
      */
     public function index(){
