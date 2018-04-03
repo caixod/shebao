@@ -336,7 +336,7 @@ function getMenuList($act_list){
 	$menu_list = getAllMenu();
 	if($act_list != 'all'){
 		$right = M('system_menu')->where("id in ($act_list)")->cache(true)->getField('right',true);
-		
+		var_dump($right);
 		foreach ($right as $val){
 			$role_right .= $val.',';
 		}
@@ -357,7 +357,7 @@ function getAllMenu(){
 			'system' => array('name'=>'系统设置','icon'=>'fa-cog','sub_menu'=>array(
 //					array('name'=>'网站设置','act'=>'index','control'=>'System'),
 //					array('name'=>'友情链接','act'=>'linkList','control'=>'Article'),
-//					array('name'=>'自定义导航','act'=>'navigationList','control'=>'System'),
+//					array('name'=>'自定义导航','act'=>'navigationList','control'=>'System'),				
 					array('name'=>'区域管理','act'=>'region','control'=>'Tools'),
 					array('name'=>'权限资源列表','act'=>'right_list','control'=>'System'),
 			)),
@@ -481,6 +481,7 @@ function getAllMenu(){
 			array('name' => '问题反馈列表', 'act'=>'up_question', 'control'=>'manage'),
 			array('name' => '消息列表', 'act'=>'news_list', 'control'=>'manage'),
 			array('name' => '短信消息列表', 'act'=>'sms_send_list', 'control'=>'manage'),
+			array('name' => '贴士展示', 'act'=>'index', 'control'=>'tips'),			
 //			array('name' => '菜品管理', 'act'=>'manageList', 'control'=>'Base_manage'),
 //			array('name' => '订单管理', 'act'=>'orders', 'control'=>'Base_manage'),
 //			array('name' => '菜品统计', 'act'=>'statistics', 'control'=>'Base_manage'),

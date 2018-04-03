@@ -294,26 +294,45 @@
                 </ul>
 
             </div>
-            <div class="main-article-tips">
-                <div class="default">
-                    <h4>社保小贴士</h4>
-                    <p>请选择您的参保城市</p>
-                    <p>根据您选择的参保城市，提供以下信息：</p>
-                    <p>1、下单截止日期</p>
-                    <p>2、参保规则说明</p>
-                    <p>3、需要提供的参保资料</p>
-                    <p>4、服务费收取规则</p>
-                </div>
-                <div class="social_tips">
-                    <p>特别提示:</p>
-                    <div>
-                        1、 因客户自身原因（未了解清楚规则、无故撤单）退费的，服务费不予退还！<br>
-                        2、不承接现已怀孕、重病等特殊人员的社保代缴业务。如客户隐瞒孕情、病情下单，我司无法为其办理相应的社保待遇。如有生育计划，请在孕前3个月，即生育前13个月提前购买社保。<br>
-                        3、关于生育待遇的申领，我司仅承接异地分娩，生育备案，医疗报销等业务。涉及生育津贴、产假工资的申领我司概不接受。<br>
-                        4、首次支付时系统会提示上传身份证正反面材料，填写好个人信息支付订单后，我司会有人跟进，如后续需要其它材料补充，我司会再联系您。
-                    </div>
-                </div>
-            </div>
+            <?php $tips = M('tips')->find(); ?>
+			<div class="main-article-tips">
+				<div class="default">
+					<h4>社保小贴士</h4>
+					<div><?php echo $tips['tips1']; ?></div>
+				</div>
+				<div class="social_tips">
+					<p>特别提示:</p>
+					<div>
+					<?php echo $tips['tips2']; ?>
+					</div>
+				</div>
+			</div>
+            <?php $tips = M('tips')->find(); ?>
+			<div class="main-article-tips">
+				<div class="default">
+					<h4>社保小贴士</h4>
+					<div><?php echo $tips['tips1']; ?></div>
+				</div>
+				<div class="social_tips">
+					<p>特别提示:</p>
+					<div>
+					<?php echo $tips['tips2']; ?>
+					</div>
+				</div>
+			</div>
+            <?php $tips = M('tips')->find(); ?>
+			<div class="main-article-tips">
+				<div class="default">
+					<h4>社保小贴士</h4>
+					<div><?php echo $tips['tips1']; ?></div>
+				</div>
+				<div class="social_tips">
+					<p>特别提示:</p>
+					<div>
+					<?php echo $tips['tips2']; ?>
+					</div>
+				</div>
+			</div>
         </div>
     </div>
 </div>

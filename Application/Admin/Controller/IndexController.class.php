@@ -18,7 +18,9 @@ class IndexController extends BaseController {
 
     public function index(){
         $act_list = session('act_list');
+
         $menu_list = getMenuList($act_list);
+
         /*by Nicolas 20170317 start*/
         $dish_menu_list = getDishMenu();
         $system_menu_list = systemMenu();//

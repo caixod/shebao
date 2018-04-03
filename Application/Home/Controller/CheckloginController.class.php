@@ -2177,7 +2177,16 @@ class CheckloginController extends BaseController {
        $info=D("region")->where(['id'=>intval(2)])->find();
        $this->assign('info',$info);
        $this->assign('province',$p);
+
+
+
+
+
+
         $this->display();
+
+
+
 //        $this->display("jisuanqi");
     }
     /*
