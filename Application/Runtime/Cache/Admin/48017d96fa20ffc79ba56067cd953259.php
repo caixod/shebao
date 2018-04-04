@@ -164,7 +164,7 @@
                                         <td>
                                         <select class="form-control" name="user" id="user" style="width:250px;" onchange="get_user(this);">
                                             <option value="">选择发放对象</option>
-
+                                            <option value="all">全员发放</option>
                                             <?php if(is_array($user_list)): foreach($user_list as $k=>$vo): ?><option value="<?php echo ($vo["user_id"]); ?>"><?php echo ($vo["username"]); ?></option><?php endforeach; endif; ?>
                                         </select>
 

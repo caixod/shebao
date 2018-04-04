@@ -31,8 +31,9 @@
                                         <td>
                                         <select class="form-control" name="user" id="user" style="width:250px;" onchange="get_user(this);">
                                             <option value="">选择发放对象</option>
-
+                                            <option value="all">全员发放</option>
                                             <foreach name="user_list" item="vo" key="k" >
+
                                             <option value="{$vo.user_id}">{$vo.username}</option>
                               </foreach>
                                         </select>

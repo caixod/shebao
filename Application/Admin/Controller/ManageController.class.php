@@ -297,25 +297,48 @@ class ManageController extends BaseController{
     public function coupon_add(){
         $model=D("coupon");
         if(IS_POST){
+
           $user_id_arr=I('post.user_id');
           $start_time=I("post.start_time");
           $money=I("post.money");
           $max_fee=I("post.max_fee");
           $end_time=I("post.end_time");
-          foreach($user_id_arr as $k=>$v){
-              $code="V".$v.date("Ymd").mt_rand(1,9);
-              $dat=[
-                  'user_id'=>$v,
-                  'coupon_code'=>$code,
-                  'money'=>$money,
-                  'max_fee'=>$max_fee,
-                  'start_time'=>$start_time,
-                  'end_time'=>$end_time,
-                  'add_time'=>time(),
-              ];
-              $model->add($dat);
+
+          if (in_array('all',$user_id_arr)) {
+            $where['is_lock'] = '0';
+            $user_id_arr = M('users')->field('user_id')->where($where)->select();
+            foreach($user_id_arr as $k=>$v){
+                $code="V".$v['user_id'].date("Ymd").mt_rand(1,9);
+                $dat=[
+                    'user_id'=>$v['user_id'],
+                    'coupon_code'=>$code,
+                    'money'=>$money,
+                    'max_fee'=>$max_fee,
+                    'start_time'=>$start_time,
+                    'end_time'=>$end_time,
+                    'add_time'=>time(),
+                ];
+                $model->add($dat);
+            }
           }
-       $this->success("发放成功",U("Manage/coupon_list"));
+          else{
+            foreach($user_id_arr as $k=>$v){
+                $code="V".$v.date("Ymd").mt_rand(1,9);
+                $dat=[
+                    'user_id'=>$v,
+                    'coupon_code'=>$code,
+                    'money'=>$money,
+                    'max_fee'=>$max_fee,
+                    'start_time'=>$start_time,
+                    'end_time'=>$end_time,
+                    'add_time'=>time(),
+                ];
+                $model->add($dat);
+            }
+          }
+
+
+            $this->success("发放成功",U("Manage/coupon_list"));
             die;
         }
         $user_list=D("users")->field('user_id,username,account_name')->where(['is_lock'=>0,'account_name'=>array('gt','0')])->select();
@@ -328,6 +351,8 @@ class ManageController extends BaseController{
         $this->display();
 
     }
+
+
     /*
      * 代金券修改
      * */

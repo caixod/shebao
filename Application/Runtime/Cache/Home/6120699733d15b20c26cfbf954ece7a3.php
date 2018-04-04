@@ -265,7 +265,7 @@
                         1、 因客户自身原因（未了解清楚规则、无故撤单）退费的，服务费不予退还！ </div>
                 </div>
                 <div class="i_agree">
-                    <input type="checkbox" id="agree" style="margin-top:6px" checked="checked"><label for="agree">我已阅读并同意<a href="" >《服务代理协议》</a></label>
+                    <input type="checkbox" id="agree" style="margin-top:6px" checked="checked"><label for="agree">我已阅读并同意<a href="<?php echo U('home/xieyi/xieyi');?>" target="_blank">《服务代理协议》</a></label>
                 </div>
                 <!--<div class="g_button">-->
                     <!--<button  type="button" onclick="to_jisuanfee();" class="btn btn-lg btn-success now_buy">下一步</button>-->

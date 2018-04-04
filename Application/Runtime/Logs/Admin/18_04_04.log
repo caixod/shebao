@@ -1,0 +1,2515 @@
+[ 2018-04-04T09:25:50+08:00 ] 127.0.0.1 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000533s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005207s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.005215s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.008060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002116s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011697s ]
+
+[ 2018-04-04T09:25:55+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000294s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003789s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: ��֪������������  F:\phpstudy\WWW\wwwroot\Application\Admin\Common\function.php 第 279 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=user_push&amp;domain=sd.com&amp;last_domain=sd.com&amp;key_num=v1.3.2&amp;install_time=1480844624&amp;cpu=0001&amp;mac=0002&amp;serial_number=20161204054344hMRIXH): failed to open stream: php_network_getaddresses: getaddrinfo failed: ��֪������������  F:\phpstudy\WWW\wwwroot\Application\Admin\Common\function.php 第 279 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.004470s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.009943s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000834s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002508s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001543s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003188s ]
+
+[ 2018-04-04T09:25:57+08:00 ] 127.0.0.1 /index.php/Admin/Admin/vertify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000426s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003185s ]
+
+[ 2018-04-04T09:26:48+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Admin&a=login&t=0.9075468024968667
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000268s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002583s ]
+
+[ 2018-04-04T09:26:56+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Admin&a=login&t=0.3389131633684346
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003347s ]
+
+[ 2018-04-04T09:26:59+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Admin&a=vertify&r=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000522s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003956s ]
+
+[ 2018-04-04T09:27:03+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Admin&a=vertify&r=73
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003176s ]
+
+[ 2018-04-04T09:27:09+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Admin&a=login&t=0.47753824250008203
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000556s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002666s ]
+
+[ 2018-04-04T09:27:18+08:00 ] 127.0.0.1 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004255s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: ��֪������������  F:\phpstudy\WWW\wwwroot\Application\Admin\Logic\UpgradeLogic.class.php 第 52 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=checkVersion&amp;v=v1.3.2): failed to open stream: php_network_getaddresses: getaddrinfo failed: ��֪������������  F:\phpstudy\WWW\wwwroot\Application\Admin\Logic\UpgradeLogic.class.php 第 52 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002415s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002714s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.295190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.297092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003082s ]
+
+[ 2018-04-04T09:27:21+08:00 ] 127.0.0.1 /index.php/Admin/System/login_task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000486s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003415s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\SystemController.class.php 第 255 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002694s ]
+
+[ 2018-04-04T09:27:23+08:00 ] 127.0.0.1 /index.php/Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000518s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004844s ]
+NOTIC: [8] Undefined index: version F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\IndexController.class.php 第 110 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002941s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.005256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002646s ]
+NOTIC: [8] Undefined variable: count F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 173 行.
+NOTIC: [8] Undefined variable: count F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 201 行.
+NOTIC: [8] Undefined variable: count F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003385s ]
+
+[ 2018-04-04T09:28:59+08:00 ] 127.0.0.1 /index.php/Admin/tips/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000294s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003263s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002468s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001012s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002663s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003017s ]
+
+[ 2018-04-04T09:42:53+08:00 ] 127.0.0.1 /index.php/Admin/tips/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005061s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.013859s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.015547s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002970s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003658s ]
+
+[ 2018-04-04T09:44:59+08:00 ] 127.0.0.1 /index.php/Admin/manage/coupon_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000334s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003613s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 277 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 278 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002472s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002783s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002231s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003779s ]
+
+[ 2018-04-04T09:48:20+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003825s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002508s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001012s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002736s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003522s ]
+
+[ 2018-04-04T09:52:52+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000324s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003798s ]
+
+[ 2018-04-04T09:53:00+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000305s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004484s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002737s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002949s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 188 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 195 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.007010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004361s ]
+
+[ 2018-04-04T09:53:10+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000301s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002979s ]
+
+[ 2018-04-04T09:53:15+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000304s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003169s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002790s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001005s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002648s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 188 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 195 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.139946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006695s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003021s ]
+
+[ 2018-04-04T09:54:12+08:00 ] 127.0.0.1 /index.php/Admin/tips/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003136s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002277s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000982s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001538s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003211s ]
+
+[ 2018-04-04T09:54:14+08:00 ] 127.0.0.1 /index.php/Admin/manage/coupon_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000524s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020585s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 277 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 278 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003320s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.005699s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001775s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004502s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.205981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.208460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003671s ]
+
+[ 2018-04-04T09:54:18+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000305s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003200s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002284s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002707s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001484s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003155s ]
+
+[ 2018-04-04T09:54:38+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003039s ]
+
+[ 2018-04-04T09:55:47+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000328s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004387s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002418s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002745s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003223s ]
+
+[ 2018-04-04T09:56:02+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000559s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003414s ]
+
+[ 2018-04-04T09:56:03+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000308s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002984s ]
+
+[ 2018-04-04T09:56:25+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000519s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005299s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002796s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001010s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002662s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003149s ]
+
+[ 2018-04-04T09:56:37+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000282s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003063s ]
+
+[ 2018-04-04T09:58:27+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000278s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003234s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002463s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001003s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002676s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003238s ]
+
+[ 2018-04-04T10:00:45+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000275s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002996s ]
+
+[ 2018-04-04T10:01:30+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000278s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003347s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002437s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001004s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002701s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001402s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003145s ]
+
+[ 2018-04-04T10:01:41+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000278s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003367s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+
+[ 2018-04-04T10:02:14+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000329s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003333s ]
+
+[ 2018-04-04T10:05:53+08:00 ] 127.0.0.1 /index.php/Admin/tips/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000362s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003734s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002878s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004871s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002692s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003309s ]
+
+[ 2018-04-04T10:05:56+08:00 ] 127.0.0.1 /index.php/Admin/manage/coupon_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000527s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003316s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 277 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 278 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002740s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004564s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001581s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003200s ]
+
+[ 2018-04-04T10:06:01+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000278s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003238s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002429s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001781s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004373s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.183420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.185687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003415s ]
+
+[ 2018-04-04T10:06:11+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000820s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003735s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002245s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000745s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002494s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006641s ]
+
+[ 2018-04-04T10:06:14+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004389s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 277 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 278 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003047s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.005373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002769s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.221135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.222731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001704s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003239s ]
+
+[ 2018-04-04T10:06:35+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000303s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003661s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002248s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003878s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002661s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003099s ]
+
+[ 2018-04-04T10:08:56+08:00 ] 127.0.0.1 /index.php/Admin/manage/coupon_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000298s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003265s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 277 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 278 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002524s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002742s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.182127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.183817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003349s ]
+
+[ 2018-04-04T10:09:02+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000312s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003196s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002335s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003960s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002917s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003154s ]
+
+[ 2018-04-04T10:09:15+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000284s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004061s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003935s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.007073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002819s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007084s ]
+
+[ 2018-04-04T10:09:18+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000297s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003199s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 277 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\ManageController.class.php 第 278 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002307s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003872s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002717s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\6447e6af28be20173e575b7b5bb07ee4.php 第 215 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.219988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004364s ]
+
+[ 2018-04-04T10:09:56+08:00 ] 127.0.0.1 /index.php/Admin/Manage/coupon_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000275s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003600s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002333s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003903s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001003s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002631s ]
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 186 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 187 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 193 行.
+NOTIC: [8] Undefined variable: info F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 194 行.
+NOTIC: [8] Undefined variable: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\48017d96fa20ffc79ba56067cd953259.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003185s ]
+
+[ 2018-04-04T10:13:13+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000336s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006616s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002535s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002827s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.278097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.280281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001395s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004495s ]
+
+[ 2018-04-04T10:13:47+08:00 ] 127.0.0.1 /index.php/Admin/Wechat/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000288s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004459s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002289s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003935s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001718s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003599s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.312644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.314758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007931s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003149s ]
+
+[ 2018-04-04T10:22:29+08:00 ] 127.0.0.1 /index.php/Admin/Wechat/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000316s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025844s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.031333s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.034420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002729s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\138883f8411c83891319bcbaf8069345.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.272092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.273924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015926s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.019048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.038447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013187s ]
+
+[ 2018-04-04T10:22:40+08:00 ] 127.0.0.1 /index.php/Admin/Wechat/text
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000456s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003129s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002228s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003873s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000979s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002700s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001540s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003102s ]
+
+[ 2018-04-04T10:22:42+08:00 ] 127.0.0.1 /index.php/Admin/Wechat/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000277s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003123s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003295s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.005932s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001746s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003527s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.409784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.411992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001357s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005515s ]
+
+[ 2018-04-04T10:26:47+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_company_order_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000275s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003164s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 307 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 308 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002415s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003017s ]
+NOTIC: [8] Undefined variable: company_name F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 152 行.
+NOTIC: [8] Undefined variable: handle_name F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 153 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 234 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.317428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.319116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003159s ]
+
+[ 2018-04-04T10:27:40+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000499s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003222s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 487 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 488 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002265s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002900s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.382584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.384515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003278s ]
+
+[ 2018-04-04T10:27:45+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_daijiao_edit/id/133
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000303s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003347s ]
+NOTIC: [8] Undefined offset: 2 F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 231 行.
+NOTIC: [8] Undefined offset: 2 F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 231 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002197s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003924s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001780s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003567s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.379027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.380680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003031s ]
+
+[ 2018-04-04T10:28:14+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_daijiao_edit/id/133
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000303s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003181s ]
+NOTIC: [8] Undefined offset: 2 F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 231 行.
+NOTIC: [8] Undefined offset: 2 F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 231 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002567s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001734s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.263309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.265084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003049s ]
+
+[ 2018-04-04T10:28:36+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000294s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003374s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 671 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 672 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002429s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004601s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002779s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\0cf2c9972a0249b6dd8338c7dd7f7465.php 第 237 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\0cf2c9972a0249b6dd8338c7dd7f7465.php 第 237 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\0cf2c9972a0249b6dd8338c7dd7f7465.php 第 237 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\0cf2c9972a0249b6dd8338c7dd7f7465.php 第 237 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\0cf2c9972a0249b6dd8338c7dd7f7465.php 第 237 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\0cf2c9972a0249b6dd8338c7dd7f7465.php 第 237 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\0cf2c9972a0249b6dd8338c7dd7f7465.php 第 237 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.292477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.294193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002373s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003428s ]
+
+[ 2018-04-04T10:28:39+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_edit/id/115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000320s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004413s ]
+NOTIC: [8] Undefined offset: 2 F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 231 行.
+NOTIC: [8] Undefined offset: 2 F:\phpstudy\WWW\wwwroot\Application\Common\Common\common.php 第 231 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002217s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004854s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001758s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003892s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.382623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.384946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001696s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004283s ]
+
+[ 2018-04-04T10:29:09+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_zhuanyi_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000453s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003156s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 829 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 830 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002363s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003930s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002825s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\470fe4b9f5e4bb6f0134d2e31c488612.php 第 225 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.239562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.241156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003226s ]
+
+[ 2018-04-04T10:29:13+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_zhuanyi_edit/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000754s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004375s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002543s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001499s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.379123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.380705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003049s ]
+
+[ 2018-04-04T10:30:08+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000351s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003236s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002505s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003337s ]
+NOTIC: [8] Undefined variable: page F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\b682812e058c4f7cab74d08ab9eabe11.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.198757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.200448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001440s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003308s ]
+
+[ 2018-04-04T10:30:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/admin_info/admin_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000306s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005770s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002317s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.333553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.335234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003172s ]
+
+[ 2018-04-04T10:30:39+08:00 ] 127.0.0.1 /index.php/Admin/Admin/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000274s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003040s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002296s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003949s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001006s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002701s ]
+NOTIC: [8] Undefined variable: page F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\20927eb07d3b96edd3fb6587372d1c00.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.169648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003145s ]
+
+[ 2018-04-04T10:30:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000505s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004502s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002303s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003985s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000943s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002575s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.207409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.209526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001341s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003084s ]
+
+[ 2018-04-04T10:30:52+08:00 ] 127.0.0.1 /index.php/Admin/Admin/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000271s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003427s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002163s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003821s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001012s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002744s ]
+NOTIC: [8] Undefined variable: page F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\20927eb07d3b96edd3fb6587372d1c00.php 第 181 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001374s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003223s ]
+
+[ 2018-04-04T10:30:54+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003419s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003145s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.005409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001586s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004652s ]
+NOTIC: [8] Undefined variable: page F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\b682812e058c4f7cab74d08ab9eabe11.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.208300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.211114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004142s ]
+
+[ 2018-04-04T10:31:04+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000298s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003175s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002294s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002763s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.235298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.236952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003052s ]
+
+[ 2018-04-04T10:31:20+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000315s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003235s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002256s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002713s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.225996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.228052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003190s ]
+
+[ 2018-04-04T10:31:22+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000319s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006352s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002576s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001821s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004711s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.314727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.317382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002091s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.006349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003767s ]
+
+[ 2018-04-04T10:31:24+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_company_order_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000326s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004254s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 307 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 308 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002544s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005134s ]
+NOTIC: [8] Undefined variable: company_name F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 152 行.
+NOTIC: [8] Undefined variable: handle_name F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 153 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 234 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.361329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.363932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001596s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003342s ]
+
+[ 2018-04-04T10:32:19+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_daijiao_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003127s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 487 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 488 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002351s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002839s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\e63d812592c6b23f1fdb1bbe313e6f55.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.313692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.315584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003387s ]
+
+[ 2018-04-04T10:33:10+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000308s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003368s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002270s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003965s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002860s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.224098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.225779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003961s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003394s ]
+
+[ 2018-04-04T10:37:50+08:00 ] 127.0.0.1 /index.php/Admin/Order/sb_company_order_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000278s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003567s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 307 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\OrderController.class.php 第 308 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.008204s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.014009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001700s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003929s ]
+NOTIC: [8] Undefined variable: company_name F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 152 行.
+NOTIC: [8] Undefined variable: handle_name F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 153 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 234 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\7a623df9b4caba6d58f86d89b8bcccd6.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.267028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.268754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003282s ]
+
+[ 2018-04-04T10:51:19+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000306s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008320s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002477s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002911s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005143s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.334325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.336200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002120s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004345s ]
+
+[ 2018-04-04T11:03:49+08:00 ] 127.0.0.1 /index.php/Admin/Admin/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004241s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002705s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004665s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000763s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002502s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003250s ]
+
+[ 2018-04-04T11:03:52+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000292s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007532s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: ��֪������������  F:\phpstudy\WWW\wwwroot\Application\Admin\Common\function.php 第 279 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=user_push&amp;domain=sd.com&amp;last_domain=sd.com&amp;key_num=v1.3.2&amp;install_time=1480844624&amp;cpu=0001&amp;mac=0002&amp;serial_number=20161204054344hMRIXH): failed to open stream: php_network_getaddresses: getaddrinfo failed: ��֪������������  F:\phpstudy\WWW\wwwroot\Application\Admin\Common\function.php 第 279 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002509s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.005931s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000900s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002682s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003115s ]
+
+[ 2018-04-04T11:03:53+08:00 ] 127.0.0.1 /index.php/Admin/Admin/vertify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000302s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005158s ]
+
+[ 2018-04-04T11:04:03+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Admin&a=login&t=0.10427585718536503
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000323s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003457s ]
+
+[ 2018-04-04T11:04:06+08:00 ] 127.0.0.1 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000965s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003220s ]
+NOTIC: [2] file_get_contents(): php_network_getaddresses: getaddrinfo failed: ��֪������������  F:\phpstudy\WWW\wwwroot\Application\Admin\Logic\UpgradeLogic.class.php 第 52 行.
+NOTIC: [2] file_get_contents(http://service.shop.yiqidongfang.com/index.php?m=Home&amp;c=Index&amp;a=checkVersion&amp;v=v1.3.2): failed to open stream: php_network_getaddresses: getaddrinfo failed: ��֪������������  F:\phpstudy\WWW\wwwroot\Application\Admin\Logic\UpgradeLogic.class.php 第 52 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002971s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.005024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002839s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.434115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.437004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001881s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.005991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003299s ]
+
+[ 2018-04-04T11:04:07+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Admin&a=login&t=0.0888589993545219
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000303s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004300s ]
+
+[ 2018-04-04T11:04:08+08:00 ] 127.0.0.1 /index.php/Admin/System/login_task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000471s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004203s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\SystemController.class.php 第 255 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002826s ]
+
+[ 2018-04-04T11:04:10+08:00 ] 127.0.0.1 /index.php/Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000576s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003032s ]
+NOTIC: [8] Undefined index: version F:\phpstudy\WWW\wwwroot\Application\Admin\Controller\IndexController.class.php 第 110 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002278s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003849s ]
+NOTIC: [8] Undefined variable: count F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 173 行.
+NOTIC: [8] Undefined variable: count F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 201 行.
+NOTIC: [8] Undefined variable: count F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\69fa43b310489e974c292babf8eca7e7.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.173761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.176173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002759s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003095s ]
+
+[ 2018-04-04T11:12:03+08:00 ] 127.0.0.1 /index.php/Admin/tips/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000387s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003775s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.006651s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002617s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003217s ]
+
+[ 2018-04-04T11:12:18+08:00 ] 127.0.0.1 /index.php/Admin/tips/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000275s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003119s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003296s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004994s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003470s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001300s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005983s ]
+
+[ 2018-04-04T11:12:20+08:00 ] 127.0.0.1 /index.php/Admin/tips/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000295s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003664s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002293s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003921s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002732s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001660s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003117s ]
+
+[ 2018-04-04T11:20:34+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000306s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004217s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002409s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004314s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002678s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.251659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.253282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003244s ]
+
+[ 2018-04-04T11:20:40+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000296s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003153s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002313s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002822s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.232729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.235030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003055s ]
+
+[ 2018-04-04T11:20:43+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000312s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003253s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.004675s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.007823s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001934s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007568s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.437908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.440843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004433s ]
+
+[ 2018-04-04T11:20:47+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000337s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003282s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002405s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002762s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.241142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.242789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003162s ]
+
+[ 2018-04-04T11:21:35+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000314s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003129s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002241s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.003986s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002756s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.241249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.242852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003979s ]
+
+[ 2018-04-04T11:22:48+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000516s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005095s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003931s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.006047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002774s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.317086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.319237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002287s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006803s ]
+
+[ 2018-04-04T11:23:42+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000621s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004177s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.004974s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.007162s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002830s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Undefined index: id F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 193 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' F:\phpstudy\WWW\wwwroot\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.294164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.295866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003713s ]
+
+[ 2018-04-04T11:29:05+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001495s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006162s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002380s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004610s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002847s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.218669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.220308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002310s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003387s ]
+
+[ 2018-04-04T11:29:11+08:00 ] 127.0.0.1 /index.php/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000293s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005590s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002364s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001750s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.213514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.215377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002303s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.003095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005867s ]
+

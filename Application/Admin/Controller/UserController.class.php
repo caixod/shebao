@@ -57,6 +57,11 @@ class UserController extends BaseController {
 
         $account_name=I('account_name','');
         $where=['is_lock'=>0,'account_name'=>array('gt','0')];
+        // $un = I('un');
+        // $mobile = I('mobile');
+        // $where['username'] = ['like',"%$un%"];
+        // $where['mobile'] = ['like',"%$mobile%"];
+
         if($account_name){
             $where['account_name']=['like',"%$account_name%"];
         }
